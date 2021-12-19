@@ -14,7 +14,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send';
-      alert('Thank you for contacting us. We have recieved your message and will reply shortly');
+      alert('Thank you for contacting us. We have recieved your message and will reply to you shortly');
     }, (err) => {
       btn.value = 'Send';
       alert(JSON.stringify(err));
