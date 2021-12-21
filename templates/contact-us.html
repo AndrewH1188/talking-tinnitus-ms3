@@ -1,0 +1,37 @@
+
+
+<img src="assets/images/contact-us-hero.jpg" alt="Person on a computer with a phone in their hand. There is a phone, mail and email symbol showing">
+
+<h2>Contact Us</h2>
+
+<p>To get in touch with us please fill in your details in the contact form below 
+    and we will respond to your message as soon as possible. Thank you</p>
+
+<!-- The below was taken from EmailJS and has had some alterations made -->
+<form id="form">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+    </div>
+
+    <!-- Need to make this part only allow email addresses -->
+    <div class="field">
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" required>
+    </div>
+
+    <!-- Need to make this part work -->
+    <div class="field">
+        <label for="enquiry"></label>
+        <input type="text" name="enquiry" id="enquiry" required>
+      </div>
+    <input type="submit" id="button" value="Send" >
+  </form>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_xWG3suhvA2uVXlkEiuC7r')
+</script>
+
