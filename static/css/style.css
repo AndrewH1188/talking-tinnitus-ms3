@@ -1,3 +1,22 @@
+/*--------------------------------------------- Contact Us Form */
+.brand-logo {
+  margin-left: 3%;
+}
+
+
+
+/* .nav-extended {
+  background-color: #3d7b9c;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -35,3 +54,67 @@
   .text-area {
     margin-bottom: 20px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------- Footer */
+.connect {
+  padding-bottom: 20px;
+}
+
+.designed-by {
+  padding-bottom: 20px;
+}
+
+.page-footer {
+  background-color: #3d7b9c;
+}
+
+
+
+
+
+
+/*--------------------------------------------- Media Queries */
+
+/*---------------- Computer medium screen size */
+
+/* @media (max-width: 992px) { 
+
+}
+
+
+
+
+
+
+/*---------------- iPhone and Surface Duo */
+
+@media (max-width: 768px) {
+.brand-logo {
+  font-size: small;
+  text-align: center;
+  margin-right: -40px;
+}
+}
+
+
+
+/*---------------- Galaxy Fold */
+
+@media (max-width: 576px) {
+.brand-logo {
+  font-size: small;
+  margin-left: 0;
+}
+}
