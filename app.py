@@ -1,3 +1,6 @@
+# The code that I have used for this has come from the Code Institute Task Manager 
+# Mini project, but has been amended in places to fit with my code for the different pages.
+
 import os
 from flask import (
     Flask, flash, render_template, 
@@ -17,11 +20,12 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 @app.route("/")
-@app.route("/get_entries")
-def get_entries():
-    entries = mongo.db.entries.find()
-    return render_template("entries.html", entries=entries)
+@app.route("/get_entry")
+def get_entry():
+    entry = (mongo.db.entry.find())
+    return render_template("entries.html", entry=entry)
 
 
 if __name__ == "__main__":
