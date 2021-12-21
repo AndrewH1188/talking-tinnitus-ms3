@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="icon" href="assets/images/talking-tinnitus-favicon.jpg">
+    <title>Talking Tinnitus</title>
+    {% block styles %}
+    {% endblock %}
+</head>
+<body>
+
+
+    <!-- Taken from the Task Manager Application Mini Project -->
+    <header>
+        <!-- top navbar -->
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Talking Tinnitus</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    {% if session.user %}
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">New Task</a></li>
+                    {% if session.user|lower == "admin"|lower %}
+                            <li><a href="#">Manage Categories</a></li>
+                    {% endif%}
+                        <li><a href="#">Log Out</a></li>
+                    {% else %}
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Register</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <!-- mobile side navbar -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><h4 class ="center-align light-green-text text-darken-4">Talking Tinnitus</h4></li>
+                    <li><a href="#">Home</a></li>
+                    {% if session.user %}
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">New Task</a></li>
+                    {% if session.user|lower == "admin"|lower %}
+                            <li><a href="#">Manage Categories</a></li>
+                    {% endif%}
+                        <li><a href="#">Log Out</a></li>
+                    {% else %}
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Register</a></li>
+                    {% endif %}
+        </ul>
+    </header>
+    
+
+
+
+
+<footer>
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l12 s6">
+            
+              
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <p class="connect center-align">Connect with us:</p>
+              <ul>
+                <li><a class="social-media" href="https://www.facebook.com/groups/417947383216864/" target="_blank"><i class=”fab fa-facebook-f”></i></a></li>
+                <li><a class="social-media" href="https://twitter.com/talk_tinnitus" target="_blank"><i class=”fab fa-twitter”></i></a></li>
+                <li><a class="social-media" href="https://www.instagram.com/talking_tinnitus/" target="_blank"><i class=”fab fa-instagram”></i></a></li>
+                <li><a class="social-media" href="https://www.youtube.com/channel/UCrU99cJK2_zFsmvo4YzWilA" target="_blank"><i class=”fab fa-youtube”></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="designed-by center-align">
+          <div class="container">
+          Website designed by Andrew Harding
+          </div>
+        </div>
+
+      </footer>
+
+</footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>
