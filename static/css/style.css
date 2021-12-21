@@ -1,15 +1,17 @@
-/*--------------------------------------------- Contact Us Form */
+/*--------------------------------------------- Base page */
 .brand-logo {
   margin-left: 3%;
 }
 
 
+/*---------------------------- This needs taking out of comments as it colours the nav bar correctly */
+/* 
 
-/* .nav-extended {
+.nav-extended {
   background-color: #3d7b9c;
 }
 
-
+*/
 
 
 
@@ -69,16 +71,38 @@
 
 /*--------------------------------------------- Footer */
 .connect {
-  padding-bottom: 20px;
+  text-align: center;
+
 }
 
 .designed-by {
+  padding-top: 0;
+  margin-top: 0;
   padding-bottom: 20px;
 }
 
 .page-footer {
   background-color: #3d7b9c;
 }
+
+
+.social-media {
+  color: #fff;
+  font-size: large;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a.social-media { 
+  display: flex;
+
+}
+
+a.social-media :hover {
+  color: #c2e5d3;
+}
+
+
 
 
 
