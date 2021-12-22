@@ -17,7 +17,7 @@
 <body>
 
 
-    <!-- Taken from the Task Manager Application Mini Project -->
+    <!-- Taken from the Code Institute Task Manager Application Mini Project -->
     <header>
         <!-- top navbar -->
         <nav class="nav-extended">
@@ -27,6 +27,7 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
+                    <li><a href="{{ url_for('get_entry') }}">Community Entries</a></li>
                     {% if session.user %}
                         <li><a href="#">Profile</a></li>
                         <li><a href="#">New Task</a></li>
@@ -48,6 +49,7 @@
             <li><h4 class ="center-align">Talking Tinnitus</h4></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
+                    <li><a href="{{ url_for('get_entry') }}">Community Entries</a></li>
                     {% if session.user %}
                         <li><a href="#">Profile</a></li>
                         <li><a href="#">New Task</a></li>
@@ -58,23 +60,21 @@
                     {% else %}
                         <li><a href="#">Log In</a></li>
                         <li><a href="#">Register</a></li>
+                        
                     {% endif %}
                     <li><a href="#">Contact Us</a></li>
         </ul>
     </header>
     
-
-
+{% block content %}
+{% endblock %}
 
 
 <footer>
-
     <footer class="page-footer">
         <div class="container">
           <div class="row">
             <div class="col l12 s6">
-            
-              
             </div>
             <div class="col l8 offset-l2 s12">
               <p class="connect center-align">Connect with us:</p>
@@ -112,16 +112,10 @@
         </div>
 
       </footer>
-
-</footer>
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/14fbbe1178.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
- 
+    <script src="{{ url_for('static', filename='js/entries.js') }}"></script>
     {% block scripts %}
     {% endblock %}
 </body>
