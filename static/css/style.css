@@ -4,17 +4,73 @@
 }
 
 
-/*---------------------------- This needs taking out of comments as it colours the nav bar correctly */
-/* 
+
+/*--------------------------------------------- Base page Nav Bar */
 
 .nav-extended {
   background-color: #3d7b9c;
+  margin-bottom: 60px;
+}
+
+
+.page-headings {
+  text-align: center;
+}
+
+
+/*--------------------------------------------- Hero Images */
+
+.hero-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/*--------------------------------------------- Home and About section images and headings */
+
+/*
+
+.left-image {
+}
+
+.right-image {
 }
 
 */
 
 
+.section-heading-left {
+  color: #df832f;
+}
 
+.section-heading-right {
+  color: #df832f;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------- Entries page */
+
+.magnifying-glass {
+  color: #3d7b9c;
+}
+
+.btn-small {
+  margin: 5px;
+}
+
+.collapsible-header .col strong {
+  margin: 5px;
+  line-height: 42px;
+}
 
 
 
@@ -78,13 +134,18 @@
 .designed-by {
   padding-top: 0;
   margin-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .page-footer {
   background-color: #3d7b9c;
+  padding-top: 0;
 }
 
+
+footer.page-footer {
+  margin-top: 60px;
+}
 
 .social-media {
   color: #fff;
