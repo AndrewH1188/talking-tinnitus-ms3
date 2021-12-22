@@ -9,12 +9,13 @@
 
 .nav-extended {
   background-color: #3d7b9c;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 
 .page-headings {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 
@@ -70,12 +71,23 @@
 .collapsible-header .col strong {
   margin: 5px;
   line-height: 42px;
+  margin-right: 50px;
+}
+
+.collapsible-header {
+  background-color: #3d7b9c;
 }
 
 
+ul.collapsible {
+  margin-left: 3%;
+  margin-right: 3%;
+}
 
-
-
+.card-panel {
+  margin-left: 3%;
+  margin-right: 3%;
+}
 
 
 /*--------------------------------------------- Contact Us Form */
@@ -195,6 +207,7 @@ a.social-media :hover {
 
 
 
+
 /*---------------- Galaxy Fold */
 
 @media (max-width: 576px) {
@@ -202,4 +215,12 @@ a.social-media :hover {
   font-size: small;
   margin-left: 0;
 }
+.page-headings {
+  font-size: x-large;
 }
+
+.reset {
+  margin-bottom: 20px;
+}
+}
+
