@@ -24,7 +24,15 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_entry")
 def get_entry():
-    entry = (mongo.db.entry.find())
+    entry = list(mongo.db.entry.find())
+    print(entry)
+    return render_template("entries.html", entry=entry)
+
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    entry = list(mongo.db.entry.find({"$text": {"$search": query}}))
     return render_template("entries.html", entry=entry)
 
 
