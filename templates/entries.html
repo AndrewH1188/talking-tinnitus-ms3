@@ -1,12 +1,54 @@
 {% extends "base.html" %}
 {% block content %}
 
+<h3 class="page-headings">Community Entries</h3>
 
-{% for entry in entry %}
-    {{entry.category_name}}
-    {{entry.entry_details}}
-{% endfor %}
+<!-- The below code has been taken from the Code Institute Task Manager Mini Project-->
+
+<div class="row card-panel grey lighten-5">
+    <form action="{{ url_for('search') }}" method="post" class="col s12">
+        <div class="row valign-wrapper center-align">
+            <div class="input-field col s12 m8">
+                <i class="fas fa-search prefix magnifying-glass"></i>
+                <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                <label for="query">Search Entries</label>
+            </div>
+            <div class="col s12 m4">
+                <a href="{{ url_for('get_entry') }}" class="red btn text-shadow">Reset</a>
+                <button type="submit" class="light-green darken-1 btn text-shadow">
+                    <i class="fas fa-search left"></i> Search
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
 
 
+{% if entry|length > 0 %}
+<ul class="collapsible">
+    {% for entry in entry %}
+    <li>
+        <div class="collapsible-header white-text light-green darken-4 text-shadow">
+            <div class="col s3">
+                <i class="fas fa-caret-down"></i>
+                {% if session.user|lower == entry.created_by|lower %}
+                    <a href="#" class="btn-small red darken-4">Delete</a>
+                    <a href="#" class="btn-small indigo darken-4">Edit</a>
+                {% endif %}
+            </div>
+
+        </div>
+        <div class="collapsible-body">
+            <strong>{{ entry.category_name }}</strong>
+            <p>{{entry.entry_details}}</p>
+            <p><em>by: {{ entry.created_by }}</em></p>
+            <p><em>date: {{ entry.created_date }}</em></p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+    <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+{% endif %}
 
 {% endblock %}
