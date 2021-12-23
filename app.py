@@ -22,11 +22,24 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+@app.route("/home")
+def home():
+    title = "Talking Tinnitus | Home"
+    return render_template("index.html", title=title)
+
+
+@app.route("/about")
+def about():
+    title = "Talking Tinnitus | About Us"
+    return render_template("about-us.html", title=title)
+
+
 @app.route("/get_entry")
 def get_entry():
     entry = list(mongo.db.entry.find())
     print(entry)
-    return render_template("entries.html", entry=entry)
+    title = "Talking Tinnitus | Community Entries"
+    return render_template("entries.html", entry=entry, title=title)
 
 
 @app.route("/search", methods=["GET", "POST"])
@@ -59,6 +72,15 @@ def register():
         return redirect(url_for("profile", username=session["user"]))
 
     return render_template("register.html")
+
+
+
+@app.route("/contact")
+def contact():
+    title = "Talking Tinnitus | Contact Us"
+    return render_template("contact-us.html", title=title)
+
+
 
 
 if __name__ == "__main__":
