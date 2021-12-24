@@ -546,3 +546,192 @@ I have added a post that features the What is Tinnitus from my website / service
 #### Youtube
 ![Youtube](assets/images/social-media/talking-tinnitus-youtube.jpg)
 
+
+
+
+
+
+
+
+
+
+
+
+
+## Testing:
+
+
+
+
+
+
+
+
+
+
+
+
+## Implementation:
+
+
+
+
+
+
+
+
+
+## Results:
+
+
+
+
+
+
+
+
+
+
+## Bugs:
+
+1. When I added the Python code for the home page I was shown this: ![Jinja error](assets/bugs/base-jinja-error.jpg) I tried looking for help online how to connect the home page in Python as this is where I thought the error was coming from. It was only when I’d started the steps for tutor support that I thought the Python seems fine, so I re looked at what Jinja was telling me with regard to where the error is and where this is coming from again, I checked the HTML file to see if the problem was there as Jinja mentioned base.html. I looked at the get entries page and looked at the base.html command and saw that I had missed the quote marks around the “base.html”. Having added the quote marks in and checking this works the Jinja error disappeared and my home page was now showing. This then meant that I could cancel the help from Tutor Support as I’d found the bug and squished it.
+
+
+
+
+
+## Deployment:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Credits:
+* Code Institute GitPod template that has Emmett abbreviation. Also the videos and tasks have enabled me to learn and successfully undertake another Milestone Project.
+* [Code Institute](https://codeinstitute.net/) Task Manager Mini Project which has been used in order to add the functionality to my design. I have credited the code used (even if some parts have amends) in comments above the code itself in the relevant files that this applies too.
+* [Adobe Stock](https://stock.adobe.com/uk/) for once again having superb images that I have been able to pay for and download to make my website / service look amazing. All images and their links have been mentioned and owners credited in both the Imagery and Media sections.
+* [101 Computing.net](https://www.101computing.net/html-how-to-add-a-favicon/) I reused this code from the first Milestone Project Go Tennis System and my second Milestone Project War Heroes Remembered where I added this code from 101 Computing.net to enable a favicon to display across my site on all pages.
+* [Materialize](https://materializecss.com/) has allowed me to create the nav bar and footer for the base template as well as help me to style the home and about pages. Materialize has also been used for elements such as the forms on the contact us, log in, registration, cards for the categories (admin only), the entries with the drop down, buttons and the nav bar. With the nav bar when it comes to viewing my site / service on smaller devices, the nav bar links collapse into an expanding side menu which emerges from the right-hand side when the bars / hamburger icon is clicked. The code here has been used from the Task Manager Mini Project to help with this, but links and colours amended to the colours and page names of my site
+* [JS Fiddle](https://jsfiddle.net/api/post/library/pure/): Used by EmailJS to test in a live environment how your contact form works. I have copied the code from here for the JavaScript, CSS and HTML to help me with the Contact Us page section and have attributed the code to coming from here in the comments above on all files.
+* [W3 Schools](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_pattern4): Used for the below code to enable users input an email address and not just anything random into the input fields. I added the required to stop users being able to bypass this by entering nothing into the fields that require an email address on the register, log in and contact us sections. ![W3 Schools email pattern](assets/help/w3-schools-email.jpg)
+* [Stack Overflow](https://stackoverflow.com/questions/51134459/are-you-sure-want-to-delete) I used Stack Overflow to find out how to display the message to the user about deleting the entry and then have reused this for the Admin section for Manage Categories too.
+* [Codemy.com](https://www.youtube.com/watch?v=fQrq207zXzU) for showing me how to add the appropriate title to each page of my website / service. ![Codemy.com page title](assets/help/codemy.jpg).
+* [Font Awesome](https://fontawesome.com/) has been used for the following:
+- Social media icons
+- Log in, Register, Send, Add Category, Share buttons
+- Search entries
+- Add category and Add category page
+- Mobile menu bars / hamburger icon 
+
+
+## Content:
+All content on my website / service has been written by myself apart from the content that I have copied and listed in this section with the relevant link to the source of this information. The copied paragraph features on my Home / Index page in the Welcome to Talking Tinnitus section. The copied text was taken from the [British Tinnitus Association - BTA](https://www.tinnitus.org.uk/blog/number-of-people) **“there are already an estimated six million people living with tinnitus here in the UK and this number is expected to rise by more than half a million by 2028”.** I have slightly altered this to read a bit better to ‘there are already an estimated six million people living with tinnitus here in the UK and this number is expected to rise to more than half a million by 2028’. I changed the by, and added to instead as although it reads ok, it doesn’t really sound right. I have highlighted this text on my design in red to also show that this is not my content, although the actual text on my website / service will probably be in italics to highlight this.
+
+
+## Media:
+All images were purchased and downloaded from [Adobe Stock](https://stock.adobe.com/uk/).
+
+#### Home Page:
+[Good hearing, soundwaves, medical artwork](https://stock.adobe.com/uk/images/good-hearing-soundwaves-medical-artwork/137447095)
+By Axel Kock
+File Number: 137447095
+
+[Tinnitus einer Frau, 3D Illustration](https://stock.adobe.com/uk/images/tinnitus-einer-frau-3d-illustration/85261887)
+By Axel Kock
+File Number: 85261887
+
+[Group of people practicing yoga in park](https://stock.adobe.com/uk/images/group-of-people-practicing-yoga-in-park/213654633)
+By Prostock-studio
+File Number: 213654633
+
+
+#### About Us:
+[Senior wearing hearing aid in her ears in front a laptop](https://stock.adobe.com/uk/images/senior-wearing-hearing-aid-in-her-ears-in-front-a-laptop/138129727)
+By Goodpics
+File Number: 138129727
+
+[People communicating with each other sitting in circle in group therapy session. Black woman comforts, supports and reassures upset unhappy caucasian mature man. You're not alone. We're here for you](https://stock.adobe.com/uk/images/people-communicating-with-each-other-sitting-in-circle-in-group-therapy-session-black-woman-comforts-supports-and-reassures-upset-unhappy-caucasian-mature-man-you-re-not-alone-we-re-here-for-you/458056982)
+By Studio Romantic
+File Number: 458056982
+
+[Delighted positive woman looking at you](https://stock.adobe.com/uk/images/delighted-positive-woman-looking-at-you/170686047)
+By zinkevych
+File Number: 170686047
+
+
+#### Register / Sign Up:
+[woman using laptop, searching web, browsing information, having workplace at home / soft focus picture / Vintage concept](https://stock.adobe.com/uk/images/woman-using-laptop-searching-web-browsing-information-having-workplace-at-home-soft-focus-picture-vintage-concept/184972433)
+By Urupong
+File Number: 184972433
+
+
+#### Log in:
+[Models On screen, illustration of an otitis](https://stock.adobe.com/uk/images/models-on-screen-illustration-of-an-otitis/158907990)
+By RFBSIP
+File Number: 158907990
+
+
+#### Logged in:
+[Teenagers holding speech bubbles with copy space](https://stock.adobe.com/uk/images/teenagers-holding-speech-bubbles-with-copy-space/252949825)
+By Prostock-studio
+File Number: 252949825 
+
+
+#### Contact Us:
+[Contact us or Customer support hotline people connect. Businessman using a mobile phone](https://stock.adobe.com/uk/images/contact-us-or-customer-support-hotline-people-connect-businessman-using-a-mobile-phone/360197061)
+By RoBird
+File Number: 360197061
+
+
+#### Favicon:
+[Speech bubble / speech balloon or chat bubble line art icon for apps and websites](https://stock.adobe.com/uk/images/speech-bubble-speech-balloon-or-chat-bubble-line-art-icon-for-apps-and-websites/203635604)
+By martialred
+File Number: 203635604
+
+
+## Acknowledgments:
+I would like to firstly thank my Mentor Caleb Mbakwe for all the help, support and expertise given to me that has enabled me to complete my third milestone project. I would like to say a huge thank you for all of your help and support that you have given to me throughout this project along the way. Your feedback has helped me to see things from a users point of view and has helped me to clarify what this site is about, as a sense of community rather than just a site. Without your valuable feedback, guidance and directions I honestly don’t think I would have been able to have achieved this project and the outcome that I have, so Thank you again and I very much look forward to working with you on my fourth and final Milestone Project in due course.
+
+Thank you to Tim Nelson at Code Institute for the tutorial videos showing the power of Jinja and Python as well as Mongo DB in action. All of your videos have helped with coding this milestone project as well as trying out the Materialize design platform too. 
+
+I would also like to thank Sean at Code Institute Tutor Support for his help pointing out the couple of tiny bits that I had missed which stopped my page All Entries from showing all the entries that were listed on it. Thank you, Sean for your help to point these bits out to enable me to get the entries showing on my entries page. It is very much appreciated.
+
+Also I would like to thank Code Institute in general for an absolutely amazing course which has and is challenging and aiding my learning, I know with practice (and google) I will be able to achieve the end goals of both this project and this course too. I appreciate all of your help, support and course material that you have put together in order so that I can go from not knowing the first thing about the majority of the programs or languages to having a better understanding and achieve what I didn’t know was possible, so thank you again. I would also like to thank student care at Code Institute for the check up calls that they have also made and the many emails that I have received to remind me to deploy early or about upcoming changes etc. I am really grateful for your help also and would like to say thank you to you as well.
+
+Thank you to Stuart Crang at the Learning People Global who I have discussed this project with also and who is looking forward to seeing this as well as my final project too. Stuart has been supportive and enthusiastic again for this project, like my previous projects that I have undertaken and thus far completed. 
+
+I would like to thank Camilla Roos at the Learning People Global for her check up phone call on the 21st December to see how I am getting on, it was a nice surprise and great to be able to talk to you. Thank you for your call checking in on how I am doing and for your helpful words too. I really appreciate your time and help so thank you again.
+
+I would like to thank the [British Tinnitus Association (BTA)](https://www.tinnitus.org.uk/) for all their help and support that they have provided to everyone with tinnitus, and for allowing me to be a volunteer with them. This has allowed me to help others, as well as learn more about tinnitus and how this makes different people feel, also how they managed their tinnitus before and how they have used the suggestions that I have been able to offer to them in order to effectively manage this further and help themselves. I would also like to thank the British Tinnitus Association for the help and knowledge that they have also provided to me which has helped me to manage my own tinnitus as well as be able to confidently take on this task of creating a website / service for people with tinnitus.
+
+As always there are the reoccurring thank yous to those that have been with me supporting me through the past two milestone projects, and have also been there supporting me during this milestone project. They are the following people:
+
+My Mum as always has been there to help me through yet another milestone project with her encouragement and support, she has seen this project slowly take shape as I have been working on it and has given her feedback on this too. It’s always great to have your support and encouragement as it really helps me to believe that having done this twice now, I can sure do it two more times as well as many others times for future projects as well. My Mum has also helped me to stop and made me take a break from the hours that I am putting into this project, whether it be the coding side of things, design side of things or what seems like my autobiographical awards acceptance speech README. This has helped me to refocus, resume and return to a productive outcome being able to continue on and challenge myself with this project, so Thank you for all your help again, it really means a lot to me and is always appreciated.
+
+Where would I be without this absolute legend Adam Jameel? I would like to also thank you for your calls that you have made to me to chat about anything and nothing in particular. This has helped me to also have a bit of a break and refresh before going back into this project full on. Your belief in me and well as your support and encouragement is always appreciated and most certainly another huge help that gets me through the days, hours, minutes and seconds that go into these full scale challenging but enjoyable projects. Thank you again for all of your support, Hopefully soon I’ll be back at Tennis and will let you beat me at a game or two as a thank you gesture (ha-ha).
+
+To Jim and Susie Jenner another huge thank you for your never ending support is always very much appreciated. It is a big help to me knowing that you my good friends are there pushing me to achieve and willing me on too. I know you still don’t understand what it is exactly that I am doing, but still support me regardless and for this I can’t thank you enough. 
+
+I would like to also thank my Auntie Julie and Uncle Danny for their continued encouragement and also checking in on me, to see how I am getting on and what part I am learning when we speak. Your help and support like many others is greatly appreciated and very much welcomed so thank you.
+
+Throughout the day I have Planet Rock on as a bit of background company, but also listening to some of the stuff the presenters come out with that puts a smile on my face. Also there is the music that is played that helps me to continue on coding, as well as designing and writing when it comes round to doing the next Milestone Project. To you all I would also like to say thank you for helping me and giving me some company whilst I code, design and write away, I swear it is from the music and the presenters that I manage to find the extra hidden energy to continue on and conquer so thank you again for this.
+
+Whenever I get questioned about how I manage to achieve what I have done I always say the following:
+When you see a live act, you only see those on the stage, but remember there are many people behind the scenes that have worked their absolute magic in many ways that puts that one person on the stage. All of the above have played an enormous part and continue to do so in putting me on the stage and allowing me to perform to my best. With their encouragement and support anything is possible, so I again extend my huge debt of thanks to you all, you are all the stars of the show too so thank you again for your help, support, encouragement and belief in me.
+
+Talking Tinnitus was designed and created by Andrew Harding
