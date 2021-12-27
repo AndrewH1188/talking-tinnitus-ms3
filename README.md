@@ -630,7 +630,9 @@ I have added a post that features the What is Tinnitus from my website / service
 * [JS Fiddle](https://jsfiddle.net/api/post/library/pure/): Used by EmailJS to test in a live environment how your contact form works. I have copied the code from here for the JavaScript, CSS and HTML to help me with the Contact Us page section and have attributed the code to coming from here in the comments above on all files.
 * [W3 Schools](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_pattern4): Used for the below code to enable users input an email address and not just anything random into the input fields. I added the required to stop users being able to bypass this by entering nothing into the fields that require an email address on the register, log in and contact us sections. ![W3 Schools email pattern](assets/help/w3-schools-email.jpg)
 * [Stack Overflow](https://stackoverflow.com/questions/51134459/are-you-sure-want-to-delete) I used Stack Overflow to find out how to display the message to the user about deleting the entry and then have reused this for the Admin section for Manage Categories too.
-* [Codemy.com](https://www.youtube.com/watch?v=fQrq207zXzU) for showing me how to add the appropriate title to each page of my website / service. ![Codemy.com page title](assets/help/codemy.jpg).
+* [Codemy.com](https://www.youtube.com/watch?v=fQrq207zXzU) for showing me how to add the appropriate title to each page of my website / service. ![Codemy.com page title](assets/help/codemy.jpg)
+* [Codegrepper.com](https://www.codegrepper.com/code-examples/python/displaying+an+image+in+jinja+template) for showing me how to display an image using the jinja template.
+![Codegrepper.com](assets/help/code-grepper.jpg)
 * [Font Awesome](https://fontawesome.com/) has been used for the following:
 - Social media icons
 - Log in, Register, Send, Add Category, Share buttons
