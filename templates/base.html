@@ -27,16 +27,17 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About Us</a></li>
-                    <li><a href="{{ url_for('get_entry') }}">Community Entries</a></li>
+                    <li><a href="{{ url_for('add_entry') }}">Add Community Entry</a></li>
                     {% if session.user %}
                         <li><a href="#">Profile</a></li>
-                        <li><a href="#">New Task</a></li>
+                        <li><a href="{{ url_for('get_entry') }}">Community Entries</a></li>
+
                     {% if session.user|lower == "admin"|lower %}
                             <li><a href="#">Manage Categories</a></li>
                     {% endif%}
-                        <li><a href="#">Log Out</a></li>
+                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
-                        <li><a href="#">Log In</a></li>
+                        <li><a href="{{ url_for('login') }}">Log In</a></li>
                         <li><a href="{{ url_for('register') }}">Register</a></li>
                     {% endif %}
                     <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
@@ -49,16 +50,16 @@
             <li><h4 class ="center-align logo">Talking Tinnitus</h4></li>
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About Us</a></li>
-                    <li><a href="{{ url_for('get_entry') }}">Community Entries</a></li>
                     {% if session.user %}
                         <li><a href="#">Profile</a></li>
-                        <li><a href="#">New Task</a></li>
+                        <li><a href="{{ url_for('get_entry') }}">Community Entries</a></li>
+                        <li><a href="{{ url_for('add_entry') }}">Add Community Entry</a></li>
                     {% if session.user|lower == "admin"|lower %}
                             <li><a href="#">Manage Categories</a></li>
                     {% endif%}
-                        <li><a href="#">Log Out</a></li>
+                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
-                        <li><a href="#">Log In</a></li>
+                        <li><a href="{{ url_for('login') }}">Log In</a></li>
                         <li><a href="{{ url_for('register') }}">Register</a></li>
                         
                     {% endif %}
