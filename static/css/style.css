@@ -72,6 +72,7 @@
 
 .section-heading-right {
   color: #df832f;
+  text-align: right;
 }
 
 
@@ -194,7 +195,8 @@ ul.collapsible {
 
 .page-footer {
   background-color: #3d7b9c;
-  padding-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 footer.page-footer {
@@ -202,7 +204,7 @@ footer.page-footer {
 }
 
 .connect {
-  text-align: center;
+  padding-bottom: 10px;
 }
 
 .social-media {
@@ -210,11 +212,8 @@ footer.page-footer {
   font-size: large;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-a.social-media { 
-  display: flex;
-
+  text-align: center;
+  display: inline;
 }
 
 a.social-media :hover {
@@ -224,7 +223,6 @@ a.social-media :hover {
 .designed-by {
   padding-top: 0;
   margin-top: 0;
-  padding-bottom: 10px;
 }
 
 
