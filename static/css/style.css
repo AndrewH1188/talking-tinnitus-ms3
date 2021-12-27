@@ -144,6 +144,38 @@ ul.collapsible {
 }
 
 
+
+/*--------------------------------------------- Submit an Entry page */
+
+
+
+.submit-entry {
+  background-color: #3d7b9c;
+}
+
+.submit-entry:hover{
+  background-color: #c2e5d3;
+  color:#3d7b9c;
+}
+
+
+
+
+/*--------------------------------------------- Add an Entry page */
+
+
+
+.add-entry-button {
+  background-color: #3d7b9c;
+}
+
+.add-entry-button:hover{
+  background-color: #c2e5d3;
+  color:#3d7b9c;
+}
+
+
+
 /*--------------------------------------------- Contact Us Form */
 
 /* Taken from EmailJS */
