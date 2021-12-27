@@ -7,6 +7,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
@@ -55,12 +56,17 @@ def register():
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
+        
+        # check if email already exists in db
+        existing_email = mongo.db.email.find_one(
+            {"email": request.form.get("email").lower()})
 
         if existing_user:
-            flash("Username already exists")
+            flash("Username or email address already exists")
             return redirect(url_for("register"))
 
         register = {
+            "email": request.form.get("email").lower(),
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
         }
@@ -69,18 +75,68 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
-        return redirect(url_for("profile", username=session["user"]))
-
     return render_template("register.html")
 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        # check if username exists in db
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            # ensure hashed password matches user input
+            if check_password_hash(
+                    existing_user["password"], request.form.get("password")):
+                        session["user"] = request.form.get("username").lower()
+                        flash("Welcome, {}".format(
+                            request.form.get("username")))
+                        return redirect(url_for(
+                            "profile", username=session["user"]))
+            else:
+                # invalid password match
+                flash("Incorrect Email Address and/or Username and/or Password")
+                return redirect(url_for("login"))
+
+        else:
+            # username doesn't exist
+            flash("Incorrect Email Address and/or Username and/or Password")
+            return redirect(url_for("login"))
+
+    return render_template("login.html")
+
+@app.route("/logout")
+def logout():
+    # remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
+
+
+# add entries
+@app.route("/add_entry", methods=["GET", "POST"])
+def add_entry():
+    title = "Talking Tinnitus | Add Community Entry"
+    if request.method == "POST":
+        entry = {
+            "category_name": request.form.get("category_name"),
+            "entry_description": request.form.get("entry_description"),
+            "entry_details": request.form.get("entry_details"),
+            "created_by": session["user"],
+            "created_date": session["date"]
+        }
+        mongo.db.entry.insert_one(entry)
+        flash("Thank you for submitting your entry")
+        return redirect(url_for("get_entry"))
+
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("add-entry.html", title=title, categories=categories)
 
 
 @app.route("/contact")
 def contact():
     title = "Talking Tinnitus | Contact Us"
     return render_template("contact-us.html", title=title)
-
-
 
 
 if __name__ == "__main__":
