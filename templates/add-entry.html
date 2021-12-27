@@ -9,11 +9,11 @@
 <!-- The below code has been taken from the Code Institute Task Manager Mini Project-->
 
     <div class="row card-panel grey lighten-5">
-    <form class="col s12" method="POST" action="{{ url_for('add_task') }}">
+    <form class="col s12" method="POST" action="{{ url_for('add_entry') }}">
         <!-- category selection -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix light-green-text text-darken-4"></i>
+                <i class="fas fa-folder-open prefix font-icon"></i>
                 <select id="category_name" name="category_name" class="validate" required>
                     <option value="" disabled selected>Choose Category</option>
                     {% for category in categories %}
@@ -27,18 +27,28 @@
             <!-- entry description -->
             <div class="row">  
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix"></i>
+                    <i class="fas fa-edit prefix font-icon"></i>
                     <textarea id="entry_description" name="entry_description" minlength="15" 
-                        maxlength="500" class="materialize-textarea validate" required></textarea>
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
                     <label for="entry_description">Entry Description</label>
                 </div>
             </div>
+
+                        <!-- entry details -->
+                        <div class="row">  
+                            <div class="input-field col s12">
+                                <i class="fas fa-align-left prefix font-icon"></i>
+                                <textarea id="entry_details" name="entry_details" minlength="15" 
+                                    maxlength="500" class="materialize-textarea validate" required></textarea>
+                                <label for="entry_details">Entry Details</label>
+                            </div>
+                        </div>
 
  
             <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit-entry" class="btn-large light-green darken-1 text-shadow">
+                    <button type="submit-entry" class="btn-large add-entry-button">
                         Submit Entry <i class="fas fa-file-import"></i>
                     </button>
                 </div>
