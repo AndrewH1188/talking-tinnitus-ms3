@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
-<img src="assets/images/home-hero.jpg" class="hero-image" alt="Sound waves from an ear">
+<img src="{{url_for('static', filename='images/home-hero.jpg')}}" class="hero-image" alt="Sound waves from an ear">
+
 <h3 class="page-headings">Welcome to Talking Tinnitus</h3>
 <p class="introduction">
     We are glad to be able to welcome you to our community. We hope that by being an active member of our
@@ -21,8 +22,8 @@
     <div class="container">
         <div class="row">
             <div class="col l12 s6">
-                <img src="assets/images/home-what-is-tinnitus.jpg" class="left-image"
-                    alt="Sound waves inside a woman's head and in the ear">
+
+<img src="{{url_for('static', filename='images/home-what-is-tinnitus.jpg')}}" class="left-image" alt="Sound waves inside a woman's head and in the ear">
                 <h4 class="section-heading-left">What is Tinnitus?</h4>
                 <p>
                     Tinnitus is the term for hearing a sound where no external sound is present.
@@ -61,7 +62,7 @@
                     <br>
                     Painting, Lego, Construction Kits and even Talking to others with Tinnitus.
                 </p>
-                <img src="assets/images/home-what-can-help.jpg" class="right-image"
+                <img src="{{url_for('static', filename='images/home-what-can-help.jpg')}}" class="right-image"
                     alt="A group of people doing a meditation exercise">
             </div>
         </div>

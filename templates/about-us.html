@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<img src="assets/images/about-hero.jpg" class="hero-image" alt="Person with hearing aid looking at a computer screen">
+<img src="{{url_for('static', filename='images/about-hero.jpg')}}" class="hero-image" alt="Person with hearing aid looking at a computer screen">
 <h3 class="page-headings">About Us</h3>
 <p class="introduction">
     Talking Tinnitus has been designed with you in mind. We want to connect everyone that has and is
@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col l12 s6">
                 <h4 class="section-heading-left">How we can help you?</h4>
-                <img src="assets/images/about-we-help-you.jpg" class="left-image" alt="Lady comforting man with others in a support group">
+                <img src="{{url_for('static', filename='images/about-we-help-you.jpg')}}" class="left-image" alt="Lady comforting man with others in a support group">
                 <p>
                     We understand you as we have had tinnitus for a few years ourselves. We understand how it feels to
                     experience
@@ -50,7 +50,7 @@
         <div class="row">
             <div class="col l12 s6">
                 <h4 class="section-heading-right">How you can help you?</h4>
-                <img src="assets/images/about-you-help-you.jpg" class="right-image" alt="A group of people listening and discussing with each other">
+                <img src="{{url_for('static', filename='images/about-you-help-you.jpg')}}" class="right-image" alt="A group of people listening and discussing with each other">
                 <p>
                     You can manage your tinnitus but do not monitor it. Monitoring tinnitus creates a negative feeling
                     towards it.
