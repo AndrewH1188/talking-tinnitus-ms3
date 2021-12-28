@@ -77,6 +77,7 @@ def register():
         flash("Registration Successful!")
     return render_template("register.html")
 
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -105,6 +106,20 @@ def login():
 
     return render_template("login.html")
 
+
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+    title = "Talking Tinnitus | My Profile"
+    # grab the session user's username from db
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+
+    if session["user"]:
+        return render_template("profile.html", username=username, title=title)
+
+    return redirect(url_for("login"))
+
+
 @app.route("/logout")
 def logout():
     # remove user from session cookie
@@ -130,7 +145,8 @@ def add_entry():
         return redirect(url_for("get_entry"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("add-entry.html", title=title, categories=categories)
+    return render_template("add-entry.html",
+            title=title, categories=categories)
 
 
 @app.route("/contact")
