@@ -46,7 +46,7 @@
 .introduction { 
   margin-left: 13%;
   margin-right: 13%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
   text-align: justify;
 }
 
@@ -55,24 +55,43 @@
 
 
 /*--------------------------------------------- Home and About section images and headings */
-/*
 
-.left-image {
+
+.boxed-content {
+  background-color: #3d7b9c1e;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-
-.right-image {
-}
-
-*/
 
 
 .section-heading-left {
   color: #df832f;
+  text-align: left;
 }
+
+.section-text-left {
+  text-align: justify;
+}
+
+
+
+
+
 
 .section-heading-right {
   color: #df832f;
-  text-align: right;
+  text-align: center;
+  padding-left: 90px;
+}
+
+.section-text-right {
+  text-align: justify;
+}
+
+
+.right-image {
+  margin-left: 30px;
 }
 
 
