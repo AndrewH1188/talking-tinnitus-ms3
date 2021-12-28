@@ -292,6 +292,12 @@ By zinkevych
 File Number: 170686047
 
 
+##### Profile:
+[World hello day banner with bubbles with word Hello in different languages - English, Russian, Spanish, Italian, French, Turkish, Sweden](https://stock.adobe.com/uk/images/world-hello-day-banner-with-bubbles-with-word-hello-in-different-languages-english-russian-spanish-italian-french-turkish-sweden/465577580)
+By Mariia
+File Number: 465577580
+
+
 ##### Register / Sign Up:
 [woman using laptop, searching web, browsing information, having workplace at home / soft focus picture / Vintage concept](https://stock.adobe.com/uk/images/woman-using-laptop-searching-web-browsing-information-having-workplace-at-home-soft-focus-picture-vintage-concept/184972433)
 By Urupong
@@ -304,7 +310,7 @@ By RFBSIP
 File Number: 158907990
 
 
-##### Logged in:
+##### Add Entry:
 [Teenagers holding speech bubbles with copy space](https://stock.adobe.com/uk/images/teenagers-holding-speech-bubbles-with-copy-space/252949825)
 By Prostock-studio
 File Number: 252949825 
@@ -644,6 +650,8 @@ I have added a post that features the What is Tinnitus from my website / service
 ## Content:
 All content on my website / service has been written by myself apart from the content that I have copied and listed in this section with the relevant link to the source of this information. The copied paragraph features on my Home / Index page in the Welcome to Talking Tinnitus section. The copied text was taken from the [British Tinnitus Association - BTA](https://www.tinnitus.org.uk/blog/number-of-people) **“there are already an estimated six million people living with tinnitus here in the UK and this number is expected to rise by more than half a million by 2028”.** I have slightly altered this to read a bit better to ‘there are already an estimated six million people living with tinnitus here in the UK and this number is expected to rise to more than half a million by 2028’. I changed the by, and added to instead as although it reads ok, it doesn’t really sound right. I have highlighted this text on my design in red to also show that this is not my content, although the actual text on my website / service will probably be in italics to highlight this.
 
+There is also a large amount of code in the majority of my files that I have reused from the Code Institiute Task Manager Mini Project. All of this code has been credited throughout, but I thought I would also mention this in the Credits part of my README.md too.
+
 
 ## Media:
 All images were purchased and downloaded from [Adobe Stock](https://stock.adobe.com/uk/).
@@ -676,6 +684,12 @@ By zinkevych
 File Number: 170686047
 
 
+#### Profile:
+[World hello day banner with bubbles with word Hello in different languages - English, Russian, Spanish, Italian, French, Turkish, Sweden](https://stock.adobe.com/uk/images/world-hello-day-banner-with-bubbles-with-word-hello-in-different-languages-english-russian-spanish-italian-french-turkish-sweden/465577580)
+By Mariia
+File Number: 465577580
+
+
 #### Register / Sign Up:
 [woman using laptop, searching web, browsing information, having workplace at home / soft focus picture / Vintage concept](https://stock.adobe.com/uk/images/woman-using-laptop-searching-web-browsing-information-having-workplace-at-home-soft-focus-picture-vintage-concept/184972433)
 By Urupong
@@ -688,7 +702,7 @@ By RFBSIP
 File Number: 158907990
 
 
-#### Logged in:
+#### Add Entry:
 [Teenagers holding speech bubbles with copy space](https://stock.adobe.com/uk/images/teenagers-holding-speech-bubbles-with-copy-space/252949825)
 By Prostock-studio
 File Number: 252949825 
