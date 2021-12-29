@@ -39,7 +39,6 @@ def about():
 @app.route("/get_entry")
 def get_entry():
     entry = list(mongo.db.entry.find())
-    print(entry)
     title = "Talking Tinnitus | Community Entries"
     return render_template("entries.html", entry=entry, title=title)
 
@@ -53,6 +52,7 @@ def search():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    title = "Talking Tinnitus | Register / Sign up"
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
@@ -76,11 +76,12 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
-    return render_template("register.html")
+    return render_template("register.html", title=title)
 
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    title = "Talking Tinnitus | Log in"
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
@@ -98,7 +99,7 @@ def login():
             else:
                 # invalid password match
                 flash("Incorrect Email Address and/or Username and/or Password")
-                return redirect(url_for("login"))
+                return redirect(url_for("login", title=title))
 
         else:
             # username doesn't exist
@@ -123,10 +124,11 @@ def profile(username):
 
 @app.route("/logout")
 def logout():
+    title = "Talking Tinnitus | Log in"
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for("login", title=title))
 
 
 
@@ -157,9 +159,32 @@ def add_entry():
 # Updated but need to check and 
 # add a warning about are you sure you want to delete this entry?
 
+@app.route("/edit_entry/<entry_id>", methods=["GET", "POST"])
+def edit_entry(entry_id):
+    title = "Talking Tinnitus | Edit Entry"
+    if request.method == "POST":
+        is_urgent = "on" if request.form.get("is_urgent") else "off"
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "entry_description": request.form.get("entry_description"),
+            "entry_details": request.form.get("entry_details"),
+            "created_by": session["user"],
+# THE BELOW NEEDS TO BE WORKED ON TO ENABLE THE DATE TO DISPLAY CORRECTLY.
+            # "created_date": session["datetime.date"]
+        }
+        mongo.db.entry.update({"_id": ObjectId(entry_id)}, submit)
+        flash("Entry Successfully Updated")
+
+    entry = mongo.db.entry.find_one({"_id": ObjectId(entry_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit-entry.html", entry=entry, 
+            categories=categories, title=title)
+
+
+
 @app.route("/delete_entry/<entry_id>")
-def delete_entry(task_id):
-    mongo.db.entry.remove({"_id": ObjectId(task_id)})
+def delete_entry(entry_id):
+    mongo.db.entry.remove({"_id": ObjectId(entry_id)})
     flash("Entry Successfully Deleted")
     return redirect(url_for("get_entry"))
 
@@ -171,12 +196,15 @@ def delete_entry(task_id):
 
 @app.route("/get_categories")
 def get_categories():
+    title = "Talking Tinnitus | Manage Categories"
     categories = list(mongo.db.categories.find().sort("category_name", 1))
-    return render_template("manage-categories.html", categories=categories)
+    return render_template("manage-categories.html", 
+                categories=categories, title=title)
 
 
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
+    title = "Talking Tinnitus | Add Category"
     if request.method == "POST":
         category = {
             "category_name": request.form.get("category_name")
@@ -184,11 +212,12 @@ def add_category():
         mongo.db.categories.insert_one(category)
         return redirect(url_for("get_categories"))
 
-    return render_template("add-category.html")
+    return render_template("add-category.html", title=title)
 
 
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
+    title = "Talking Tinnitus | Edit Category"
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name")
@@ -198,7 +227,7 @@ def edit_category(category_id):
         return redirect(url_for("get_categories"))
 
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
-    return render_template("edit-category.html", category=category)
+    return render_template("edit-category.html", category=category, title=title)
 
 
 @app.route("/delete_category/<category_id>")
