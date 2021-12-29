@@ -98,6 +98,26 @@
   margin-left: 30px;
 }
 
+/*--------------------------------------------- About page */
+
+
+
+.register-link {
+  color: #3d7b9c;
+}
+
+a.register-link:hover{
+  color: #1e3e50;
+}
+
+.login-link {
+  color: #3d7b9c;
+}
+
+a.login-link:hover{
+  color: #1e3e50;
+}
+
 
 /*--------------------------------------------- Register page */
 
@@ -138,10 +158,6 @@
 
 /*--------------------------------------------- Entries page */
 
-.magnifying-glass {
-  color: #3d7b9c;
-}
-
 .btn-small {
   margin: 5px;
 }
@@ -165,6 +181,7 @@ ul.collapsible {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 
 
 
@@ -196,6 +213,8 @@ ul.collapsible {
   background-color: #c2e5d3;
   color:#3d7b9c;
 }
+
+
 
 
 
