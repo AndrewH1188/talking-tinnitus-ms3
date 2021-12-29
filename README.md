@@ -607,7 +607,59 @@ I have added a post that features the What is Tinnitus from my website / service
 
 
 ## Deployment:
+#### Cloning or running my project:
+In order to create this website I used GitPod to create files that enabled me to write the code in, upload and store images and all relevant folders that were required for this website to function, as well as show the testing, bugs, a live version of the deployed site which have been added to my README file to showcase these. GitPod is linked to GitHub which enables me to use the terminal in GitPod to add, commit and push the code and any changes to GitHub. My project has been deployed using [Heroku](https://www.heroku.com/) which has allowed my site to go live for people to use and view. This project serves as another part of my expanding portfolio that employers are able to view and see my coding skills and also my design skills. Having this site live also enables me to be able to look back at my journey over the course of studying with the Code Institute and see how far I have come on my journey from my first website [Go Tennis System](https://andrewh1188.github.io/go-tennis-ms1/) to my second website [War Heroes Remembered](https://andrewh1188.github.io/war-heroes-remembered-ms2/index.html) to becoming a Full Stack Web Developer. 
 
+Having a live deployed site enables users to view my site without having to fork or clone this for themselves, but if users would rater clone my site for themselves I have added a section below to walk them through how to do this.
+
+If you would like to run my project locally you are more than welcome to do so. In order to do this you will need to do the following:
+1. Click on the talking-tinnitus-ms3 link which is at the top of my Repository in GitHub.
+2. Click on the drop down arrow where it says Code.
+3. Click Clone, Open GitHub Desktop or Download ZIP.
+4. Open in your preferred IDE.
+5. Run on your preferred server.
+6. You will need to install the required packages using the pip install -r requirements.txt command in the terminal. Installing the requirements.txt file will help when you run this on Heroku.
+
+
+#### Deploying to Heroku:
+To deploy to Heroku please follow these steps:
+1. Head over to [Heroku](https://www.heroku.com/) and sign up if you don’t already have an account.
+2. Once you have signed up or logged in then you will be able to see the dashboard with the New button up the top.
+3. Click the New button and select Create new app.
+4. Once the Create new app section has been selected you will be brought to the page that will ask you to put in your App name (which should be ideally the same name as your repository name to reduce complexity) and select your region. Once these details have been added click Create app button.
+5. Once you have set up your app head over to the deploy section that is shown on the top menu. Select the GitHub logo with Connect to GitHub beneath this.
+6. You will be prompted to find your GitHub repository to connect to. 
+7. Enter your repository name for your GitHub project and click on the search button.
+8. Once your GitHub repository has been found click the connect button.
+9. Before enabling the automatic deploy you will need to head over to the Settings part of Heroku and scroll down to the Config Vars section.
+10. In the Config Vars section select Reveal Config Vars. In here I added the following values:
+* Key: IP, Value: (Value from your MongoDB IP that was added when you set up your database)
+* Key: PORT, Value: 5000
+* Key: MONGO_DBNAME, Value: (The name of your database that you would like to connect to in MongoDB)
+* Key: MONGO_URI, Value: (This can be found in MongoDB, Clusters, Connect, Connect to your application. You will need to substitute the database name and password).
+* * Key: SECRET_KEY, Value: (For this I used the Fort Knox Passwords from [randomkeygen](https://randomkeygen.com/) although you can use which every you would like to). Make sure that when you add this into your env.py file that this is in the gitignore file as your Secret Key should not be shared with anyone.
+11. You are now able to go back to the Deployment section and scroll down to the Automatic Deploy section. Select the Automatic Deploy button. The main branch will be the default setting and this is absolutely fine to use.
+12. You can now head on down to the Manual Deploy which will be automatically set to main. Select Deploy Branch button and you will be able to see that your project has been successfully deployed and the link to your site.
+
+
+#### Setting Up Mongo DB:
+To set up your MongoDB please follow these steps:
+1. Head over to [MongoDB](https://www.mongodb.com/) and if you don’t have an account you will need to Select the Start free or try free button, this will take you to the Register page. Once you have registered by adding a few details about yourself. Once you have added the details you can click the Get Started button. You will need to verify your email, this will have been sent to your email that was used to register / sign up with to the MongoDB site. Once you have clicked the link in tour email you will be taken to the page that says Email Successfully Verified, with the Continue button below. When you click on the continue button you will be taken to a page that asks what your goal is, what type of application you are building and your preferred language. I selected Python for the preferred language option then clicked finish button.
+2. This will take you to a page with three types of servers on, Serverless, Dedicated or Shared. For my project I selected the Shared (Free) server by clicking the Create button.
+3. Once you have clicked the Shared Free server create button you will be directed to the page to select a Cloud Provider & Region. For mine, I selected the aws (Amazon Web Services) and for the region I selected Ireland as this offered the free tier service that I required. We need to select our Cluster Tier. For my project I selected the top M0 Sandbox which is free forever service. After selecting this we need to head down to the bottom and select the Cluster Name. I used the name of myFirstCluster (which uses the camel case naming system) but you can name your Cluster whatever you would like to or best suits you. When you have done this click Create Cluster button at the bottom of the page. This may take a few minutes to create our new database.
+4. This will then take you to the Security Quickstart page where you will be able to put in your username and password, but we will actually need to head over to the Database Access that can be found in the side panel. Click on the Database Access (whilst your database is being created) You will need to click Add New Database User. For my project I used the default Password option in the box at the top. For your password as this used SCRAM you will need to like I have only used letters and numbers as using anything else will result in issues as you progress further. In the top box this is your username and in the bottom box this is your password. You need to make sure that your username and password secure and these should not appear in your repository for your GitHub project. If you do add these details, so they can be seen then you will give another user full access to your database, and I’m sure you wouldn’t want this to happen. In the same form we need to scroll down to the Database User Privileges in order to check and see if we are able to Read and Write, which for me was already selected, but it would be worth you checking this to make sure that it will work for you. When you are happy with everything then you can click Add User button at the bottom.
+5. Now that we have our user we need to head over to the Network Access in the side panel, we will be whitelisting our IP address so that it has access to our database to be able to perform the functions that we would like to do, which is read and write. Click on Add IP address button on this page, and for our project we can Allow Access from Anywhere, This will allow us to access this from both our GitHub / GitPod and Heroku too. To make this more secure you should put the IP address of your hosts to stop any security breach and unwanted access of the data that you have stored in your database. When you have selected the option click the Confirm button at the bottom.
+6. Hopefully by the time you reach this stage our Cluster should be up and running. Once this is up and running click on the Browse Collections button. This will take you to Explore Your Data page where you will see two buttons. One of those buttons is called Add My Own Data which is the one I selected for the next part. Although if you already have your own data then you can load this using the Load a Sample Dataset button. Having clicked Add My Own Data button I was able to Create my Database giving the database a name and collection name too. Once you have filled in your Database Name and Collection Name you are then able to click on the Create button at the bottom of this pop out form. ![Mongo Cluster](assets/images/mongo/mongo-cluster.jpg)
+7. After a few seconds / minutes you will be redirected back to the collections section with the name of your Cluster at the top with the name of your database and collection that has been listed.
+8. To insert a document you will need to stay in the collections page and click the insert document. Documents that you add get stored in a jSon like format which has curly braces { } and key value pairs. ![Test Collection](assets/images/mongo/mongo-collection-setup.jpg) For my test example that I have shown below I have added a character from Star Wars. I have set up a test database in order not to show any of my current database. ![Test Database](assets/images/mongo/test-database.jpg)
+
+
+#### Connecting to your Mongo DB database:
+To connect to your MongoDB please follow these steps:
+1. Head over to your Databases in the side panel. Then by the name of your Cluster in the top there are buttons, the first of these is called Connect. Select this button.
+2. You will be shown the options of connect with MongoDB Shell, Connect your application and Connect using MongoDB Compass. If you are using an environment like GitPod / GitHub then select Connect your application button. Here you will be presented with the following ![Connect to Cluster](assets/images/mongo/mongo-setup.jpg)
+3. You will need to replace the field with your password that you entered for your username of your database (not the password that was used to sign up / register for your MongoDB account). You will also need to replace the name of the database as it shows you with the name of your database.
+4. The details that we can see in the image of section point 3 above will be used to add to your env.py which is in your gitignore file as this contains the sensitive information as mentioned before that you do not want to push to GitHub.
 
 
 
@@ -726,6 +778,8 @@ I would like to firstly thank my Mentor Caleb Mbakwe for all the help, support a
 Thank you to Tim Nelson at Code Institute for the tutorial videos showing the power of Jinja and Python as well as Mongo DB in action. All of your videos have helped with coding this milestone project as well as trying out the Materialize design platform too. 
 
 I would also like to thank Sean at Code Institute Tutor Support for his help pointing out the couple of tiny bits that I had missed which stopped my page All Entries from showing all the entries that were listed on it. Thank you, Sean for your help to point these bits out to enable me to get the entries showing on my entries page. It is very much appreciated.
+
+I would also like to thank Kevin and Igor at Code Institute Tutor Support who helped me fix an issue in GitHub / GitPod when I deleted an image in GitHub. This caused GitPod to stop talking to GitHub and therefore not recording any commits. I had to do a few test commits to make sure we were back on track as previously before the error occured. Thanks to both Kevin and Igor for enabling me to get back on track and all systems running again. Your help and support is very much appreciated as always.
 
 Also I would like to thank Code Institute in general for an absolutely amazing course which has and is challenging and aiding my learning, I know with practice (and google) I will be able to achieve the end goals of both this project and this course too. I appreciate all of your help, support and course material that you have put together in order so that I can go from not knowing the first thing about the majority of the programs or languages to having a better understanding and achieve what I didn’t know was possible, so thank you again. I would also like to thank student care at Code Institute for the check up calls that they have also made and the many emails that I have received to remind me to deploy early or about upcoming changes etc. I am really grateful for your help also and would like to say thank you to you as well.
 
