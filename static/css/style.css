@@ -199,6 +199,23 @@ ul.collapsible {
 
 
 
+/*--------------------------------------------- ADMIN ONLY Add and Manage Categories pages */
+
+.category-button {
+  background-color: #3d7b9c;
+}
+
+.category-button:hover{
+  background-color: #c2e5d3;
+  color:#3d7b9c;
+}
+
+
+
+
+
+
+
 /*--------------------------------------------- Contact Us Form */
 
 /* Taken from EmailJS */
