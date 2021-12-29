@@ -99,14 +99,14 @@ def login():
             else:
                 # invalid password match
                 flash("Incorrect Email Address and/or Username and/or Password")
-                return redirect(url_for("login", title=title))
+                return redirect(url_for("login"))
 
         else:
             # username doesn't exist
             flash("Incorrect Email Address and/or Username and/or Password")
             return redirect(url_for("login"))
 
-    return render_template("login.html")
+    return render_template("login.html", title=title)
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
