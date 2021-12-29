@@ -8,6 +8,7 @@ from flask import (
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
+from datetime import date
 if os.path.exists("env.py"):
     import env
 
@@ -128,6 +129,9 @@ def logout():
     return redirect(url_for("login"))
 
 
+
+
+
 # add entries
 @app.route("/add_entry", methods=["GET", "POST"])
 def add_entry():
@@ -138,7 +142,8 @@ def add_entry():
             "entry_description": request.form.get("entry_description"),
             "entry_details": request.form.get("entry_details"),
             "created_by": session["user"],
-            "created_date": session["date"]
+# THE BELOW NEEDS TO BE WORKED ON TO ENABLE THE DATE TO DISPLAY CORRECTLY.
+            # "created_date": session["datetime.date"]
         }
         mongo.db.entry.insert_one(entry)
         flash("Thank you for submitting your entry")
@@ -147,6 +152,62 @@ def add_entry():
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add-entry.html",
             title=title, categories=categories)
+
+
+# Updated but need to check and 
+# add a warning about are you sure you want to delete this entry?
+
+@app.route("/delete_entry/<entry_id>")
+def delete_entry(task_id):
+    mongo.db.entry.remove({"_id": ObjectId(task_id)})
+    flash("Entry Successfully Deleted")
+    return redirect(url_for("get_entry"))
+
+
+
+
+
+# ADD, EDIT and Delete Categories FUNCTIONALITY
+
+@app.route("/get_categories")
+def get_categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    return render_template("manage-categories.html", categories=categories)
+
+
+@app.route("/add_category", methods=["GET", "POST"])
+def add_category():
+    if request.method == "POST":
+        category = {
+            "category_name": request.form.get("category_name")
+        }
+        mongo.db.categories.insert_one(category)
+        return redirect(url_for("get_categories"))
+
+    return render_template("add-category.html")
+
+
+@app.route("/edit_category/<category_id>", methods=["GET", "POST"])
+def edit_category(category_id):
+    if request.method == "POST":
+        submit = {
+            "category_name": request.form.get("category_name")
+        }
+        mongo.db.categories.update({"_id": ObjectId(category_id)}, submit)
+        flash("Category Successfully Updated")
+        return redirect(url_for("get_categories"))
+
+    category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
+    return render_template("edit-category.html", category=category)
+
+
+@app.route("/delete_category/<category_id>")
+def delete_category(category_id):
+    mongo.db.categories.remove({"_id": ObjectId(category_id)})
+    flash("Category Successfully Deleted")
+    return redirect(url_for("get_categories"))
+
+
 
 
 @app.route("/contact")
