@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="page-headings">Edit Entry</h3>
+
+<!-- The below code has been taken from the Code Institute Task Manager Mini Project-->
+
+
+    <div class="row card-panel grey lighten-5">
+    <form class="col s12" method="POST" action="{{ url_for('edit_entry', entry_id=entry._id) }}">
+        <!-- category selection -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-folder-open prefix font-icon"></i>
+                <select id="category_name" name="category_name" class="validate" required>
+                    <option value="" disabled>Choose Category</option>
+                    {% for category in categories %}
+                        {% if category.category_name == entry.category_name %}
+                            <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                        {% else %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                <label for="category_name">Entry Category</label>
+            </div>
+        </div>
+        <!-- entry name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-edit prefix font-icon"></i>
+                    <input id="entry_name" name="entry_name" minlength="5" maxlength="50" 
+                        value="{{ entry.entry_name }}" type="text" class="validate" required>
+                    <label for="tentry_name">Entry Name</label>
+                </div>
+            </div> 
+            <!-- entry description -->
+            <div class="row">  
+                <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix font-icon"></i>
+                    <textarea id="entry_description" name="entry_description" minlength="5" 
+                        maxlength="200" class="materialize-textarea validate" required>
+                        {{- entry.entry_description -}}
+                    </textarea>
+                    <label for="entry_description">Entry Description</label>
+                </div>
+            </div>
+           
+            <!-- submit button -->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <!-- cancel button -->
+                    <a href="{{ url_for('get_entry') }}" class="btn-large red darken-4 btn text-shadow">
+                        Cancel <i class="fas fa-times-circle right"></i>
+                    </a>
+                    <button type="submit" class="btn-large indigo darken-4 btn text-shadow">
+                        Edit Entry <i class="fas fa-file-import right"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
