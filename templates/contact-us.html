@@ -1,34 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
 
-<img src="{{url_for('static', filename='images/contact-us-hero.jpg')}}" class="hero-image" alt="Person on a computer with a phone in their hand. There is a phone, mail and email symbol showing">
+<img src="{{url_for('static', filename='images/contact-us-hero.jpg')}}" class="hero-image"
+  alt="Person on a computer with a phone in their hand. There is a phone, mail and email symbol showing">
 <h3 class="page-headings">Contact Us</h3>
-<p class="center-align">To get in touch with us please fill in your details in the contact form below 
-    and we will respond to your message as soon as possible. Thank you</p>
+<p class="center-align contact-text">To get in touch with us please fill in your details in the contact form below
+  and we will respond to your message as soon as possible. Thank you.</p>
 
 <!-- The below was taken from EmailJS and has had some alterations made -->
+
 <form id="form">
-    <div class="field">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" required>
-    </div>
+  <!-- name field -->
+  <div class="field">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required>
+  </div>
 
-    <!-- Need to make this part only allow email addresses -->
-    <div class="field">
-      <label for="email">Email:</label>
-      <input type="text" name="email" id="email" class="validate" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  required>
-    </div>
+  <!-- email address field -->
+  <div class="field">
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email" class="validate" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      required>
+  </div>
 
-    <!-- Need to make this part work -->
-    <div class="field">
-        <label for="enquiry"></label>
-        <input type="text" name="enquiry" id="enquiry" required>
-      </div>
-    <input type="submit" id="button" value="Send" >
-  </form>
+  <!-- message / enquiries field -->
+  <div class="field">
+    <label for="enquiry">Message / Enquiry</label>
+    <input type="text" name="enquiry" id="enquiry" required>
+  </div>
+  <!-- send button -->
+  <input type="submit" id="button" value="Send">
+</form>
 
-<script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script type="text/javascript">
   emailjs.init('user_xWG3suhvA2uVXlkEiuC7r')
 </script>

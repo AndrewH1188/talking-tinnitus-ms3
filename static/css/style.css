@@ -3,9 +3,14 @@
   margin-left: 3%;
 }
 
+/* Mobile view logo */
+.logo {
+  color: #3d7b9c;
+}
 
-.navigation-bar {
-  margin-right: 3%;
+.page-headings {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 
@@ -16,23 +21,14 @@
   margin-bottom: 40px;
 }
 
-.page-headings {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.logo {
-  color: #3d7b9c;
+.navigation-bar {
+  margin-right: 3%;
 }
 
 
+/*--------------------------------------------- Home and About Hero pages */
 
-
-
-
-
-
-/*--------------------------------------------- Home and About Hero images*/
+/*----------- Home and About Hero images*/
 
 .hero-image {
   display: block;
@@ -45,7 +41,7 @@
 
 
 
-/*--------------------------------------------- Home and About Us text */
+/*----------- Home and About Us text */
 
 .introduction { 
   margin-left: 13%;
@@ -58,7 +54,7 @@
 
 
 
-/*--------------------------------------------- Home and About section images and headings */
+/*----------- Home and About section images and headings */
 
 
 .boxed-content {
@@ -80,9 +76,6 @@
 
 
 
-
-
-
 .section-heading-right {
   color: #df832f;
   text-align: center;
@@ -98,16 +91,15 @@
   margin-left: 30px;
 }
 
+
 /*--------------------------------------------- About page */
-
-
 
 .register-link {
   color: #3d7b9c;
 }
 
 a.register-link:hover{
-  color: #1e3e50;
+  color: #c2e5d3;
 }
 
 .login-link {
@@ -115,13 +107,11 @@ a.register-link:hover{
 }
 
 a.login-link:hover{
-  color: #1e3e50;
+  color: #c2e5d3;
 }
 
 
 /*--------------------------------------------- Register page */
-
-
 
 .register-button {
   background-color: #3d7b9c;
@@ -129,9 +119,16 @@ a.login-link:hover{
 
 .register-button:hover{
   background-color: #c2e5d3;
-  color:#3d7b9c;
+  color:#c2e5d3;
 }
 
+.register-link {
+  color: #3d7b9c;
+}
+
+a.register-link:hover{
+  color: #c2e5d3;
+}
 
 .font-icon {
   color: #3d7b9c;
@@ -149,11 +146,18 @@ a.login-link:hover{
   color:#3d7b9c;
 }
 
-.font-icon {
+
+.login-link {
   color: #3d7b9c;
 }
 
+a.login-link:hover{
+  color: #c2e5d3;
+}
 
+.font-icon {
+  color: #3d7b9c;
+}
 
 
 /*--------------------------------------------- Entries page */
@@ -183,11 +187,7 @@ ul.collapsible {
 }
 
 
-
-
 /*--------------------------------------------- Submit an Entry page */
-
-
 
 .submit-entry {
   background-color: #3d7b9c;
@@ -200,10 +200,7 @@ ul.collapsible {
 
 
 
-
 /*--------------------------------------------- Add an Entry page */
-
-
 
 .add-entry-button {
   background-color: #3d7b9c;
@@ -242,7 +239,7 @@ ul.collapsible {
 
 
 /* The below has been taken from EmailJS. 
-I have made some edits that I have made to this to display as I would like */
+I have made some edits to enable this to display as I would like */
 
 .field {
   margin-top: 40px;
@@ -279,17 +276,6 @@ input[type="submit"] {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------- Footer */
 
 .page-footer {
@@ -311,8 +297,6 @@ footer.page-footer {
   font-size: 22px;
   margin-top: 0;
   padding: 21px;
-
-
 }
 
 a.social-media :hover {
@@ -330,8 +314,6 @@ a.social-media :hover {
 
 
 
-
-
 /*--------------------------------------------- Media Queries */
 
 /*---------------- Computer medium screen size */
@@ -339,8 +321,6 @@ a.social-media :hover {
 /* @media (max-width: 992px) { 
 
 }
-
-
 
 
 
@@ -353,16 +333,32 @@ a.social-media :hover {
   text-align: center;
   margin-right: -40px;
 }
+.hero-image {
+  width: 89%;
 }
 
+.login-text {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.register-intro{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+input[type="submit"] {
+  margin-left: 38%;
+}
+}
 
 
 
 /*---------------- Galaxy Fold */
 
-@media (max-width: 576px) {
-.brand-logo {
-  font-size: small;
+@media (max-width: 376px) {
+a.brand-logo {
+  font-size: larger;
   margin-left: 0;
 }
 .page-headings {
@@ -372,5 +368,8 @@ a.social-media :hover {
 .reset {
   margin-bottom: 20px;
 }
-}
 
+input[type="submit"] {
+  margin-left: 38%;
+}
+}
