@@ -66,7 +66,7 @@
 .section-heading-right {
   color: #df832f;
   text-align: left;
-  margin-left: 40%;
+  margin-left: 38%;
 }
 
 .section-text-right {
@@ -75,14 +75,12 @@
   margin-right: 18%;
 }
 
-.left-image {
-  margin-left: 38%;
+.right-image {
+  margin-left: 35%;
 }
 
 
-
 /*----------- Lower Content */
-
 
 .section-heading-left {
   color: #df832f;
@@ -96,9 +94,10 @@
   width: 100%;
 }
 
-.right-image {
-  margin-left: 35%;
+.left-image {
+  margin-left: 38%;
 }
+
 
 /*--------------------------------------------- About page */
 
@@ -354,6 +353,13 @@ a.social-media :hover {
   padding-left: 40px;
   padding-right: 40px;
 }
+
+
+
+
+
+
+
 
 input[type="submit"] {
   margin-left: 38%;
