@@ -41,7 +41,7 @@
 
 
 
-/*----------- Home and About Us text */
+/*----------- Home and About Us introduction text */
 
 .introduction { 
   margin-left: 13%;
@@ -52,10 +52,9 @@
 
 
 
-
-
 /*----------- Home and About section images and headings */
 
+/*----------- Middle Boxed Content */
 
 .boxed-content {
   background-color: #3d7b9c1e;
@@ -64,33 +63,42 @@
   margin-bottom: 30px;
 }
 
-
-.section-heading-left {
-  color: #df832f;
-  text-align: left;
-}
-
-.section-text-left {
-  text-align: justify;
-}
-
-
-
 .section-heading-right {
   color: #df832f;
-  text-align: center;
-  padding-left: 90px;
+  text-align: left;
+  margin-left: 40%;
 }
 
 .section-text-right {
   text-align: justify;
+  margin-left: 6%;
+  margin-right: 18%;
 }
 
+.left-image {
+  margin-left: 38%;
+}
+
+
+
+/*----------- Lower Content */
+
+
+.section-heading-left {
+  color: #df832f;
+  text-align: left;
+  margin-left: 12%;
+}
+
+.section-text-left {
+  text-align: justify;
+  margin-left: 25%;
+  width: 100%;
+}
 
 .right-image {
-  margin-left: 30px;
+  margin-left: 35%;
 }
-
 
 /*--------------------------------------------- About page */
 
