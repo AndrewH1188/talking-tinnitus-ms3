@@ -57,13 +57,12 @@ def register():
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-        
+
         # check if email already exists in db
         existing_email = mongo.db.email.find_one(
             {"email": request.form.get("email").lower()})
 
         if existing_user:
-            flash("Username or email address already exists")
             return redirect(url_for("register"))
 
         register = {
@@ -144,8 +143,7 @@ def add_entry():
             "entry_description": request.form.get("entry_description"),
             "entry_details": request.form.get("entry_details"),
             "created_by": session["user"],
-# THE BELOW NEEDS TO BE WORKED ON TO ENABLE THE DATE TO DISPLAY CORRECTLY.
-            # "created_date": session["datetime.date"]
+            "created_date": date.today().isoformat()
         }
         mongo.db.entry.insert_one(entry)
         flash("Thank you for submitting your entry")
@@ -156,24 +154,21 @@ def add_entry():
             title=title, categories=categories)
 
 
-# Updated but need to check and 
-# add a warning about are you sure you want to delete this entry?
+# Need to check and add a warning about are you sure you want to delete this entry?
 
 @app.route("/edit_entry/<entry_id>", methods=["GET", "POST"])
 def edit_entry(entry_id):
     title = "Talking Tinnitus | Edit Entry"
     if request.method == "POST":
-        is_urgent = "on" if request.form.get("is_urgent") else "off"
         submit = {
             "category_name": request.form.get("category_name"),
             "entry_description": request.form.get("entry_description"),
             "entry_details": request.form.get("entry_details"),
             "created_by": session["user"],
-# THE BELOW NEEDS TO BE WORKED ON TO ENABLE THE DATE TO DISPLAY CORRECTLY.
-            # "created_date": session["datetime.date"]
+            "created_date": date.today().isoformat()
         }
         mongo.db.entry.update({"_id": ObjectId(entry_id)}, submit)
-        flash("Entry Successfully Updated")
+        return redirect(url_for("get_entry"))
 
     entry = mongo.db.entry.find_one({"_id": ObjectId(entry_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
