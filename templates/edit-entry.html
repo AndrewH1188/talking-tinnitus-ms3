@@ -25,24 +25,24 @@
                 <label for="category_name">Entry Category</label>
             </div>
         </div>
-        <!-- entry name -->
+        <!-- entry description -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-edit prefix font-icon"></i>
-                    <input id="entry_name" name="entry_name" minlength="5" maxlength="50" 
-                        value="{{ entry.entry_name }}" type="text" class="validate" required>
-                    <label for="tentry_name">Entry Name</label>
+                    <input id="entry_description" name="entry_description" minlength="5" maxlength="50" 
+                        value="{{ entry.entry_description }}" type="text" class="validate" required>
+                    <label for="entry_description">Entry Name</label>
                 </div>
             </div> 
-            <!-- entry description -->
+            <!-- entry details -->
             <div class="row">  
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix font-icon"></i>
-                    <textarea id="entry_description" name="entry_description" minlength="5" 
+                    <textarea id="entry_details" name="entry_details" minlength="5" 
                         maxlength="200" class="materialize-textarea validate" required>
-                        {{- entry.entry_description -}}
+                        {{- entry.entry_details -}}
                     </textarea>
-                    <label for="entry_description">Entry Description</label>
+                    <label for="entry_details">Entry Details</label>
                 </div>
             </div>
            

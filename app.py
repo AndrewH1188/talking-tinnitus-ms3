@@ -99,7 +99,7 @@ def login():
                 return redirect(url_for("login"))
 
         else:
-            # username doesn't exist
+            # username (display name) doesn't exist
             flash("Incorrect Email Address and/or Username and/or Password")
             return redirect(url_for("login"))
 
