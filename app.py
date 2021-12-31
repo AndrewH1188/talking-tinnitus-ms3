@@ -91,8 +91,6 @@ def login():
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
                         session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
-                            request.form.get("username")))
                         return redirect(url_for(
                             "profile", username=session["user"]))
             else:
@@ -125,7 +123,6 @@ def profile(username):
 def logout():
     title = "Talking Tinnitus | Log in"
     # remove user from session cookie
-    flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login", title=title))
 
@@ -230,8 +227,6 @@ def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category Successfully Deleted")
     return redirect(url_for("get_categories"))
-
-
 
 
 @app.route("/contact")
