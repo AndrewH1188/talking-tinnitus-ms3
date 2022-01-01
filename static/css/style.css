@@ -17,7 +17,7 @@
 .flashes {
   background-color: #3d7b9c;
   height: fit-content;
-  width: fit-content
+  width: fit-content;
 }
 
 /*--------------------------------------------- Base page Nav Bar */
@@ -44,7 +44,6 @@
   margin-bottom: 5%;
   width: 75%;
 }
-
 
 
 /*----------- Home and About Us introduction text */
@@ -240,6 +239,11 @@ ul.collapsible {
 }
 
 
+/*--------------------------------------------- ADMIN ONLY Manage Categories page */
+
+.warning-heading {
+  color: #d50000;
+}
 
 
 /*--------------------------------------------- Contact Us Form */
@@ -331,11 +335,27 @@ a.social-media :hover {
 
 /*---------------- Computer medium screen size */
 
+
+
+
+
+
 /* @media (max-width: 992px) { 
 
+
+
+/*---------------- iPad 5th gen */
+
+@media (max-width: 240px) { 
+
+.section-text-left {
+  margin-left: 0;
+  margin-right: 0%;
 }
-
-
+.left-image {
+  margin-left: 38%;
+}
+}
 
 
 /*---------------- iPhone and Surface Duo */
@@ -388,6 +408,30 @@ a.brand-logo {
 .reset {
   margin-bottom: 20px;
 }
+
+
+/* boxed content */
+
+.left-image {
+  display: none;
+}
+
+
+/* Bottom content No box */
+
+.section-text-right {
+  text-align: center;
+  width: 100%;
+}
+
+.right-image {
+  display: none;
+}
+
+.col s4 {
+  display: none;
+}
+
 
 input[type="submit"] {
   margin-left: 38%;
