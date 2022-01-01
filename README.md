@@ -469,7 +469,7 @@ To build my fully functioning website / service I have used the languages, libra
 * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 * [jQuery](https://jquery.com/)
-* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ## Libraries Frameworks and online resources:
 * [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/): For testing purposes and to see why elements are not working as expected. Dev tools allowed me to make changes to my code in the browser to see a live representation of my website / service with the changes / amends that have been made.
@@ -610,13 +610,19 @@ On inspection looking at the HTML and Python code as well as referencing my Mong
 
 4. When I created the base HTML file I added the social media icons to the footer section as I would usually do. As always they displayed vertically down the page, but I wanted these to be centered and horizontal across the page. I tried to add display: inline-block to at least get the icons to display horizontally. Unfortunately this didn’t work. I tried to display them centered on the page as a starting point and then work out why they wouldn’t horizontally display. I managed to get this to work but the horizontal layout wasn’t to be. I revisited my War Heroes Remembered Milestone 2 project to see how I did this and copied the section with the social media icons in, updated the links and still had no joy. I looked and saw that I had given the  its own class of social media, like I had done in my War Heroes Remembered Milestone 2 project. Although I had the class on the  I hadn’t created a separate class like I had done before. On creating the class of sm-icons then adding the CSS styling of display: inline; and the Materialize command of centre-align I was able to achieve the desired result.
 ![Social Media Command 1](assets/bugs/social-media-solution.jpg)
+
 ![Social Media Command 2](assets/bugs/social-media-solution-sm.jpg)
 
 5. In the Community Entries section I wasn’t able to conduct a search as this was throwing a Jinja Error. My Mentor Caleb helped me with finding and debugging this error, which meant that we were able to fix this together. The first error was a closing bracket that was missing after the second closing bracket, so the code looked like this before: {“$search: query }}) and once fixed was like this: {“$search: query }})). Although this was one error fixed there was still no search functionality. Using the print(query) ![Search Entry Print Statement](assets/bugs/search-entry-print-statement.jpg) statement the terminal was able to show where the error was ![Terminal Help](assets/bugs/search-entry.jpg) Using [Stack Overflow](https://stackoverflow.com/questions/59920729/index-is-not-getting-created-text-index-required-for-text-query-mongoose) there was a hint at the text index not having been created in Mongo DB, therefore this would need to be fixed to enable users to perform a search on entries. Having gone over to Mongo DB and found the Create Index section ![Create Index](assets/bugs/create-index-mongodb.jpg) then removed the code that was there and pasted in { "$**": "text" } that Caleb kindly sent into the create index and saving this, then going back and testing the search functionality this worked and allowed entries to be searched and there were no errors further with the search functionality. 
 ![Index Created](assets/bugs/index-mongodb.jpg)
 
 6. Update and Delete were not working when a user tries to use these buttons. Again with Caleb my mentor’s help we did a debug on this to work out where the issue was coming from. Everything seemed to be fine code wise but the debug using the print statement gave us an error of: TypeError: 'Collection' object is not callable. If you meant to call the 'update' method on a 'Collection' object it is failing because no such method exists. Copying and pasting this into Google this came up with the following result [Stack Overflow - Pymongo error](https://stackoverflow.com/questions/28981718/collection-object-is-not-callable-error-with-pymongo) at the top of the page. Having looked at this and then looked at the requirements.txt file, and cross-referencing it with the Code Institute Task Manager Mini Project it was clear to see that the error lied with the versions being used for applications such as pymongo. 
+
 ![Requirements.txt](assets/bugs/requirements-txt-versions-required.jpg)
+
+
+
+
 
 
 
@@ -680,23 +686,6 @@ To connect to your MongoDB please follow these steps:
 2. You will be shown the options of connect with MongoDB Shell, Connect your application and Connect using MongoDB Compass. If you are using an environment like GitPod / GitHub then select Connect your application button. Here you will be presented with the following ![Connect to Cluster](assets/images/mongo/mongo-setup.jpg)
 3. You will need to replace the field with your password that you entered for your username of your database (not the password that was used to sign up / register for your MongoDB account). You will also need to replace the name of the database as it shows you with the name of your database.
 4. The details that we can see in the image of section point 3 above will be used to add to your env.py which is in your gitignore file as this contains the sensitive information as mentioned before that you do not want to push to GitHub.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Credits:
