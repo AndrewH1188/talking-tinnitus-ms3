@@ -609,6 +609,7 @@ On inspection looking at the HTML and Python code as well as referencing my Mong
 3. Although this is not really a bug there was an issue that stopped the entries having an entry date being added to it when the user creates an entry and submits this. Working with my superb Mentor Caleb the issue was the code for this. I’d imported the datetime function from date as I should have done, the created_by: was correct, however I had: ![date](assets/bugs/date.jpg) when I should have had: ![Created date](assets/bugs/created-date.jpg) When this was updated and an entry added the date showed as I would have liked it to.
 
 4. When I created the base HTML file I added the social media icons to the footer section as I would usually do. As always they displayed vertically down the page, but I wanted these to be centered and horizontal across the page. I tried to add display: inline-block to at least get the icons to display horizontally. Unfortunately this didn’t work. I tried to display them centered on the page as a starting point and then work out why they wouldn’t horizontally display. I managed to get this to work but the horizontal layout wasn’t to be. I revisited my War Heroes Remembered Milestone 2 project to see how I did this and copied the section with the social media icons in, updated the links and still had no joy. I looked and saw that I had given the  its own class of social media, like I had done in my War Heroes Remembered Milestone 2 project. Although I had the class on the  I hadn’t created a separate class like I had done before. On creating the class of sm-icons then adding the CSS styling of display: inline; and the Materialize command of centre-align I was able to achieve the desired result.
+
 ![Social Media Command 1](assets/bugs/social-media-solution.jpg)
 
 ![Social Media Command 2](assets/bugs/social-media-solution-sm.jpg)
@@ -704,11 +705,11 @@ To connect to your MongoDB please follow these steps:
 * [Codegrepper.com](https://www.codegrepper.com/code-examples/python/displaying+an+image+in+jinja+template) for showing me how to display an image using the jinja template.
 ![Codegrepper.com](assets/help/code-grepper.jpg)
 * [Font Awesome](https://fontawesome.com/) has been used for the following:
-- Social media icons
-- Log in, Register, Send, Add Category, Share buttons
-- Search entries
-- Add category and Add category page
-- Mobile menu bars / hamburger icon 
+    - Social media icons
+    - Log in, Register, Send, Add Category, Share buttons
+    - Search entries
+    - Add category and Add category page
+    - Mobile menu bars / hamburger icon 
 
 
 ## Content:
