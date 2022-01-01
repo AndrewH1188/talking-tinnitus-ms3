@@ -634,6 +634,11 @@ If you would like to run my project locally you are more than welcome to do so. 
 4. Open in your preferred IDE.
 5. Run on your preferred server.
 6. You will need to install the required packages using the pip install -r requirements.txt command in the terminal. Installing the requirements.txt file will help when you run this on Heroku.
+7. You will need to create a Procfile, this is a special file that tells Heroku how to run the project that you have created. To make a Procfile you will need to type the following in the terminal:
+* echo web: python app.py > Procfile
+
+8. I have named my Python file app.py, but if you have named yours something different then you will need to put in the name of your file as this will not work if you don't have a file of the same name. Make sure that you have a capital P for Procfile and press the return / enter key. This will create you a Procfile which will show in the Explorer side panel (if you are using GitPod like I am).
+9. Open up the new Procfile that you have created and delete the blank line as this can sometimes cause issues further on.
 
 
 #### Deploying to Heroku:
