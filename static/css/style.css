@@ -131,7 +131,7 @@ a.login-link:hover{
 
 .register-button:hover{
   background-color: #c2e5d3;
-  color:#c2e5d3;
+  color:#3d7b9c;
 }
 
 .register-link {
@@ -355,6 +355,9 @@ a.social-media :hover {
 .left-image {
   margin-left: 38%;
 }
+.reset {
+  margin-bottom: 5px;
+}
 }
 
 
@@ -381,10 +384,9 @@ a.social-media :hover {
 }
 
 
-
-
-
-
+.reset {
+  margin-bottom: 5px;
+}
 
 
 input[type="submit"] {
@@ -408,6 +410,11 @@ a.brand-logo {
 .reset {
   margin-bottom: 20px;
 }
+
+
+
+
+
 
 
 /* boxed content */
