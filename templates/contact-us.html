@@ -15,26 +15,20 @@
     <label for="from_name">Name:</label>
     <input type="text" name="from_name" id="from_name" required>
   </div>
-
   <!-- message / email from -->
   <div class="field">
     <label for="from_email">Email:</label>
-    <input type="text" name="from_email" id="from_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-    required>
+    <input type="text" name="from_email" id="from_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
   </div>
-
   <!-- message / enquiries field -->
   <div class="field">
     <label for="website_enquiry">Message / Enquiry:</label>
     <input type="text" name="website_enquiry" id="website_enquiry" required>
   </div>
-
   <input type="submit" id="button" value="Send Email">
 </form>
 
-<script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
   emailjs.init('user_xWG3suhvA2uVXlkEiuC7r')
 </script>

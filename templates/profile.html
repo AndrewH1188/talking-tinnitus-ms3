@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-<img src="{{url_for('static', filename='images/profile-hero.jpg')}}" class="hero-image" alt="Hello in different languages inside speech bubbles">
+<img src="{{url_for('static', filename='images/profile-hero.jpg')}}" class="hero-image"
+    alt="Hello in different languages inside speech bubbles">
 
 <!-- The below code has been taken from the Code Institute Task Manager Mini Project-->
-
 <div class="row">
     <div class="col s12 m8 offset-m2">
         <div class="card-panel">
@@ -12,8 +12,20 @@
                 {{ username }}'s Profile
             </h3>
         </div>
+        <div class="card-panel teal-text">
+            <p>
+                We recently recieved an entry by one of our community users AndrewH that is a really useful and helpful
+                recommendation for a great app in the App Recommendations category. Please see the recommendation made
+                below:
+                <br>
+                <br>
+                <em>"I use the Oto App at night to help me get a good nights sleep. The App has different
+                    sounds that you can listen to which will help take away the sound of your tinnitus.
+                    This is a free App and I recommend this to anyone who has problems with sleeping
+                    because of their tinnitus.</em>
+            </p>
+        </div>
     </div>
 </div>
-
 
 {% endblock %}

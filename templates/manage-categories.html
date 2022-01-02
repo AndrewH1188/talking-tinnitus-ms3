@@ -2,9 +2,7 @@
 {% block content %}
 
 <!-- The below code has been taken from the Code Institute Task Manager Mini Project-->
-
 <h3 class="center-align page-headings">Manage Categories</h3>
-
 <div class="row">
     <div class="col s12 center-align">
         <a href="{{ url_for('add_category') }}" class="btn-large category-button">
@@ -12,7 +10,6 @@
         </a>
     </div>
 </div>
-
 <div class="row">
     {% for category in categories %}
     <div class="col s12 m3">
@@ -23,12 +20,9 @@
             <div class="card-action">
                 <a href="{{ url_for('edit_category', category_id=category._id) }}"
                     class="btn indigo darken-4 text-shadow">Edit</a>
-
                 <!-- Materialize Modal Are you sure you want to delete trigger -->
-
                 <!-- Modal Trigger -->
                 <a class="red darken-4 text-shadow btn modal-trigger" href="#modal1">Delete</a>
-
                 <!-- Modal Structure -->
                 <div id="modal1" class="modal">
                     <div class="modal-content">

@@ -3,11 +3,9 @@
 
 <img src="{{url_for('static', filename='images/entries-hero.jpg')}}" class="hero-image"
     alt="People stood holding speech bubbles over their face with Let's Talk Tinnitus displayed on three of the speech bubbles">
-
 <h3 class="page-headings">Submit an Entry</h3>
 
 <!-- The below code has been taken from the Code Institute Task Manager Mini Project-->
-
 <div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="{{ url_for('add_entry') }}">
         <!-- category selection -->
@@ -41,7 +39,6 @@
                 <label for="entry_details">Entry Details</label>
             </div>
         </div>
-
         <!-- submit button -->
         <div class="row">
             <div class="col s12 center-align">

@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<img src="{{url_for('static', filename='images/login-hero.jpg')}}" class="hero-image" alt="">
-
+<img src="{{url_for('static', filename='images/login-hero.jpg')}}" class="hero-image" 
+    alt="Doctor and Patient showing a diagram of the inner ear">
 <h3 class="page-headings">Log in</h3>
 
 <!-- The below code has been taken from the Code Institute Task Manager Mini Project-->
-
 <div class="row">
     <div class="col-s12">
         <p class="center-align login-text">
-            If you have don't have an account please head on over to <a href="{{ url_for('register') }}" class="login-link">sign up / register</a>
+            If you have don't have an account please head on over to <a href="{{ url_for('register') }}"
+                class="login-link">sign up / register</a>
         </p>
     </div>
 </div>
