@@ -9,30 +9,33 @@
 
 <!-- The below was taken from EmailJS and has had some alterations made -->
 
+<!-- message / enquiries field -->
 <form id="form">
-  <!-- name field -->
   <div class="field">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" required>
+    <label for="website_enquiry">Message / Enquiry:</label>
+    <input type="text" name="website_enquiry" id="website_enquiry" required>
   </div>
 
-  <!-- email address field -->
+<!-- from name -->
   <div class="field">
-    <label for="email">Email:</label>
-    <input type="text" name="email" id="email" class="validate" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-      required>
+    <label for="from_name">Name:</label>
+    <input type="text" name="from_name" id="from_name" required>
   </div>
 
-  <!-- message / enquiries field -->
+  <!-- from email -->
   <div class="field">
-    <label for="enquiry">Message / Enquiry</label>
-    <input type="text" name="enquiry" id="enquiry" required>
+    <label for="from_email">Email address:</label>
+    <input type="text" name="from_email" id="from_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
   </div>
-  <!-- send button -->
-  <input type="submit" id="button" value="Send">
+
+
+
+  <input type="submit" id="button" value="Send Email" >
 </form>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 <script type="text/javascript">
   emailjs.init('user_xWG3suhvA2uVXlkEiuC7r')
 </script>
