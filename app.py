@@ -1,9 +1,11 @@
-# The code that I have used for this has come from the Code Institute Task Manager 
-# Mini project, but has been amended in places to fit with my code for the different pages.
+# The code that I have used for this has come
+# from the Code Institute Task Manager
+# Mini project, but has been amended in
+# places to fit with my code for the different pages.
 
 import os
 from flask import (
-    Flask, flash, render_template, 
+    Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
@@ -23,6 +25,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# Home / Index page
 @app.route("/")
 @app.route("/home")
 def home():
@@ -30,12 +33,14 @@ def home():
     return render_template("index.html", title=title)
 
 
+# About Us page
 @app.route("/about")
 def about():
     title = "Talking Tinnitus | About Us"
     return render_template("about-us.html", title=title)
 
 
+# Show Entries
 @app.route("/get_entry")
 def get_entry():
     entry = list(mongo.db.entry.find())
@@ -43,6 +48,7 @@ def get_entry():
     return render_template("entries.html", entry=entry, title=title)
 
 
+# Search Entries
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -50,6 +56,7 @@ def search():
     return render_template("entries.html", entry=entry)
 
 
+# Register / Sign Up
 @app.route("/register", methods=["GET", "POST"])
 def register():
     title = "Talking Tinnitus | Register / Sign up"
@@ -65,6 +72,9 @@ def register():
         if existing_user:
             return redirect(url_for("register"))
 
+        if existing_email:
+            return redirect(url_for("register"))
+
         register = {
             "email": request.form.get("email").lower(),
             "username": request.form.get("username").lower(),
@@ -78,6 +88,7 @@ def register():
     return render_template("register.html", title=title)
 
 
+# Login
 @app.route("/login", methods=["GET", "POST"])
 def login():
     title = "Talking Tinnitus | Log in"
@@ -85,6 +96,9 @@ def login():
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
+        # check if email already exists in db
+        existing_email = mongo.db.email.find_one(
+            {"email": request.form.get("email").lower()})
 
         if existing_user:
             # ensure hashed password matches user input
@@ -95,7 +109,7 @@ def login():
                             "profile", username=session["user"]))
             else:
                 # invalid password match
-                flash("Incorrect Email Address and/or Username and/or Password")
+                flash("Incorrect Email Address, Username and/or Password")
                 return redirect(url_for("login"))
 
         else:
@@ -127,10 +141,7 @@ def logout():
     return redirect(url_for("login", title=title))
 
 
-
-
-
-# add entries
+# ADD, EDIT and Delete Entries
 @app.route("/add_entry", methods=["GET", "POST"])
 def add_entry():
     title = "Talking Tinnitus | Add Community Entry"
@@ -148,10 +159,8 @@ def add_entry():
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add-entry.html",
-            title=title, categories=categories)
+                           title=title, categories=categories)
 
-
-# Need to check and add a warning about are you sure you want to delete this entry?
 
 @app.route("/edit_entry/<entry_id>", methods=["GET", "POST"])
 def edit_entry(entry_id):
@@ -169,9 +178,8 @@ def edit_entry(entry_id):
 
     entry = mongo.db.entry.find_one({"_id": ObjectId(entry_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit-entry.html", entry=entry, 
-            categories=categories, title=title)
-
+    return render_template("edit-entry.html", entry=entry,
+                           categories=categories, title=title)
 
 
 @app.route("/delete_entry/<entry_id>")
@@ -181,17 +189,13 @@ def delete_entry(entry_id):
     return redirect(url_for("get_entry"))
 
 
-
-
-
-# ADD, EDIT and Delete Categories FUNCTIONALITY
-
+# ADD, EDIT and Delete Categories
 @app.route("/get_categories")
 def get_categories():
     title = "Talking Tinnitus | Manage Categories"
     categories = list(mongo.db.categories.find().sort("category_name", 1))
-    return render_template("manage-categories.html", 
-                categories=categories, title=title)
+    return render_template("manage-categories.html",
+                           categories=categories, title=title)
 
 
 @app.route("/add_category", methods=["GET", "POST"])
@@ -219,7 +223,8 @@ def edit_category(category_id):
         return redirect(url_for("get_categories"))
 
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
-    return render_template("edit-category.html", category=category, title=title)
+    return render_template("edit-category.html",
+                           category=category, title=title)
 
 
 @app.route("/delete_category/<category_id>")
@@ -229,6 +234,7 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
+# Contact Us
 @app.route("/contact")
 def contact():
     title = "Talking Tinnitus | Contact Us"
