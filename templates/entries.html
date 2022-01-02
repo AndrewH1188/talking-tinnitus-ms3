@@ -35,10 +35,26 @@
             <div class="col s9">
                 <strong>{{ entry.entry_description }}</strong>
                 {% if session.user|lower == entry.created_by|lower %}
-                <a href="{{ url_for('delete_entry', entry_id=entry._id) }}"
-                    class="btn-small red darken-4 btn text-shadow">Delete</a>
                 <a href="{{ url_for('edit_entry', entry_id=entry._id) }}"
-                    class="btn-small indigo darken-4 btn text-shadow">Edit</a>
+                class="btn-small indigo darken-4 btn text-shadow">Edit</a>
+
+                 <!-- Modal Trigger -->
+                 <a class="red darken-4 text-shadow btn modal-trigger" href="#modal1">Delete</a>
+
+                 <!-- Modal Structure -->
+                 <div id="modal1" class="modal">
+                     <div class="modal-content">
+                         <h4 class="warning-heading">Are you sure you would like to delete this Entry?</h4>
+                         <p>This action cannot be undone!</p>
+                     </div>
+                     <div class="modal-footer">
+                         <a href="{{ url_for('delete_entry', entry_id=entry._id) }}"
+                             class="modal-close red darken-4 text-shadow btn-flat white-text">Proceed with Deletion</a>
+                         <a href="{{ url_for('get_entry') }}"
+                             class="modal-close indigo darken-4 text-shadow btn-flat white-text">Cancel</a>
+                     </div>
+                 </div>
+             </div>
                 {% endif %}
             </div>
         </div>
@@ -52,7 +68,7 @@
     {% endfor %}
 </ul>
 {% else %}
-<h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+<h3 class="red-text text-darken-4 center-align">No results were found. Please search again.</h3>
 {% endif %}
 
 {% endblock %}
