@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+
+<img src="{{url_for('static', filename='images/home-hero.jpg')}}" class="hero-image" alt="Sound waves from an ear">
+<h3 class="page-headings">Welcome to Talking Tinnitus</h3>
+<p class="introduction">
+    We are glad to be able to welcome you to our community. We hope that by being an active member of our
+    community this helps you to not only help others but also yourself at the same time.
+    <br>
+    <br>
+    We know and understand that tinnitus has different affects on different people.
+    Tinnitus is common, its nothing to worry about and does get better over time, but needs to be managed not monitored.
+    According to the British Tinnitus Association <em>there are already an estimated six million people living with tinnitus
+    here in the UK and this number is expected to rise to more than half a million by 2028.</em>
+    <br>
+    <br>
+    Here at Talking Tinnitus we understand how tinnitus makes people feel, the different sounds, the intrusiveness that
+    it has on peoples lives, but by Talking Tinnitus we can help to change the feelings towards it.
+</p>
+<article class="boxed-content">
+    <div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h4 class="section-heading-right">What is Tinnitus?</h4>
+        </div>
+    </div>
+        <div class="container-fluid">
+            <div class="row">
+        <div class="col s8 m12">
+            <img src="{{url_for('static', filename='images/home-what-is-tinnitus.jpg')}}" class="left-image"
+                alt="Sound waves inside a woman's head and in the ear">
+ 
+            <p class="section-text-right">
+                Tinnitus is the term for hearing a sound where no external sound is present.
+                Tinnitus has many different sounds and ranges from whooshing, hissing, whistling, buzzing, humming,
+                ringing, musical, pulsating, to name a few. This may be heard/experienced in one or both ears.
+                <br>
+                <br>
+                People with tinnitus experience all sorts of different sound levels, for some it is very loud and
+                causes the individual to miss conversations and feel anxious, for some it can be a low level noise and
+                can be heard when it is quiet, but for others it can be a combination of both at different times.
+                Others report they have tinnitus that comes and goes, and doesn't really impact or affect their day to
+                day life.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+</article>
+
+
+<!-- Text To Amend and Image Too-->
+<article>
+    <div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h4 class="section-heading-right">What can help?</h4>
+        </div>
+    </div>
+        <div class="container-fluid">
+            <div class="row">
+        <div class="col s8 m12">
+            <img src="{{url_for('static', filename='images/home-what-can-help.jpg')}}" class="right-image"
+            alt="A group of people doing a meditation exercise">
+                <p class="section-text-left">
+                    There are many different things that you can do or try that will help you
+                    to manage your tinnitus, such as:
+                    <br>
+                    Cognitive Behavioural Therapy (CBT), Meditation, Yoga, Mindfulness, Tai Chi, Relaxation,
+                    Exercising, Dancing, Sport, Acting and Drama.
+                    <br>
+                    <br>
+                    There are many other activities and things you can do to help.
+                    These can be hobbies and interests, or even trying a new hobby or interest to help take your mind off
+                    the sound(s) that you are experiencing. These could include (but are not limited to):
+                    <br>
+                    Knitting, Sewing, Visualisation, CDs, Apps, Art, Painting, Lego, Construction Kits, Writing and even
+                    Talking to others with Tinnitus.
+                </p>
+        </div>
+    </div>
+</div>
+</div>
+</article>
+
+{% endblock %}
