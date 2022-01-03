@@ -63,12 +63,12 @@
   margin-bottom: 30px;
 }
 
-.section-heading {
+h4.section-heading {
   color: #df832f;
   text-align: center;
 }
 
-.section-image {
+img.section-image {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
