@@ -13,12 +13,12 @@
   margin-bottom: 30px;
 }
 
-
 .flashes {
   background-color: #3d7b9c;
   height: fit-content;
   width: fit-content;
 }
+
 
 /*--------------------------------------------- Base page Nav Bar */
 
@@ -32,9 +32,7 @@
 }
 
 
-/*--------------------------------------------- Home and About Hero pages */
-
-/*----------- Home and About Hero images*/
+/*--------------------------------------------- All Hero Images */
 
 .hero-image {
   display: block;
@@ -56,10 +54,7 @@
 }
 
 
-
 /*----------- Home and About section images and headings */
-
-/*----------- Middle Boxed Content */
 
 .boxed-content {
   background-color: #3d7b9c1e;
@@ -68,39 +63,16 @@
   margin-bottom: 30px;
 }
 
-.section-heading-right {
+.section-heading {
   color: #df832f;
-  text-align: left;
-  margin-left: 38%;
+  text-align: center;
 }
 
-.section-text-right {
-  text-align: justify;
-  margin-left: 6%;
-  margin-right: 18%;
-}
-
-.right-image {
-  margin-left: 35%;
-}
-
-
-/*----------- Lower Content */
-
-.section-heading-left {
-  color: #df832f;
-  text-align: left;
-  margin-left: 12%;
-}
-
-.section-text-left {
-  text-align: justify;
-  margin-left: 25%;
-  width: 100%;
-}
-
-.left-image {
-  margin-left: 38%;
+.section-image {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 
@@ -158,7 +130,6 @@ a.register-link:hover{
   color:#3d7b9c;
 }
 
-
 .login-link {
   color: #3d7b9c;
 }
@@ -211,7 +182,6 @@ ul.collapsible {
 }
 
 
-
 /*--------------------------------------------- Add an Entry page */
 
 .add-entry-button {
@@ -222,9 +192,6 @@ ul.collapsible {
   background-color: #c2e5d3;
   color:#3d7b9c;
 }
-
-
-
 
 
 /*--------------------------------------------- ADMIN ONLY Add and Manage Categories pages */
@@ -253,7 +220,6 @@ ul.collapsible {
   margin-right: 13%;
   margin-bottom: 6%;
 }
-
 
 /* The below has been taken from EmailJS. 
 I have made some edits to enable this to display as I would like */
@@ -330,117 +296,62 @@ a.social-media :hover {
 }
 
 
-
 /*--------------------------------------------- Media Queries */
-
-/*---------------- Computer medium screen size */
-
-
-
-
-
-
-/* @media (max-width: 992px) { 
-
-
-
-/*---------------- iPad 5th gen */
-
-@media (max-width: 240px) { 
-
-.section-text-left {
-  margin-left: 0;
-  margin-right: 0%;
-}
-.left-image {
-  margin-left: 38%;
-}
-.reset {
-  margin-bottom: 5px;
-}
-}
-
 
 /*---------------- iPhone and Surface Duo */
 
 @media (max-width: 768px) {
-.brand-logo {
-  font-size: small;
-  text-align: center;
-  margin-right: -40px;
-}
-.hero-image {
-  width: 89%;
-}
+  .brand-logo {
+    font-size: small;
+    text-align: center;
+    margin-right: -40px;
+  }
 
-.login-text {
-  padding-left: 40px;
-  padding-right: 40px;
+  .hero-image {
+    width: 89%;
+  }
+
+  .login-text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .register-intro{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .reset {
+    margin-bottom: 5px;
+  }
+
+  .cancel {
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    margin-left: 33%;
+  }
 }
-
-.register-intro{
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-
-.reset {
-  margin-bottom: 5px;
-}
-
-
-input[type="submit"] {
-  margin-left: 38%;
-}
-}
-
 
 
 /*---------------- Galaxy Fold */
 
 @media (max-width: 376px) {
-a.brand-logo {
-  font-size: larger;
-  margin-left: 0;
-}
-.page-headings {
-  font-size: x-large;
-}
+  a.brand-logo {
+    font-size: larger;
+    margin-left: 0;
+  }
 
-.reset {
-  margin-bottom: 20px;
-}
+  .page-headings {
+    font-size: x-large;
+  }
 
+  .reset {
+    margin-bottom: 20px;
+  }
 
-
-
-
-
-
-/* boxed content */
-
-.left-image {
-  display: none;
-}
-
-
-/* Bottom content No box */
-
-.section-text-right {
-  text-align: center;
-  width: 100%;
-}
-
-.right-image {
-  display: none;
-}
-
-.col s4 {
-  display: none;
-}
-
-
-input[type="submit"] {
-  margin-left: 38%;
-}
+  input[type="submit"] {
+    margin-left: 33%;
+  }
 }
