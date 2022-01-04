@@ -59,33 +59,38 @@ def search():
 # Register / Sign Up
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    title = "Talking Tinnitus | Register / Sign up"
-    if request.method == "POST":
-        # check if username already exists in db
-        existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").lower()})
+        title = "Talking Tinnitus | Register / Sign up"
+        if request.method == "POST":
+            # check if username already exists in db
+            existing_user = mongo.db.users.find_one(
+                {"username": request.form.get("username").lower()})
 
-        # check if email already exists in db
-        existing_email = mongo.db.email.find_one(
-            {"email": request.form.get("email").lower()})
+            # check if email already exists in db
+            existing_email = mongo.db.users.find_one(
+                {"email": request.form.get("email")})
 
-        if existing_user:
-            return redirect(url_for("register"))
+            if existing_user:
+                flash("Username already exists")
+                return redirect(url_for("register"))
+        
+            if existing_email:
+                flash("Email already exists")
+                return redirect(url_for("register"))
 
-        if existing_email:
-            return redirect(url_for("register"))
+            else:
+                register = {
+                    "email": request.form.get("email"),
+                    "username": request.form.get("username").lower(),
+                    "password": generate_password_hash(request.form.get("password"))
+                }
+            mongo.db.users.insert_one(register)
 
-        register = {
-            "email": request.form.get("email").lower(),
-            "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password"))
-        }
-        mongo.db.users.insert_one(register)
+            # put the new user into 'session' cookie
+            session["user"] = request.form.get("username").lower()
+            flash("Registration Successful!")
+            return redirect(url_for("profile", username=session["user"]))
 
-        # put the new user into 'session' cookie
-        session["user"] = request.form.get("username").lower()
-        flash("Registration Successful!")
-    return render_template("register.html", title=title)
+        return render_template("register.html", title=title)
 
 
 # Login
@@ -96,30 +101,33 @@ def login():
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-        # check if email already exists in db
-        existing_email = mongo.db.email.find_one(
-            {"email": request.form.get("email").lower()})
 
+        # Code for the rest of the Log in (down to the end of the else statement) 
+        # by Igor at Tutor Support
+        
+        # check if email exists in db
         if existing_user:
-            # ensure hashed password matches user input
-            if check_password_hash(
-                    existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        return redirect(url_for(
-                            "profile", username=session["user"]))
+            if existing_user["email"] == request.form.get("email").lower():
+                # ensure hashed password matches user input
+                if check_password_hash(
+                        existing_user["password"], request.form.get("password")):
+                            session["user"] = request.form.get("username").lower()
+                            return redirect(url_for(
+                                "profile", username=session["user"]))
+                else:
+                    flash("Incorrect Password")
+                    return redirect(url_for("login"))
             else:
-                # invalid password match
-                flash("Incorrect Email Address, Username and/or Password")
+                flash("Incorrect Email Address")
                 return redirect(url_for("login"))
-
         else:
-            # username (display name) doesn't exist
-            flash("Incorrect Email Address and/or Username and/or Password")
+            flash("Incorrect Username")
             return redirect(url_for("login"))
 
     return render_template("login.html", title=title)
 
 
+# User profile
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     title = "Talking Tinnitus | My Profile"
@@ -133,6 +141,7 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+# Log out
 @app.route("/logout")
 def logout():
     title = "Talking Tinnitus | Log in"
@@ -141,7 +150,7 @@ def logout():
     return redirect(url_for("login", title=title))
 
 
-# ADD, EDIT and Delete Entries
+# Add entry
 @app.route("/add_entry", methods=["GET", "POST"])
 def add_entry():
     title = "Talking Tinnitus | Add Community Entry"
@@ -162,6 +171,7 @@ def add_entry():
                            title=title, categories=categories)
 
 
+# Edit entry
 @app.route("/edit_entry/<entry_id>", methods=["GET", "POST"])
 def edit_entry(entry_id):
     title = "Talking Tinnitus | Edit Entry"
@@ -182,6 +192,7 @@ def edit_entry(entry_id):
                            categories=categories, title=title)
 
 
+# delete entry
 @app.route("/delete_entry/<entry_id>")
 def delete_entry(entry_id):
     mongo.db.entry.remove({"_id": ObjectId(entry_id)})
@@ -189,7 +200,7 @@ def delete_entry(entry_id):
     return redirect(url_for("get_entry"))
 
 
-# ADD, EDIT and Delete Categories
+# Find category
 @app.route("/get_categories")
 def get_categories():
     title = "Talking Tinnitus | Manage Categories"
@@ -198,6 +209,7 @@ def get_categories():
                            categories=categories, title=title)
 
 
+# Add category
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
     title = "Talking Tinnitus | Add Category"
@@ -211,6 +223,7 @@ def add_category():
     return render_template("add-category.html", title=title)
 
 
+# Edit category
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     title = "Talking Tinnitus | Edit Category"
@@ -227,6 +240,7 @@ def edit_category(category_id):
                            category=category, title=title)
 
 
+# delete category
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
