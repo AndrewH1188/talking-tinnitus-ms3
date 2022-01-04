@@ -22,9 +22,9 @@
                     class="btn indigo darken-4 text-shadow">Edit</a>
                 <!-- Materialize Modal Are you sure you want to delete trigger -->
                 <!-- Modal Trigger -->
-                <a class="red darken-4 text-shadow btn modal-trigger" href="#modal1">Delete</a>
+                <a class="red darken-4 text-shadow btn modal-trigger" href="#modal1-{{ category._id }}">Delete</a>
                 <!-- Modal Structure -->
-                <div id="modal1" class="modal">
+                <div id="modal1-{{ category._id }}" class="modal">
                     <div class="modal-content">
                         <h4 class="warning-heading">Are you sure you would like to delete this Category?</h4>
                         <p>This action cannot be undone!</p>
