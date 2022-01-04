@@ -72,7 +72,7 @@ def register():
             if existing_user:
                 flash("Username already exists")
                 return redirect(url_for("register"))
-        
+
             if existing_email:
                 flash("Email already exists")
                 return redirect(url_for("register"))
@@ -81,7 +81,8 @@ def register():
                 register = {
                     "email": request.form.get("email"),
                     "username": request.form.get("username").lower(),
-                    "password": generate_password_hash(request.form.get("password"))
+                    "password": generate_password_hash
+                    (request.form.get("password"))
                 }
             mongo.db.users.insert_one(register)
 
@@ -102,17 +103,18 @@ def login():
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
-        # Code for the rest of the Log in (down to the end of the else statement) 
+        # Code for the rest of the Log in
+        # (down to the end of the else statement)
         # by Igor at Tutor Support
-        
+
         # check if email exists in db
         if existing_user:
             if existing_user["email"] == request.form.get("email").lower():
                 # ensure hashed password matches user input
                 if check_password_hash(
-                        existing_user["password"], request.form.get("password")):
-                            session["user"] = request.form.get("username").lower()
-                            return redirect(url_for(
+                     existing_user["password"], request.form.get("password")):
+                        session["user"] = request.form.get("username").lower()
+                        return redirect(url_for(
                                 "profile", username=session["user"]))
                 else:
                     flash("Incorrect Password")
