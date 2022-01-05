@@ -29,7 +29,7 @@
         <nav class="nav-extended">
             <div class="nav-wrapper">
                 <a href="{{ url_for('home') }}" class="brand-logo">Talking Tinnitus</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i><span class="sr-only">Side Navigation Menu</span></a>
                 <ul class="right hide-on-med-and-down navigation-bar">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About Us</a></li>
@@ -96,23 +96,19 @@
             <ul>
                 <li class="sm-icons">
                     <a class="social-media" href="https://www.facebook.com/groups/417947383216864/" target="_blank"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <span class="sr-only">Facebook</span>
+                            class="fab fa-facebook-f"></i><span class="sr-only">Facebook</span></a>
                 </li>
                 <li class="sm-icons">
                     <a class="social-media" href="https://twitter.com/talk_tinnitus" target="_blank"><i
-                            class="fab fa-twitter"></i></a>
-                    <span class="sr-only">Twitter</span>
+                            class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a>
                 </li>
                 <li class="sm-icons">
                     <a class="social-media" href="https://www.instagram.com/talking_tinnitus/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                    <span class="sr-only">Instagram</span>
+                            class="fab fa-instagram"></i><span class="sr-only">Instagram</span></a>
                 </li>
                 <li class="sm-icons">
                     <a class="social-media" href="https://www.youtube.com/channel/UCrU99cJK2_zFsmvo4YzWilA"
-                        target="_blank"><i class="fab fa-youtube"></i></a>
-                    <span class="sr-only">YouTube</span>
+                        target="_blank"><i class="fab fa-youtube"></i><span class="sr-only">YouTube</span></a>
                 </li>
             </ul>
         </div>
@@ -125,7 +121,6 @@
     <script src="https://kit.fontawesome.com/14fbbe1178.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/entries.js') }}"></script>
-    <script type='text/javascript' src="{{ url_for('static', filename='js/sendEmail.js') }}"></script>
     {% block scripts %}
     {% endblock %}
 </body>
