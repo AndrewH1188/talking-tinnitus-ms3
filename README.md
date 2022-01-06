@@ -553,56 +553,308 @@ I have added a post that features the What is Tinnitus from my website / service
 ![Youtube](assets/images/social-media/talking-tinnitus-youtube.jpg)
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## Testing:
+I decided to create this site / service because I know what having tinnitus is like as I have this myself. As mentioned before I know what it is like for other people as being a volunteer Befriender for the British Tinnitus Association I hear from others about how this makes them feel and what they think about it. I know that there are many sites out there that clam x works and y doesn’t, but If I can make this a site / service that highlights what works for people like a database to help others and this succeeds then we have won half the battle.
+
+Thinking of how users would view my site / service I tried to keep this simple but with enough information to help the user better understand what I am offering them and what they can offer to others as well.
+
+With some issues of the original design (like the Home and About Us page) there were special previsions with the need for media queries to help some of the areas to display properly on smaller devices. For the media queries I have once again copied across the helpful template with the screen size names like iPhone and Galaxy Fold to help me to target the right areas, as well as check the changes are actually working when viewed using Google Chrome Dev Tools. I have also used my 32 Inch TV that I have hooked unto my 13 inch medium-sized screen MacBook as well as use my 6.1 inch iPhone 13 to see how this looks on a smaller screen. 
+
+Included below are images that show the different page layouts on a mobile device.
+
+### Home page
+Using Materialize meant that setting up the nav bar for this project was pretty straightforward, which was a big help in development time saved, but when it came to the footer section it was a different story. This was because I had issues with the alignment of the footer Social Media Icons. After looking at my War Heroes Remembered Milestone 2 project and using the sm-icons class I was able to get the icons to move from aligning vertically down the page to centrally and horizontally line up, and with the help of some CSS they were perfectly positioned as I would like them to be. This also works on both desktop, tablet and mobile screens nicely without further help from CSS commands. I had to change the layout of original design where the two sections are on the home page as they were not displaying as I would have liked them to have looked when viewing on smaller devices. Having changed the layout of these sections the home page now displays and look the same on any device. 
+
+![Home Mobile Top](assets/testing/home-mobile-top.jpg)
+
+![Home Mobile Middle](assets/testing/home-mobile-middle.jpg)
+
+![Home Mobile Bottom](assets/testing/home-mobile-bottom.jpg)
 
 
 
+### About Us
+I had to change the layout of original design where the two sections are on the about us page as they were not displaying as I would have liked them to have looked when viewing on smaller devices. Having changed the layout of these sections the about us page now displays and look the same on any device. I set up the links to sign up and Log in to help users navigate there quickly and give them guidance to help them navigate a bit easier. I changed the colours to the ones that I have as the theme with the teal type for the link colour and the mint green for the hovered over colour so a user knows they have hovered and the link works. On the About Us page it instructs a user how we can help them, and suggestions that they can try to help themselves.
+
+![About Us Mobile Top](assets/testing/about-us-mobile-top.jpg)
+
+![About Us Mobile Middle](assets/testing/about-us-mobile-middle.jpg)
+
+![About Us Mobile Bottom](assets/testing/about-us-mobile-bottom.jpg)
 
 
+### Register
+Using the Code Institute Task Manager Materialize layout I have kept the register / sign up for an account pretty simple for the user, as it should be. I have tested this across desktop, mobile and tablet to ensure that this works as well as displays how I would like it to display. Once registered the user is able to go and use the site / service, look around and start their journey further by creating their own helpful entry, update or delete their entry and read others entries. I have requested that users add their email address as an extra layer of security to their profile as their email address is not displayed on any entry they post, but their user (display name) is. I have tested the Register process on desktop, tablet and mobile and all works fine here, this is important as new users may want to sign up so that they can view or contribute to this service and help others.
+
+![Register Mobile](assets/testing/register-mobile.jpg)
 
 
+### Log in
+Using the Code Institute Task Manager Materialize layout I have kept the login pretty simple for the user, as it should be. I have tested this across desktop, mobile and tablet to ensure that this works as well as displays how I would like it to display. When the user logs in this takes them to their profile, they are then able to navigate around the rest of the site to add their entry or view others entries as they please. I have tested the Login process on desktop, tablet and mobile and all works fine here, this is important as users may want to log in to see others entries or even add their own from wherever they are in the world using whatever device they have.
+
+![Log in Mobile](assets/testing/log-in-mobile.jpg)
 
 
+### User Profile
+The user profile is very basic, although I decided to add a section for the best user comment that has been submitted. This is a way to showcase and recognise the users for their input as well as help others who view this that may have missed their input. Using Materialize for this allows the content to be device friendly as it can be viewed on all screen sizes meaning that the user isn’t restricted to what they can use this service on.
 
+![User Profile Mobile](assets/testing/profile-mobile.jpg)
+
+
+### Community Entries
+When a user looks at the Community Entries page they are shown all entries from all registered users.
+
+![Searching Community Entries 1](assets/testing/all-community-entries.jpg)
+
+A user is able to search for entries but should the entry they have searched for not be shown or no results found then they will be shown a message that no results were found to please search again. 
+
+![Searching Community Entries 1](assets/testing/community-entries-search.jpg)
+
+However when there is an entry or entries that matches the user’s search, the user is shown the entry or matching keyword entries as they would expect. 
+
+![Searching Community Entries 2](assets/testing/community-entries-search-1.jpg)
+
+![Searching Community Entries 3](assets/testing/community-entries-search-2.jpg)
+
+I have also tested this page to make sure that everything looks, displays and functions as it should, and I am happy with the results. This page also uses the Code Institute Task Manager Materialize layout.
+
+![Community Entries Mobile](assets/testing/community-entries-mobile.jpg)
+
+
+### Add Entry
+The add entry page again is a simple process and uses the Code Institute Task Manager Materialize layout. Using this means that the user can quickly add the entry they would like to add into the right category and submit this for other registered users to see. I have added entries on desktop, mobile and tablet check to see if this was working all ok, and all was working fine. 
+
+![Add Entry Mobile](assets/testing/submit-entry-mobile.jpg)
+
+
+### Edit Entry - (User specific, only a user can edit their own entry)
+The edit entry again is a simple process and uses the Code Institute Task Manager Materialize layout. Using this means that the user can quickly edit their entry by either moving the category that this is in (by selecting a new category), or update what they have there, for example the user submits an entry and it either doesn’t make sense when they read it back, there are spelling mistakes or just a general update for any reason. I have added entries on desktop, mobile and tablet check to see if this was working all ok, and all was working fine. 
+
+![Edit Entry Mobile](assets/testing/edit-entry-mobile.jpg)
+
+
+### Delete Entry - (User specific, only a user can delete their own entry)
+Like add and edit entry pages the delete entry also uses the Code Institute Task Manager Materialize layout. I have tested the delete function and Modal to see whether or not the test entries that I created but no longer require can be removed. I originally had an issue when adding in the Modal asking if a user is sure they wish to delete. The issue was that not defining the entry_.id meant that the first entry all the time was deleted. After having help form Igor at Tutor Support and him pointing this out I was able to amend this and test again. I tested on all devices and different screen sizes and this worked and looked fine.
+
+![Delete Entry Mobile](assets/testing/delete-entry-mobile.jpg)
+
+
+### Manage Categories - ADMIN ONLY
+Like the add, edit, delete and community entries this page also uses the Code Institute Task Manager Materialize layout. This page only is allowed to be viewed and maintained by the admin of this site. I have viewed this page on all devices and the layout works fine and is tidy and easy to use for an admin user.
+
+![Manage Categories Mobile](assets/testing/manage-categories-mobile.jpg)
+
+
+### Add Category - ADMIN ONLY
+Like all other pages that have used the Code Institute Task Manager Materialize layout, this page is no exception. I have logged into the admin user account (as this is the only account that can access this page) on all devices and have managed to successfully add a test category.
+
+![Manage Categories Edit Mobile](assets/testing/add-category-mobile.jpg)
+
+
+### Edit Category - ADMIN ONLY
+Using the test category I have been able to update the name of this across all devices successfully. Like every page on my site / service the mobile responsiveness is nice and clear, making this easy to use for the admin.
+
+![Manage Categories Edit Mobile](assets/testing/edit-category-mobile.jpg)
+
+
+### Delete Category - ADMIN ONLY
+When testing this function I had the same trouble as I’d had with the delete entry page where the category that was selected for deletion had the modal pop up warning me of the consequences of deleting this category, when I said I was happy for this to be deleted the first category was deleted. This was solved thanks to Igor at Code Institute Tutor Support when I asked about the delete entry problem, again adding the category._id to the modal to tell it that the test category that was selected was the one that I wanted to delete and not the first category as it had been doing. I tested this across all devices to ensure that this works, and all worked well with the right category being deleted. Looking at the delete category modal on a mobile looks fine as well as viewing at this on other devices too.
+
+![Manage Categories Delete Mobile](assets/testing/delete-category-mobile.jpg)
+
+
+### Contact Us
+Having successfully wired up the contact form to the Emails using their HTML, CSS and JavaScript I set about testing this to ensure that it not only works and I receive an email, but that it wouldn’t allow nothing or anything being added (in terms of the email field). 
+
+I have tried to leave the form blank and submit this as shown below, but the code isn’t allowing this to happen. I tried to put in only a name, but again the code wouldn’t allow this. I tried to put in a comma or full stop to see if I could get round asking for a full email address, but again the code wasn’t allowing this to happen. Having filled in the name and email correctly I decided to try and leave the message blank, but was unable to do this due to the code running the contact form. 
+
+To get the form asking for users to add a name, email and a message I added the required to all the fields to stop users leaving this blank, but also in terms of the email field I added the pattern that looks out for the right information in terms of the @ and. Being added and in the right place. 
+
+Having tested this to see if there was any way that I could think of to get round not having to input information, or the wrong information in the name and email section thankfully all failed. This means that my site from the contact form point has the defensive design added to it, but not only this it works as intended as shown in the last image below. I have tested the contact form across all devices to ensure that I can compose and send as well as make sure that I receive the message that has been sent and all worked out fine. Also the responsiveness of this has been tested and looks great on any device.
+
+![Contact Form Blank Testing 1](assets/testing/contact-form-defensive1.jpg)
+
+![Contact Form Blank Testing 2](assets/testing/contact-form-defensive2.jpg)
+
+![Contact Form Blank Testing 3](assets/testing/contact-form-defensive3.jpg)
+
+![Contact Form Blank Testing 4](assets/testing/contact-form-defensive4.jpg)
+
+![Contact Us](assets/testing/contact-us-mobile.jpg)
+
+#### Contact form message sent and email received:
+
+![Contact Form Testing with received email](assets/testing/test-contact-form.jpg)
 
 
 ## Implementation:
-
-
-
-
-
-
-
+This is my third Milestone Project that I have completed with the Code Institute. The more I am using the languages the more I am learning, as well as finding errors be it in code or that cause bugs to break the code that is there, but this is all part of the learning that is helping and setting me up for future roles in this career field. This project has tested me in many ways, especially with Jinja when there are errors, as well as Python that was causing some of the errors when bits weren’t quite right. Materialize was also a bit of a challenge too. This was mainly with the Modal, but this was soon solved with some help, and then was the issue with entries not showing either. It was pointed out to me that I’d forgotten to add the jQuery to make this function, although once this was done I could see that my entries were being retrieved from my database and this section was working as I had intended it too. As mentioned in my Results section I had issues with the Home and About us middle and bottom sections and how they looked on smaller devices. To combat this I had to change the design in terms of layout for this sections, although If I am able to (and I am sure that with more learning and practice it will be possible) I will change these sections to the layout that I would have initially like to have seen. I have worked with Google Chrome Dev Tools and Lighthouse in order to test and make changes where possible. I have also used the PEP8, JSHint, W3 Validator and W3 Jigsaw CSS Validator to check for any issues and have fixed to the best of my ability.
 
 
 ## Results:
+Whilst testing my site the following issues were pointed out to me:
+
+### HTML
+I ran the HTML of my site through the [W3 HTML Validator](https://validator.w3.org/) and this returned the following results:
+
+#### First Test:
+On the first test I was getting the following errors:
+
+![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-top.jpg)
+
+![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-top2.jpg)
+
+![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-bottom.jpg)
+
+#### Final Testing:
+Once I had tidied up these warnings and errors I was left with the following:
+[W3 HTML Results](https://validator.w3.org/nu/?doc=http%3A%2F%2Ftalking-tinnitus.herokuapp.com%2F)
+
+![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-final.jpg)
+
+I double-checked that the above section warnings were OK and on [Stack Overflow](https://stackoverflow.com/questions/24155024/w3c-html-validation-error-section-lacks-heading-consider-using-h2-h6-elements) there a comment that says about alter this or ignore this as it is ok. I also double-checked and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/non-normative) also says that it is not needed to be followed as a rule.
 
 
+### CSS
+I ran the CSS of my site through the [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) and this returned the following results:
+
+[W3 CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftalking-tinnitus.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+![W3 CSS Testing](assets/testing/validator/talking-tinnitus-w3-css-testing.jpg)
 
 
+### JSHint 
+I ran the JavaScript that is being used in my site through the [JSHint](https://jshint.com/) and this returned the following results:
+
+### EmailJS:
+![JSHint sendEmail](assets/testing/jshint/talking-tinnitus-jshint-sendemail-testing.jpg)
+
+#### Entries (Entries Collapsible, Navigation, Modal):
+![JSHint sendEmail](assets/testing/jshint/talking-tinnitus-jshint-entries-testing.jpg)
+
+### PEP8
+I ran the Python of my site through the [PEP8](http://pep8online.com/) site and this returned the following results:
+The results before were showing four where the line was too long, four where there was trailing white space (this was because I had knocked some of the code on a new line so that there were not too many characters to a line and had forgotten to delete the space after the comma), three where there wasn’t enough indentation. After a quick Google to see how to fix this I came across the question on [Stack Overflow](https://stackoverflow.com/questions/15435811/what-is-pep8s-e128-continuation-line-under-indented-for-visual-indent) which had been answered by Gareth Latty who said “PEP-8 recommends you indent lines to the opening parentheses if you put anything on the first line, so it should either be indenting to the opening bracket.” This was enough to show me how to line up / indent my code properly and resolve PEP8 returning this as an issue.
+
+![PEP8 Results Before](assets/testing/pep8/pep8-results-before.jpg)
+
+After I had successfully followed the instructions from PEP8 showing me where there were the issues the results returned as All right:
+
+![PEP8 Results After](assets/testing/pep8/pep8-results-after.jpg)
 
 
+### Lighthouse
+I have tested my site using Lighthouse in Google Chrome Dev Tools and my results for the testing of the various pages are as follows:
+
+#### Home Page:
+![Home Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-home-desktop.jpg)
+
+![Home Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-home-mobile.jpg)
 
 
+#### About Us:
+![About Us Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-about-us-desktop.jpg)
+
+![About Us Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-about-us-mobile.jpg)
+
+
+#### Log In:
+![Log In Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-login-desktop.jpg)
+
+
+![Log In Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-login-mobile.jpg)
+
+
+#### Register:
+![Register Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-register-sign-up-desktop.jpg)
+
+
+![Register Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-register-sign-up-mobile-1.jpg)
+
+Having had the negative results above for the Register page I did my little trick that I thought of and reduced the image in TinyPNG, added it into Adobe Photoshop and scaled this to the right size, then exported out at 50%, then reloaded this back into TinyPNG to further reduce the image size, then back into Gitpod. Once added, committed and pushed I re run the register page through Lighthouse and was able to significantly improve the mobile results.
+![Register Page Lighthouse Mobile 2](assets/testing/lighthouse/lighthouse-register-sign-up-mobile-2.jpg)
+
+
+#### User Profile:
+![User Profile Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-user-profile-desktop.jpg)
+
+
+![User Profile Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-user-profile-mobile.jpg)
+
+
+#### Add Entry:
+On the first test the desktop version was all ok, the problem was when I tested the desktop version that I found the problem with the performance. The reason for this is that despite using TinyPNG the file size hadn’t been reduced enough to be satisfactory for mobile devices. 
+
+![Add Entry Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-user-profile-mobile.jpg)
+
+
+![Add Entry Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-add-entry-mobile-1.jpg)
+
+I managed to reduce the file size of the image by placing this in Adobe Photoshop, Selected Image Size, then reduced the resolution down to 200 Pixels/inch. I saved this using the Export, Save Web Legacy. I then loaded this up to TinyPNG which allowed me to reduce the file size a bit further. I placed this back into Adobe Photoshop where I added the text over the speech bubbles and applied the same size to the image so that this matched my other hero images, then saved it out using the Export, Save Web Legacy again, although I chose to save the quality at 50 and the Percent at 50. For the last time I uploaded this into TinyPNG which helped to further reduce the file size further. I then tested the mobile version first in Lighthouse to see if anything had changed at all. I was happy to see that not only the results had changed but from a 40 red warning to jump to 68 an ok warning was great to see. The screenshot of the new results can be seen below:
+
+![Add Entry Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-add-entry-desktop-2.jpg)
+
+
+![Add Entry Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-add-entry-mobile-2.jpg)
+
+
+#### Community Entries:
+![All Entries Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-all-entries-desktop.jpg)
+
+![All Entries Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-all-entries-mobile.jpg)
+
+
+#### Edit Entry:
+![Edit Entry Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-edit-entry-desktop.jpg)
+
+![Edit Entry Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-edit-entry-mobile.jpg)
+
+
+#### Manage Categories:
+![Manage Categories - ADMIN ONLY Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-manage-categories-desktop.jpg)
+
+
+![Manage Categories - ADMIN ONLY Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-manage-categories-mobile.jpg)
+
+
+#### Add Category - ADMIN ONLY
+![Add Category - ADMIN ONLY Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-add-category-desktop.jpg)
+
+
+![Add Category - ADMIN ONLY Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-add-category-mobile.jpg)
+
+
+#### Edit Category - ADMIN ONLY
+![Edit Category - ADMIN ONLY Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-edit-category-desktop.jpg)
+
+
+![Edit Category - ADMIN ONLY Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-edit-category-mobile.jpg)
+
+
+#### Contact Us
+On the first test the desktop version was all ok, the problem was when I tested the desktop version that I found the problem with the performance. The reason for this is that despite using TinyPNG the file size hadn’t been reduced enough to be satisfactory for mobile devices.
+
+![Contact Us Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-contact-us-desktop-1.jpg)
+
+
+![Contact Us Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-contact-us-mobile-1.jpg)
+
+I managed to reduce the file size of the image the same way as I had done with the Submit an Entry image. I placed this in Adobe Photoshop, Selected Image Size, then reduced the resolution down to 200 Pixels/inch. I saved this using the Export, Save Web Legacy. I then loaded this up to TinyPNG which allowed me to reduce the file size a bit further. I placed this back into Adobe Photoshop where I was able to size the image correctly to the same size as my other hero image and saved it out using the Export, Save Web Legacy again, although I chose to save the quality at 50 and the Percent at 50. For the last time I uploaded this into TinyPNG which helped to further reduce the file size further. I then tested the mobile version first in Lighthouse to see if anything had changed at all. I was happy to see that not only the results had changed but from a 40 red warning to jump to 68 an ok warning was great to see. The screenshot of the new results can be seen below:
+
+![Contact Us Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-contact-us-desktop-2.jpg)
+
+
+![Contact Us Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-contact-us-mobile-2.jpg)
 
 
 ## Bugs:
-
 1. When I added the Python code for the home page I was shown this: ![Jinja error](assets/bugs/base-jinja-error.jpg) I tried looking for help online how to connect the home page in Python as this is where I thought the error was coming from. It was only when I’d started the steps for tutor support that I thought the Python seems fine, so I re looked at what Jinja was telling me with regard to where the error is and where this is coming from again, I checked the HTML file to see if the problem was there as Jinja mentioned base.html. I looked at the get entries page and looked at the base.html command and saw that I had missed the quote marks around the “base.html”. Having added the quote marks in and checking this works the Jinja error disappeared and my home page was now showing. This then meant that I could cancel the help from Tutor Support as I’d found the bug and squished it.
 
-2. There was an issue with the Entry Name not updating when this was edited. When the edit button was clicked the entry name was missing, having added an entry name and pressing the edit button it would show the name as None. 
+2. There was an issue with the Entry Name not updating when this was edited. When the edit button was clicked the entry name was missing.
+
+![Edit Entry None](assets/bugs/edit-entry-none.jpg)
+
+When I added an entry name and pressed the edit button it would show the name as None. 
 ![Edit Entry](assets/bugs/edit-entry.jpg)
 On inspection looking at the HTML and Python code as well as referencing my Mongo database I could see that my Mongo database and Python code were correct, but my HTML was not, so after cross-referencing all 3 documents I could see that the error was coming from entry_name and not as it should have been entry_description. Having amended this and testing this again the entry name was showing, on editing the entry name this would display the new entry name as it should. This is just one of the few bugs that were thankfully squished.
 
@@ -624,11 +876,28 @@ when I should've had:
 
 ![Requirements.txt](assets/bugs/requirements-txt-versions-required.jpg)
 
+7. I managed to get a Modal from Materialize and display the warning error / message about deleting and the consequences this has (it cannot be undone). When selecting the Cancel button on both Admin and User accounts this worked and took me back to the page that I was on. However when deleting the Category (as an Admin user) I encountered a problem. It was working but it was deleting the first category on the page and not the category that was selected for deletion. I thought this could be down to the there being a 1 which was displaying the categories in alphabetical order, so I decided to remove this, but unfortunately this was not the solution to the problem. I also tried this with the Community Entries page as both Admin and User, but this also had the same affect as the Manage Categories page where the first Community Entry was deleted and not the one selected. I looked at others code who have done the same thing. The trouble was that I was a bit confused as this may break this completely so sought help from Igor at Tutor Support. The problem turned out to be that although I had the href as “modal1” I didn’t include the -{{ category._id }} or -{{ entry._id }}, so this meant that all first instance entries and categories were deleted, but with Igor’s helps this is now not the case and the correct entry or category is now deleted and another bug squished.
 
+![Modal Warning](assets/bugs/modal-warning.jpg)
 
+![Successfully Deleted Flash Message](assets/bugs/successfully-deleted-flash-message.jpg)
 
+![Wrong Category Deleted](assets/bugs/wrong-category-deleted.jpg)
 
+8. I originally had a config.js in my static file in case this was required and had added this to the gitignore file as well as the link to this in the base.html file. When I realised that I didn’t need this I removed it from the gitignore and deleted the JavaScript file. When I checked my site for another issue using the Dev Tools in Google Chrome I was presented with the following console log error:
+![config.js Console Error](assets/bugs/config-js-console-error.jpg)
 
+I originally didn’t realise why this was displaying. It was only after dinner that it occurred to me that this could be because the base.html file is still seeing the link, but has nowhere for the direction in terms of the file. I checked the base.html file and sure enough there it was. Another error (of if you want to call it a bug) bug squished.
+
+9. Having tested the sign in and register process I discovered that a user as long as they had the right username and password was able to log in. Likewise, if a user who was already registered with their email address they could also reuse their email address in order to create another account. I had help from Igor at Tutor Support to fix the login issue. I had assistance from Ed at Tutor Support and after trying many different variations on the same sort of theme I was able to fix this issue. This means that for the login process the right email, username and password must be entered in order to access your account. With the register process if the user tries to sign up for more than one account using the same email address that they are not able to do so.
+
+10.  In the console I had an error saying that mentioned the sendEmail.js file cannot read the properties of null (reading ‘addEventListener’)
+
+![sendEmail JS Console Error](assets/bugs/send-emailjs-console-warning.jpg)
+
+At first, I thought this was something to do with it being an error in EmailJS, but after my mentor session with Caleb we checked and the reason this was happening was because the script for the EmailJS was not being seen as it was reading this from the base.html file. Once this was taken out of the base.html file and added in the contact-us.html file the console error disappeared.
+
+All known bugs have been squished.
 
 
 ## Deployment:
@@ -690,6 +959,23 @@ To connect to your MongoDB please follow these steps:
 2. You will be shown the options of connect with MongoDB Shell, Connect your application and Connect using MongoDB Compass. If you are using an environment like GitPod / GitHub then select Connect your application button. Here you will be presented with the following ![Connect to Cluster](assets/images/mongo/mongo-setup.jpg)
 3. You will need to replace the field with your password that you entered for your username of your database (not the password that was used to sign up / register for your MongoDB account). You will also need to replace the name of the database as it shows you with the name of your database.
 4. The details that we can see in the image of section point 3 above will be used to add to your env.py which is in your gitignore file as this contains the sensitive information as mentioned before that you do not want to push to GitHub.
+
+#### EmailJS set up:
+Using EmailJS will allow you as the website designer and coder to link your contact form to send emails through to your email address. This is simple to set up. If you would also like to use EmailJS on your form on your project then please follow the simple steps below:
+1. Go to this [web address](https://www.emailjs.com/) and click the Sign Up Free if you don’t have an EmailJS account already.
+2. If you haven’t got an account with EmailJS you need to sign up. You will be directed to this [page](https://dashboard.emailjs.com/sign-up).
+3. Upon sign up you will be taken to the [Email Services](https://dashboard.emailjs.com/admin) page. On this page you will see the + Add New Service button. Click this and you will see a list of email provider services and their logos. Select the email provider/service that you want to connect your email too.
+If you’re using Gmail you can connect your Gmail account to this service and send a test email to make sure this is connected (the test box has a tick auto enabled so this will send on your behalf when you click the Create Service button). Whereas if you’re using anything else like AOL, iCloud, Outlook or Yahoo you will need to put in your email address and a password. When connecting your email you will see a Service ID, this will need to be copied as you will require this later.
+4. Under Email Services you will then see your mail service logo and name with your service code, so if you didn’t copy this when you input your email please copy this now and place this safe in your JavaScript file as you will require this in your code to set up your code talking to this service.
+5. In the list on the left-hand side select [Email Templates](https://dashboard.emailjs.com/admin/templates) to get your email template set up. When you click here you will see it has a button that says + Create New Template. Click this or the Press [Create New Template](https://dashboard.emailjs.com/admin/templates/new) to create your first template!
+6. Now you are able to customise what you want your template to say as well as give it a name. Once you have done select the save in the top right-hand corner. Once you have saved this you will see The template has been added successfully appear in the top middle of the screen.
+7. To test the template and see if this is connected to your email you will then need to select Test It which is in the top right hand corner near the Save button.
+8. You will be able to fill in the form and then press the Send Test Email button. One thing to note is that above the Send Test Email button there is the following:
+* Javascript Code
+* emails.send(“service_27qba4y”,”template_opwbfyr”);
+You will need to also copy and save this somewhere (like your JavaScript file as you will need this later. In the template that you have edited to suit your requirements be sure to go to the settings and give this a name. The Template ID needs to be left as it is, so please do not change this part.
+9. So you have now set up your template and tested that this works with your email, you are now able to add in the code from EmailJS into your own JavaScript file. To do this head over to the [Integration](https://dashboard.emailjs.com/admin/integration/npm) section on the left-hand panel and select the [Browser](https://dashboard.emailjs.com/admin/integration/browser) button under the Integration title and next to the NPM button. 
+If you are using the Jinja templating language like I am then you will need to add the url_for(‘static’,filename=jsfilename='js/name-of-your-javascript-file-goes-here.js') between your script opening and closing tags. This will direct your HTML as to where to call the details to make your EmailJS work and send you that all important email from your website users / viewers. If you would like to add the JavaScript in then there is some to get you started in the Playground section. This will allow you to see the JavaScript that you may need to add to your JavaScript file. I decided that as EmailJS had the code for the CSS, HTML and JavaScript that I would borrow theirs and credit them for this as it worked and sped up the development time for this part of my project.
 
 
 ## Credits:
@@ -797,7 +1083,17 @@ I would also like to thank Sean at Code Institute Tutor Support for his help poi
 
 I would also like to thank Kevin and Igor at Code Institute Tutor Support who helped me fix an issue in GitHub / GitPod when I deleted an image in GitHub. This caused GitPod to stop talking to GitHub and therefore not recording any commits. I had to do a few test commits to make sure we were back on track as previously before the error occured. Thanks to both Kevin and Igor for enabling me to get back on track and all systems running again. Your help and support is very much appreciated as always.
 
+I would like to thank Igor at Code Institute Tutor Support for his help with the modal issues that I was having, The simple fix by adding the -{{category._id}} to the manage categories modal and the -{{entry._id}} to the entries modal meant that the deletion for doth entry and category deletes the right category or entry. Thank you for your help in regards this issue and for helping me to be able to address and fix this issue. I would also like to thank you for your help with the code in Python for the Login section too. If it wasn’t for you my potential users would be able to log in with any email address, but as long as their username (display name) and password were correct still be able to enter, with your help in sorting this it has added the extra layer of security keeping my users profiles safe.
+
+I would like to thank Igor, Sean and Ed at Code Institute Tutor Support for their help in regards to the register / sign up page issue that I was having. The issue with this was that an existing email address could be used to create multiple accounts, but with the help of Igor, Sean and Ed I was able to fix this issue and stop registered users being able to re-register for another account using the same email address.
+
 Also I would like to thank Code Institute in general for an absolutely amazing course which has and is challenging and aiding my learning, I know with practice (and google) I will be able to achieve the end goals of both this project and this course too. I appreciate all of your help, support and course material that you have put together in order so that I can go from not knowing the first thing about the majority of the programs or languages to having a better understanding and achieve what I didn’t know was possible, so thank you again. I would also like to thank student care at Code Institute for the check up calls that they have also made and the many emails that I have received to remind me to deploy early or about upcoming changes etc. I am really grateful for your help also and would like to say thank you to you as well.
+
+I would like to thank Sam Timmins a fellow student who helped with a couple of questions that I had. The first was about how to add a message to a user warning them that the action that they had selected (Delete) were they sure that they wanted to do this? I didn’t know what the alert was for this but having asked the question in the ask us anything Slack Channel Sam named this with a link to the Bootstrap page. As I am using Materialize I headed on over to there to see if they had one and they did so I used the one from there. I was able to get this showing the message to the user as a result of Sam’s help naming this element as a Modal. Sam also tried to help with the issue of the Modal delete function not accessing and deleting the correct record too. So I would like to once again say a huge Thank you to Sam for all of his help pointing me in the right direction. I have a bit to do to get the modal to delete the right entry or category, but at least there has been progress made regarding the warning to users, and for this I am grateful.
+
+I would also like to thank Gaff Alumnus another fellow student on slack who has lent me a helping hand to the issue of the modal not deleting the correct entry / category. Gaff kindly sent over a project that he has done so that I can take a look at how this was achieved. I would like to say thank you for showing and helping me see how you have done this.
+
+I would like to thank Gareth Latty  for his helpful answer on [Stack Overflow](https://stackoverflow.com/questions/15435811/what-is-pep8s-e128-continuation-line-under-indented-for-visual-indent) regarding Line under indented for which he had commented and said “PEP-8 recommends you indent lines to the opening parentheses if you put anything on the first line, so it should either be indenting to the opening bracket.” This was enough to show me how to line up / indent my code properly and resolve PEP8 returning this as an issue.
 
 Thank you to Stuart Crang at the Learning People Global who I have discussed this project with also and who is looking forward to seeing this as well as my final project too. Stuart has been supportive and enthusiastic again for this project, like my previous projects that I have undertaken and thus far completed. 
 
