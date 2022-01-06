@@ -114,6 +114,7 @@ I hope that as outlined above that users who will use my website / service will 
 * I would like to be able to use the site logging in and contributing as easily as I currently do now.
 * I would like to be able to still search for the information out of the categories that I am looking for.
 
+
 #### As a returning user I would expect the questions asked would be:
 * Is the register / log in process as easily accessible as before when I first visited?
 * Is there anything I would be able to offer to this site / service?
@@ -183,11 +184,8 @@ My finished website / service will have a clean look and feel as well as an orga
 
 ## Design:
 For the design of my website / service I have used two basic information pages, home (index) and the about us page. These pages give the user the information about my website / service that they are viewing as well as the goals for them and my website / service that they are being provided. I have added a contact us page to allow users to get in touch and interact further should they wish to do so. Also incorporated are the following pages: manage category, all content, add content, edit submitted content, login and register pages. 
-
 * The Manage Category page will be admin only. This will allow an admin to add, edit and delete categories as the need arises. 
-
 * The Entries page will display to the user all the submitted content by all users. Here is where the user will be able to read others content, as well as edit and delete their own content.
-
 * The Login and Register pages will allow users to sign up, or if they are already signed up log into their account. Once registered or signed in the user will be able to head over to the main content page and post their thoughts.
 
 In my live site design that I produced in [Adobe InDesign](https://www.adobe.com/uk/products/indesign.html) giving a more finished look and feel to the site I have included the colour breakdowns for teal type colour used in the nav bar and the orange that has been used for the section headings and bullet points that are on the home page.as mentioned above the main teal type colour was chosen as it matched the home / index hero image, there is also black used in the hero image and so the text has been left as default black, whilst the headers for the different sections on the home and about page as well as the bullet points have been given an orange colour to liven the page up a bit more and introduce a secondary colour. Other colours include a pale mint colour for the hover of the Social Media links as well as a dark red and blue for the delete and edit buttons on the Manage Categories and the Entries pages.
@@ -390,34 +388,22 @@ The mapping and planning out for my database was constructed using [dbdiagram.io
 
 # Features:
 In this section I will briefly highlight some of the many existing features that that my site / service has to offer the user(s) that will use visit and use my site / service. I have also listed what I believe the benefit to the user that these features have.
-
 * My site / service enables the user to be use this on different devices such as computers, tablets and phones as this is fully responsive to fit and work on all of these. This enables the user to be able to use my site / service wherever they are, whenever they like.
 * The home and about have a similar layout to keep with consistency. There is also the hero image that has been added to each of the user pages to keep consistency as well as to make the page slightly attractive than just a form, or lots of text there. The only exceptions to this are the All Entries, the Add Category and Manage Category pages. The Add Category and Manage Categories pages I feel do not require a hero image as this is an admin only page, and therefore as it isn’t shown to the user would serve very little practical purpose in having an image. Although there is nothing to stop this later being added should I so wish to do so. The all entries page doesn’t have a hero image as I would like the user to focus mainly on reading the entries as well as adding, editing or even deleting their own entry or entries as they see fit.
 * The content has been laid out on different pages so that users are able to easily understand what they are expected to do when they are on said page. This also helps with the clean look and feel that I want to display to the user / users.
-
 * The Talking Tinnitus brand name in the nav bar has been enabled so that the user can click this in order to go to the home / index page of my site / service, giving the user(s) a positive user experience.
-
 * The nav bar is able to collapse thanks to the help of Materialize and Font Awesome for the bars / hamburger icon. When clicked this will extend from the right-hand side of the screen and allow the user to use the menu effectively and navigate my site / service easily.
-
 * There is a contact form that has been linked again to EmailJS so that emails come through from my site / service to my Gmail email address, which will enable me to answer any enquiries and messages effectively, resulting in another positive user experience.
-
 * Again like my previous Milestone Projects I have the Font Awesome social media icons that have been linked to the social media channels that I have set up specifically for my website / service. This is to give the whole thing a professional finished feel when these are clicked on. Users are able to like, comment, upload to the different social media channels that I have used, again helping with a positive interactive user experience.
 
 ##### The main categories that I will have for the user to be able to add content to are as follows:
 * App recommendations - Users are able to make recommendations about any apps that they use/ have used or find useful, or even apps that users should avoid and their reasons for these.
-
 * Helpful Organisations - If there are any organisations that users have been and tried and how they believe they helped them, any helpful hints they may wish to share with other users that may they believe be of benefit to them and help them.
-
 * Helpful Products - Lots of products are out there on the market, but not all help people with tinnitus. This will allow users to comment and say which are the ones that worked for them, and also which ones users should avoid wasting their money on.
-
 * Helpful Website Articles - Many websites exist, all with varying content, but weeding through everything and getting to the bits that users believe as and does help them is the key thing. If there is anything a user has found, whether it be research, try this, or even a news article which could help and inform someone with tinnitus makes the grade here.
-
 * Recommended Exercises - There are many exercises that can be done to help take our minds off of tinnitus. There may be something that is either quite intense such as tennis (where you have to really focus and read your opponent), or something more relaxing such as mindfulness or meditation that users are able to do that helps them that they can recommend to others. This will allow users to take the plunge into trying these activities as recommended by other users and see how this helps them. Some may have positive experiences, whereas some may not. Some may find that something such as tennis is not for them even though they are able to participate and are fully able to do it, but something not so intense such as mindfulness or meditation is better for them and helps them better.
-
 * Support Groups - There are many support groups out there for people with tinnitus, but if you don’t know where to look then you won’t be aware that there is support in your local area. This can help users when they search for support groups here to be able to find any that a user has added, or a link that contains all support groups to be able to locate the groups, as well as give a bit of n insight to others what support groups do and how they help.
-
 * Tinnitus Management - Under this category users are able to write about how they manage their tinnitus, outside of products and exercises, this could include activities and hobbies such as writing, art or even singing. Whatever the user believes helps them and how this helps them they will be able to include in this section.
-
 * Thoughts / Feelings - Its no secret that tinnitus has affected our thoughts and feelings, here we can discuss these and offer hope to those that maybe very negatively affected by their tinnitus. This section can be used to help others to change their perception of how tinnitus makes them feel and how they react to it.
 
 All sections can help to feed into the Social Media side of things. Many website articles are also shared on Social Media. I know that the British Tinnitus Association do this with the articles that they publish. I could take a snapshot of the comment in the category for example the thoughts / feelings, share this and give our help to them. In a way acting as a professional service to the user, whilst also drawing people both to the website and the various social media platforms that I have set up for this project.
@@ -427,36 +413,22 @@ With three of these categories I have named them Helpful … The reason for this
 
 ### Existing features:
 * The user is able to submit their name, email and message via the contact us form which is being handled by EmailJs, sending the email through to my Gmail account that has been set up specifically for this project.
-
 * The design has been simplified as much as possible in order to try and not only engage users, but with media queries added look good on small screens as well.
-
 * Using Materialize for to nav bar this will help when it comes to viewing my site / service on smaller devices also, as the nav bar links collapse into an expanding side menu which emerges from the right-hand side when the bars / hamburger icon is clicked. The code here has been used from the Task Manager Mini Project to help with this, but links and colours amended to the colours and page names of my site.
-
-
 * My site / service has an easy to follow theme and enables users to be taken on their journey to being able to go from home page to becoming a registered user and having an impact helping themselves and others by contributing to the site and categories that are there to be talked about.
-
 * All of the social media icons in the footer give the user to further engage with us. These go a light mint colour when they are hovered over to let the user know that these are active links, and so they can see which one they are on. Each of the links open up to the social media channel, group, page etc that I have set up for this project. Each social media page etc will open in a new tab so that users don’t lose my website / service.
-
 * As all categories are defined by an ObjectId this will not affect any previous entries from users if the admin account (after feedback received from the users) chooses to update / amend the category name. This means that all users posts are safe.
-
 * I have incorporated a favicon using two speech bubbles with a T in each. The letter T is what people refer to their tinnitus as, rather than say the word fully. This is because for some people the word is like a cat down a chalkboard and can bring on certain feelings / emotions. The two T’s in the speech bubbles that overlap was done as if there was a conversation being had about tinnitus by two people, but also Talking Tinnitus, so it has a double meaning here.
 
 
 ### Future features:
 * I would like to add something to make users feel valued, this could be sharing something that is of benefit they have put on my site / service on social media and tag them in thanking them for this input. 
-
 * Another way to make users feel valued is to have something like a like box that so that they can see the site owner is grateful for their input as well as others are also appreciative of their input.
-
 * I would like to add something that allows the user profile to receive notes from the admin about any changes or additions that have been made, or even something like a message to say thank you or even to mark special occasions such as Easter, Christmas, New Year etc or similar.
-
 * Something that I think would be a nice to have would be the ability for a user to customise their profile, maybe the option for a light / dark theme or a profile picture. This could then be implemented throughout the site.
-
 * Thinking of the profile picture this would be great if this could go next to their display name on their posts so that users who benefit from this user are able to verify that it is them (even though the username / display name will be unique and could potentially be searched in the search bar above all the entries).
-
 * A page where users are able to ask questions relating to something that may not have been posted, for example a new product and ask if anyone else has tried this or not?
-
 * In order to reach out further to my community audience it would be great to have something in the user’s profile that they are able to press a button for help and this sends through to an online operative in a messaging system, a bit like the Code Institute Tutor Support section. I guess the page were to grow exponentially then there would need to be operatives trained for this feature, but it would be great to have to further help the user(s) that bit further.
-
 * I would like to grow the page and add a section with any interesting articles that users deem to be helpful, rather than a user having to search using the search function through the All Entries page. This would further help the user to easily find what they’re looking for. This could be done with the logo of each site, like the British Tinnitus Association or NHS and then behind the article preview and link to get and view this article.
 
 
@@ -481,7 +453,6 @@ To build my fully functioning website / service I have used the languages, libra
 * [Twitter icon](https://fontawesome.com/v5.15/icons/twitter?style=brands)
 * [Instagram icon](https://fontawesome.com/v5.15/icons/instagram?style=brands)
 * [YouTube icon](https://fontawesome.com/v5.15/icons/youtube?style=brands)
-* [Arrow Up icon](https://fontawesome.com/v5.15/icons/arrow-up?style=solid)
 * [Send icon](https://fontawesome.com/v5.15/icons/paper-plane?style=regular)
 * [Log in](https://fontawesome.com/v5.15/icons/sign-in-alt?style=solid)
 * [Register](https://fontawesome.com/v5.15/icons/user-plus?style=solid)
@@ -490,7 +461,7 @@ To build my fully functioning website / service I have used the languages, libra
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/): using the Werkzeug functionality and Jinja templating package has allowed me to render content to the pages on my website / service. This allows less HTML5 by passing through templates such as the base html file like I have done, this contains the nav bar and footer layout across all pages within my website / service. This has allowed me to be able to work on one single HTML5 document, keep everything consistent and speed up development. The Flask framework also allows quick and easy connection to my database 
 * [MongoDB](https://www.mongodb.com/): used for relational and non relational database handling. This allowed me to be able to create, read, update and delete categories as well as manage a database of users entries. Users are also able to create, read, update and delete their own entries, as well as read others entries.
 * [EmailJS](https://www.emailjs.com/): used in order to hook up my contact section to my email. This is so that I am able to receive, questions or feedback from the users that have interacted with my site / service.
-* [JS Fiddle](https://jsfiddle.net/api/post/library/pure/): Used by EmailJS to test in a live environment how your contact form works. I have copied the code from here for the JavaScript, CSS and HTML to help me with the Contact Us page section and have attributed the code to coming from here in the comments above on all files. I have copied the code that EmailJS use and saved this into my own [JS Fiddle account](https://jsfiddle.net/AndrewH1188/5mehojx9/1/) so that this can be viewed if required. I have also credited that the code came from EmailJS above the code in my sendEmail.js, css and contact-us.html files. 
+* [JS Fiddle](https://jsfiddle.net/): Used by EmailJS to test in a live environment how your contact form works. I have copied the code from here for the JavaScript, CSS and HTML to help me with the Contact Us page section and have attributed the code to coming from here in the comments above on all files. I have copied the code that EmailJS use and saved this into my own [JS Fiddle account](https://jsfiddle.net/AndrewH1188/5mehojx9/1/) so that this can be viewed if required. I have also credited that the code came from EmailJS above the code in my sendEmail.js, css and contact-us.html files. 
 
 
 ## Tools:
@@ -498,7 +469,7 @@ To build my fully functioning website / service I have used the languages, libra
 * [Git](https://git-scm.com/): Git was used for version control having set up the GitPod Terminal to commit and push saved changes and commits to GitHub.
 * [GitHub](https://github.com/): GitHub was used to store the saved changes from my project after being pushed from Git.
 * [Heroku](https://www.heroku.com/): was used to deploy my website / service and make this live for all to explore and use.
-* [Balsamiq](https://balsamiq.com/): was used to create the initial [wireframes](assets/wireframes) and amend them to reflect the new feature(s).
+* [Balsamiq](https://balsamiq.com/): was used to create the initial [wireframes](assets/designs/wireframes) and amend them to reflect the new feature(s).
 * [DB Diagram](https://dbdiagram.io/home): used to create an entry relationship diagram for my database.
 * [Random Key Gen](https://randomkeygen.com/): used to get a random generated key for my Secret Key. 
 
@@ -528,7 +499,7 @@ To build my fully functioning website / service I have used the languages, libra
 Just like I did with my War Heroes Remembered Milestone 2 Project, I decided to set up Talking Tinnitus on the relevant social media channels as listed below:
 * Facebook - [Talking Tinnitus](https://www.facebook.com/groups/417947383216864/).
 * Twitter - [Talking Tinnitus](https://twitter.com/talk_tinnitus) with the handle of @Talk_Tinnitus. 
-* Instagram - [Talking Tinnitus](https:/www.instagram.com/talking_tinnitus/) with the handle of talking_tinnitus.
+* Instagram - [Talking Tinnitus](https://www.instagram.com/talking_tinnitus/) with the handle of talking_tinnitus.
 * YouTube - [Talking Tinnitus](https://www.youtube.com/channel/UCrU99cJK2_zFsmvo4YzWilA).
 
 All of the above links to the channels/accounts/groups were set up so that the icons in the footer would have a proper landing page that the icon link takes you too. This gives the site a bit more of a professional look and feel.
@@ -564,7 +535,6 @@ Included below are images that show the different page layouts on a mobile devic
 
 ### Home page
 Using Materialize meant that setting up the nav bar for this project was pretty straightforward, which was a big help in development time saved, but when it came to the footer section it was a different story. This was because I had issues with the alignment of the footer Social Media Icons. After looking at my War Heroes Remembered Milestone 2 project and using the sm-icons class I was able to get the icons to move from aligning vertically down the page to centrally and horizontally line up, and with the help of some CSS they were perfectly positioned as I would like them to be. This also works on both desktop, tablet and mobile screens nicely without further help from CSS commands. I had to change the layout of original design where the two sections are on the home page as they were not displaying as I would have liked them to have looked when viewing on smaller devices. Having changed the layout of these sections the home page now displays and look the same on any device. 
-
 ![Home Mobile Top](assets/testing/home-mobile-top.jpg)
 
 ![Home Mobile Middle](assets/testing/home-mobile-middle.jpg)
@@ -572,10 +542,8 @@ Using Materialize meant that setting up the nav bar for this project was pretty 
 ![Home Mobile Bottom](assets/testing/home-mobile-bottom.jpg)
 
 
-
 ### About Us
 I had to change the layout of original design where the two sections are on the about us page as they were not displaying as I would have liked them to have looked when viewing on smaller devices. Having changed the layout of these sections the about us page now displays and look the same on any device. I set up the links to sign up and Log in to help users navigate there quickly and give them guidance to help them navigate a bit easier. I changed the colours to the ones that I have as the theme with the teal type for the link colour and the mint green for the hovered over colour so a user knows they have hovered and the link works. On the About Us page it instructs a user how we can help them, and suggestions that they can try to help themselves.
-
 ![About Us Mobile Top](assets/testing/about-us-mobile-top.jpg)
 
 ![About Us Mobile Middle](assets/testing/about-us-mobile-middle.jpg)
@@ -585,81 +553,67 @@ I had to change the layout of original design where the two sections are on the 
 
 ### Register
 Using the Code Institute Task Manager Materialize layout I have kept the register / sign up for an account pretty simple for the user, as it should be. I have tested this across desktop, mobile and tablet to ensure that this works as well as displays how I would like it to display. Once registered the user is able to go and use the site / service, look around and start their journey further by creating their own helpful entry, update or delete their entry and read others entries. I have requested that users add their email address as an extra layer of security to their profile as their email address is not displayed on any entry they post, but their user (display name) is. I have tested the Register process on desktop, tablet and mobile and all works fine here, this is important as new users may want to sign up so that they can view or contribute to this service and help others.
-
 ![Register Mobile](assets/testing/register-mobile.jpg)
 
 
 ### Log in
 Using the Code Institute Task Manager Materialize layout I have kept the login pretty simple for the user, as it should be. I have tested this across desktop, mobile and tablet to ensure that this works as well as displays how I would like it to display. When the user logs in this takes them to their profile, they are then able to navigate around the rest of the site to add their entry or view others entries as they please. I have tested the Login process on desktop, tablet and mobile and all works fine here, this is important as users may want to log in to see others entries or even add their own from wherever they are in the world using whatever device they have.
-
 ![Log in Mobile](assets/testing/log-in-mobile.jpg)
 
 
 ### User Profile
 The user profile is very basic, although I decided to add a section for the best user comment that has been submitted. This is a way to showcase and recognise the users for their input as well as help others who view this that may have missed their input. Using Materialize for this allows the content to be device friendly as it can be viewed on all screen sizes meaning that the user isn’t restricted to what they can use this service on.
-
 ![User Profile Mobile](assets/testing/profile-mobile.jpg)
 
 
 ### Community Entries
 When a user looks at the Community Entries page they are shown all entries from all registered users.
-
 ![Searching Community Entries 1](assets/testing/all-community-entries.jpg)
 
 A user is able to search for entries but should the entry they have searched for not be shown or no results found then they will be shown a message that no results were found to please search again. 
-
 ![Searching Community Entries 1](assets/testing/community-entries-search.jpg)
 
 However when there is an entry or entries that matches the user’s search, the user is shown the entry or matching keyword entries as they would expect. 
-
 ![Searching Community Entries 2](assets/testing/community-entries-search-1.jpg)
 
 ![Searching Community Entries 3](assets/testing/community-entries-search-2.jpg)
 
 I have also tested this page to make sure that everything looks, displays and functions as it should, and I am happy with the results. This page also uses the Code Institute Task Manager Materialize layout.
-
 ![Community Entries Mobile](assets/testing/community-entries-mobile.jpg)
 
 
 ### Add Entry
 The add entry page again is a simple process and uses the Code Institute Task Manager Materialize layout. Using this means that the user can quickly add the entry they would like to add into the right category and submit this for other registered users to see. I have added entries on desktop, mobile and tablet check to see if this was working all ok, and all was working fine. 
-
 ![Add Entry Mobile](assets/testing/submit-entry-mobile.jpg)
 
 
 ### Edit Entry - (User specific, only a user can edit their own entry)
 The edit entry again is a simple process and uses the Code Institute Task Manager Materialize layout. Using this means that the user can quickly edit their entry by either moving the category that this is in (by selecting a new category), or update what they have there, for example the user submits an entry and it either doesn’t make sense when they read it back, there are spelling mistakes or just a general update for any reason. I have added entries on desktop, mobile and tablet check to see if this was working all ok, and all was working fine. 
-
 ![Edit Entry Mobile](assets/testing/edit-entry-mobile.jpg)
 
 
 ### Delete Entry - (User specific, only a user can delete their own entry)
 Like add and edit entry pages the delete entry also uses the Code Institute Task Manager Materialize layout. I have tested the delete function and Modal to see whether or not the test entries that I created but no longer require can be removed. I originally had an issue when adding in the Modal asking if a user is sure they wish to delete. The issue was that not defining the entry_.id meant that the first entry all the time was deleted. After having help form Igor at Tutor Support and him pointing this out I was able to amend this and test again. I tested on all devices and different screen sizes and this worked and looked fine.
-
 ![Delete Entry Mobile](assets/testing/delete-entry-mobile.jpg)
 
 
 ### Manage Categories - ADMIN ONLY
 Like the add, edit, delete and community entries this page also uses the Code Institute Task Manager Materialize layout. This page only is allowed to be viewed and maintained by the admin of this site. I have viewed this page on all devices and the layout works fine and is tidy and easy to use for an admin user.
-
 ![Manage Categories Mobile](assets/testing/manage-categories-mobile.jpg)
 
 
 ### Add Category - ADMIN ONLY
 Like all other pages that have used the Code Institute Task Manager Materialize layout, this page is no exception. I have logged into the admin user account (as this is the only account that can access this page) on all devices and have managed to successfully add a test category.
-
 ![Manage Categories Edit Mobile](assets/testing/add-category-mobile.jpg)
 
 
 ### Edit Category - ADMIN ONLY
 Using the test category I have been able to update the name of this across all devices successfully. Like every page on my site / service the mobile responsiveness is nice and clear, making this easy to use for the admin.
-
 ![Manage Categories Edit Mobile](assets/testing/edit-category-mobile.jpg)
 
 
 ### Delete Category - ADMIN ONLY
 When testing this function I had the same trouble as I’d had with the delete entry page where the category that was selected for deletion had the modal pop up warning me of the consequences of deleting this category, when I said I was happy for this to be deleted the first category was deleted. This was solved thanks to Igor at Code Institute Tutor Support when I asked about the delete entry problem, again adding the category._id to the modal to tell it that the test category that was selected was the one that I wanted to delete and not the first category as it had been doing. I tested this across all devices to ensure that this works, and all worked well with the right category being deleted. Looking at the delete category modal on a mobile looks fine as well as viewing at this on other devices too.
-
 ![Manage Categories Delete Mobile](assets/testing/delete-category-mobile.jpg)
 
 
@@ -671,7 +625,6 @@ I have tried to leave the form blank and submit this as shown below, but the cod
 To get the form asking for users to add a name, email and a message I added the required to all the fields to stop users leaving this blank, but also in terms of the email field I added the pattern that looks out for the right information in terms of the @ and. Being added and in the right place. 
 
 Having tested this to see if there was any way that I could think of to get round not having to input information, or the wrong information in the name and email section thankfully all failed. This means that my site from the contact form point has the defensive design added to it, but not only this it works as intended as shown in the last image below. I have tested the contact form across all devices to ensure that I can compose and send as well as make sure that I receive the message that has been sent and all worked out fine. Also the responsiveness of this has been tested and looks great on any device.
-
 ![Contact Form Blank Testing 1](assets/testing/contact-form-defensive1.jpg)
 
 ![Contact Form Blank Testing 2](assets/testing/contact-form-defensive2.jpg)
@@ -683,7 +636,6 @@ Having tested this to see if there was any way that I could think of to get roun
 ![Contact Us](assets/testing/contact-us-mobile.jpg)
 
 #### Contact form message sent and email received:
-
 ![Contact Form Testing with received email](assets/testing/test-contact-form.jpg)
 
 
@@ -699,7 +651,6 @@ I ran the HTML of my site through the [W3 HTML Validator](https://validator.w3.o
 
 #### First Test:
 On the first test I was getting the following errors:
-
 ![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-top.jpg)
 
 ![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-top2.jpg)
@@ -709,7 +660,6 @@ On the first test I was getting the following errors:
 #### Final Testing:
 Once I had tidied up these warnings and errors I was left with the following:
 [W3 HTML Results](https://validator.w3.org/nu/?doc=http%3A%2F%2Ftalking-tinnitus.herokuapp.com%2F)
-
 ![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-final.jpg)
 
 I double-checked that the above section warnings were OK and on [Stack Overflow](https://stackoverflow.com/questions/24155024/w3c-html-validation-error-section-lacks-heading-consider-using-h2-h6-elements) there a comment that says about alter this or ignore this as it is ok. I also double-checked and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/non-normative) also says that it is not needed to be followed as a rule.
@@ -717,7 +667,6 @@ I double-checked that the above section warnings were OK and on [Stack Overflow]
 
 ### CSS
 I ran the CSS of my site through the [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) and this returned the following results:
-
 [W3 CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftalking-tinnitus.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ![W3 CSS Testing](assets/testing/validator/talking-tinnitus-w3-css-testing.jpg)
@@ -726,20 +675,20 @@ I ran the CSS of my site through the [W3 CSS Validator](https://jigsaw.w3.org/cs
 ### JSHint 
 I ran the JavaScript that is being used in my site through the [JSHint](https://jshint.com/) and this returned the following results:
 
+
 ### EmailJS:
 ![JSHint sendEmail](assets/testing/jshint/talking-tinnitus-jshint-sendemail-testing.jpg)
 
 #### Entries (Entries Collapsible, Navigation, Modal):
 ![JSHint sendEmail](assets/testing/jshint/talking-tinnitus-jshint-entries-testing.jpg)
 
+
 ### PEP8
 I ran the Python of my site through the [PEP8](http://pep8online.com/) site and this returned the following results:
 The results before were showing four where the line was too long, four where there was trailing white space (this was because I had knocked some of the code on a new line so that there were not too many characters to a line and had forgotten to delete the space after the comma), three where there wasn’t enough indentation. After a quick Google to see how to fix this I came across the question on [Stack Overflow](https://stackoverflow.com/questions/15435811/what-is-pep8s-e128-continuation-line-under-indented-for-visual-indent) which had been answered by Gareth Latty who said “PEP-8 recommends you indent lines to the opening parentheses if you put anything on the first line, so it should either be indenting to the opening bracket.” This was enough to show me how to line up / indent my code properly and resolve PEP8 returning this as an issue.
-
 ![PEP8 Results Before](assets/testing/pep8/pep8-results-before.jpg)
 
 After I had successfully followed the instructions from PEP8 showing me where there were the issues the results returned as All right:
-
 ![PEP8 Results After](assets/testing/pep8/pep8-results-after.jpg)
 
 
@@ -761,13 +710,11 @@ I have tested my site using Lighthouse in Google Chrome Dev Tools and my results
 #### Log In:
 ![Log In Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-login-desktop.jpg)
 
-
 ![Log In Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-login-mobile.jpg)
 
 
 #### Register:
 ![Register Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-register-sign-up-desktop.jpg)
-
 
 ![Register Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-register-sign-up-mobile-1.jpg)
 
@@ -778,22 +725,17 @@ Having had the negative results above for the Register page I did my little tric
 #### User Profile:
 ![User Profile Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-user-profile-desktop.jpg)
 
-
 ![User Profile Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-user-profile-mobile.jpg)
 
 
 #### Add Entry:
 On the first test the desktop version was all ok, the problem was when I tested the desktop version that I found the problem with the performance. The reason for this is that despite using TinyPNG the file size hadn’t been reduced enough to be satisfactory for mobile devices. 
-
 ![Add Entry Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-user-profile-mobile.jpg)
-
 
 ![Add Entry Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-add-entry-mobile-1.jpg)
 
 I managed to reduce the file size of the image by placing this in Adobe Photoshop, Selected Image Size, then reduced the resolution down to 200 Pixels/inch. I saved this using the Export, Save Web Legacy. I then loaded this up to TinyPNG which allowed me to reduce the file size a bit further. I placed this back into Adobe Photoshop where I added the text over the speech bubbles and applied the same size to the image so that this matched my other hero images, then saved it out using the Export, Save Web Legacy again, although I chose to save the quality at 50 and the Percent at 50. For the last time I uploaded this into TinyPNG which helped to further reduce the file size further. I then tested the mobile version first in Lighthouse to see if anything had changed at all. I was happy to see that not only the results had changed but from a 40 red warning to jump to 68 an ok warning was great to see. The screenshot of the new results can be seen below:
-
 ![Add Entry Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-add-entry-desktop-2.jpg)
-
 
 ![Add Entry Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-add-entry-mobile-2.jpg)
 
@@ -813,20 +755,17 @@ I managed to reduce the file size of the image by placing this in Adobe Photosho
 #### Manage Categories:
 ![Manage Categories - ADMIN ONLY Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-manage-categories-desktop.jpg)
 
-
 ![Manage Categories - ADMIN ONLY Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-manage-categories-mobile.jpg)
 
 
 #### Add Category - ADMIN ONLY
 ![Add Category - ADMIN ONLY Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-add-category-desktop.jpg)
 
-
 ![Add Category - ADMIN ONLY Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-add-category-mobile.jpg)
 
 
 #### Edit Category - ADMIN ONLY
 ![Edit Category - ADMIN ONLY Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-edit-category-desktop.jpg)
-
 
 ![Edit Category - ADMIN ONLY Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-edit-category-mobile.jpg)
 
@@ -836,13 +775,11 @@ On the first test the desktop version was all ok, the problem was when I tested 
 
 ![Contact Us Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-contact-us-desktop-1.jpg)
 
-
 ![Contact Us Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-contact-us-mobile-1.jpg)
 
 I managed to reduce the file size of the image the same way as I had done with the Submit an Entry image. I placed this in Adobe Photoshop, Selected Image Size, then reduced the resolution down to 200 Pixels/inch. I saved this using the Export, Save Web Legacy. I then loaded this up to TinyPNG which allowed me to reduce the file size a bit further. I placed this back into Adobe Photoshop where I was able to size the image correctly to the same size as my other hero image and saved it out using the Export, Save Web Legacy again, although I chose to save the quality at 50 and the Percent at 50. For the last time I uploaded this into TinyPNG which helped to further reduce the file size further. I then tested the mobile version first in Lighthouse to see if anything had changed at all. I was happy to see that not only the results had changed but from a 40 red warning to jump to 68 an ok warning was great to see. The screenshot of the new results can be seen below:
 
 ![Contact Us Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-contact-us-desktop-2.jpg)
-
 
 ![Contact Us Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-contact-us-mobile-2.jpg)
 
@@ -851,7 +788,6 @@ I managed to reduce the file size of the image the same way as I had done with t
 1. When I added the Python code for the home page I was shown this: ![Jinja error](assets/bugs/base-jinja-error.jpg) I tried looking for help online how to connect the home page in Python as this is where I thought the error was coming from. It was only when I’d started the steps for tutor support that I thought the Python seems fine, so I re looked at what Jinja was telling me with regard to where the error is and where this is coming from again, I checked the HTML file to see if the problem was there as Jinja mentioned base.html. I looked at the get entries page and looked at the base.html command and saw that I had missed the quote marks around the “base.html”. Having added the quote marks in and checking this works the Jinja error disappeared and my home page was now showing. This then meant that I could cancel the help from Tutor Support as I’d found the bug and squished it.
 
 2. There was an issue with the Entry Name not updating when this was edited. When the edit button was clicked the entry name was missing.
-
 ![Edit Entry None](assets/bugs/edit-entry-none.jpg)
 
 When I added an entry name and pressed the edit button it would show the name as None. 
@@ -860,11 +796,13 @@ On inspection looking at the HTML and Python code as well as referencing my Mong
 
 3. Although this is not really a bug there was an issue that stopped the entries having an entry date being added to it when the user creates an entry and submits this. Working with my superb Mentor Caleb the issue was the code for this. I’d imported the datetime function from date as I should have done, the created_by: was correct, however I had: 
 ![date](assets/bugs/date.jpg) 
+
 when I should've had: 
-![Created date](assets/bugs/created-date.jpg) When this was updated and an entry added the date showed as I would have liked it to.
 
+![Created date](assets/bugs/created-date.jpg) 
+
+When this was updated and an entry added the date showed as I would have liked it to.
 4. When I created the base HTML file I added the social media icons to the footer section as I would usually do. As always they displayed vertically down the page, but I wanted these to be centered and horizontal across the page. I tried to add display: inline-block to at least get the icons to display horizontally. Unfortunately this didn’t work. I tried to display them centered on the page as a starting point and then work out why they wouldn’t horizontally display. I managed to get this to work but the horizontal layout wasn’t to be. I revisited my War Heroes Remembered Milestone 2 project to see how I did this and copied the section with the social media icons in, updated the links and still had no joy. I looked and saw that I had given the  its own class of social media, like I had done in my War Heroes Remembered Milestone 2 project. Although I had the class on the  I hadn’t created a separate class like I had done before. On creating the class of sm-icons then adding the CSS styling of display: inline; and the Materialize command of centre-align I was able to achieve the desired result.
-
 ![Social Media Command 1](assets/bugs/social-media-solution.jpg)
 
 ![Social Media Command 2](assets/bugs/social-media-solution-sm.jpg)
@@ -873,11 +811,9 @@ when I should've had:
 ![Index Created](assets/bugs/index-mongodb.jpg)
 
 6. Update and Delete were not working when a user tries to use these buttons. Again with Caleb my mentor’s help we did a debug on this to work out where the issue was coming from. Everything seemed to be fine code wise but the debug using the print statement gave us an error of: TypeError: 'Collection' object is not callable. If you meant to call the 'update' method on a 'Collection' object it is failing because no such method exists. Copying and pasting this into Google this came up with the following result [Stack Overflow - Pymongo error](https://stackoverflow.com/questions/28981718/collection-object-is-not-callable-error-with-pymongo) at the top of the page. Having looked at this and then looked at the requirements.txt file, and cross-referencing it with the Code Institute Task Manager Mini Project it was clear to see that the error lied with the versions being used for applications such as pymongo. 
-
 ![Requirements.txt](assets/bugs/requirements-txt-versions-required.jpg)
 
 7. I managed to get a Modal from Materialize and display the warning error / message about deleting and the consequences this has (it cannot be undone). When selecting the Cancel button on both Admin and User accounts this worked and took me back to the page that I was on. However when deleting the Category (as an Admin user) I encountered a problem. It was working but it was deleting the first category on the page and not the category that was selected for deletion. I thought this could be down to the there being a 1 which was displaying the categories in alphabetical order, so I decided to remove this, but unfortunately this was not the solution to the problem. I also tried this with the Community Entries page as both Admin and User, but this also had the same affect as the Manage Categories page where the first Community Entry was deleted and not the one selected. I looked at others code who have done the same thing. The trouble was that I was a bit confused as this may break this completely so sought help from Igor at Tutor Support. The problem turned out to be that although I had the href as “modal1” I didn’t include the -{{ category._id }} or -{{ entry._id }}, so this meant that all first instance entries and categories were deleted, but with Igor’s helps this is now not the case and the correct entry or category is now deleted and another bug squished.
-
 ![Modal Warning](assets/bugs/modal-warning.jpg)
 
 ![Successfully Deleted Flash Message](assets/bugs/successfully-deleted-flash-message.jpg)
@@ -892,7 +828,6 @@ I originally didn’t realise why this was displaying. It was only after dinner 
 9. Having tested the sign in and register process I discovered that a user as long as they had the right username and password was able to log in. Likewise, if a user who was already registered with their email address they could also reuse their email address in order to create another account. I had help from Igor at Tutor Support to fix the login issue. I had assistance from Ed at Tutor Support and after trying many different variations on the same sort of theme I was able to fix this issue. This means that for the login process the right email, username and password must be entered in order to access your account. With the register process if the user tries to sign up for more than one account using the same email address that they are not able to do so.
 
 10.  In the console I had an error saying that mentioned the sendEmail.js file cannot read the properties of null (reading ‘addEventListener’)
-
 ![sendEmail JS Console Error](assets/bugs/send-emailjs-console-warning.jpg)
 
 At first, I thought this was something to do with it being an error in EmailJS, but after my mentor session with Caleb we checked and the reason this was happening was because the script for the EmailJS was not being seen as it was reading this from the base.html file. Once this was taken out of the base.html file and added in the contact-us.html file the console error disappeared.
@@ -915,7 +850,6 @@ If you would like to run my project locally you are more than welcome to do so. 
 6. You will need to install the required packages using the pip install -r requirements.txt command in the terminal. Installing the requirements.txt file will help when you run this on Heroku.
 7. You will need to create a Procfile, this is a special file that tells Heroku how to run the project that you have created. To make a Procfile you will need to type the following in the terminal:
 * echo web: python app.py > Procfile
-
 8. I have named my Python file app.py, but if you have named yours something different then you will need to put in the name of your file as this will not work if you don't have a file of the same name. Make sure that you have a capital P for Procfile and press the return / enter key. This will create you a Procfile which will show in the Explorer side panel (if you are using GitPod like I am).
 9. Open up the new Procfile that you have created and delete the blank line as this can sometimes cause issues further on.
 
@@ -932,11 +866,11 @@ To deploy to Heroku please follow these steps:
 8. Once your GitHub repository has been found click the connect button.
 9. Before enabling the automatic deploy you will need to head over to the Settings part of Heroku and scroll down to the Config Vars section.
 10. In the Config Vars section select Reveal Config Vars. In here I added the following values:
-* Key: IP, Value: (Value from your MongoDB IP that was added when you set up your database)
-* Key: PORT, Value: 5000
-* Key: MONGO_DBNAME, Value: (The name of your database that you would like to connect to in MongoDB)
-* Key: MONGO_URI, Value: (This can be found in MongoDB, Clusters, Connect, Connect to your application. You will need to substitute the database name and password).
-* * Key: SECRET_KEY, Value: (For this I used the Fort Knox Passwords from [randomkeygen](https://randomkeygen.com/) although you can use which every you would like to). Make sure that when you add this into your env.py file that this is in the gitignore file as your Secret Key should not be shared with anyone.
+    * Key: IP, Value: (Value from your MongoDB IP that was added when you set up your database)
+    * Key: PORT, Value: 5000
+    * Key: MONGO_DBNAME, Value: (The name of your database that you would like to connect to in MongoDB)
+    * Key: MONGO_URI, Value: (This can be found in MongoDB, Clusters, Connect, Connect to your application. You will need to substitute the database name and password).
+    * * Key: SECRET_KEY, Value: (For this I used the Fort Knox Passwords from [randomkeygen](https://randomkeygen.com/) although you can use which every you would like to). Make sure that when you add this into your env.py file that this is in the gitignore file as your Secret Key should not be shared with anyone.
 11. You are now able to go back to the Deployment section and scroll down to the Automatic Deploy section. Select the Automatic Deploy button. The main branch will be the default setting and this is absolutely fine to use.
 12. You can now head on down to the Manual Deploy which will be automatically set to main. Select Deploy Branch button and you will be able to see that your project has been successfully deployed and the link to your site.
 
@@ -959,6 +893,7 @@ To connect to your MongoDB please follow these steps:
 2. You will be shown the options of connect with MongoDB Shell, Connect your application and Connect using MongoDB Compass. If you are using an environment like GitPod / GitHub then select Connect your application button. Here you will be presented with the following ![Connect to Cluster](assets/images/mongo/mongo-setup.jpg)
 3. You will need to replace the field with your password that you entered for your username of your database (not the password that was used to sign up / register for your MongoDB account). You will also need to replace the name of the database as it shows you with the name of your database.
 4. The details that we can see in the image of section point 3 above will be used to add to your env.py which is in your gitignore file as this contains the sensitive information as mentioned before that you do not want to push to GitHub.
+
 
 #### EmailJS set up:
 Using EmailJS will allow you as the website designer and coder to link your contact form to send emails through to your email address. This is simple to set up. If you would also like to use EmailJS on your form on your project then please follow the simple steps below:
@@ -985,7 +920,7 @@ If you are using the Jinja templating language like I am then you will need to a
 * [Adobe Stock](https://stock.adobe.com/uk/) for once again having superb images that I have been able to pay for and download to make my website / service look amazing. All images and their links have been mentioned and owners credited in both the Imagery and Media sections.
 * [101 Computing.net](https://www.101computing.net/html-how-to-add-a-favicon/) I reused this code from the first Milestone Project Go Tennis System and my second Milestone Project War Heroes Remembered where I added this code from 101 Computing.net to enable a favicon to display across my site on all pages.
 * [Materialize](https://materializecss.com/) has allowed me to create the nav bar and footer for the base template as well as help me to style the home and about pages. Materialize has also been used for elements such as the forms on the contact us, log in, registration, cards for the categories (admin only), the entries with the drop down, buttons and the nav bar. With the nav bar when it comes to viewing my site / service on smaller devices, the nav bar links collapse into an expanding side menu which emerges from the right-hand side when the bars / hamburger icon is clicked. The code here has been used from the Task Manager Mini Project to help with this, but links and colours amended to the colours and page names of my site
-* [JS Fiddle](https://jsfiddle.net/api/post/library/pure/): Used by EmailJS to test in a live environment how your contact form works. I have copied the code from here for the JavaScript, CSS and HTML to help me with the Contact Us page section and have attributed the code to coming from here in the comments above on all files. I have saved this code from EmailJS into my own [JS Fiddle account](https://jsfiddle.net/AndrewH1188/5mehojx9/1/).
+* [JS Fiddle](https://jsfiddle.net/): Used by EmailJS to test in a live environment how your contact form works. I have copied the code from here for the JavaScript, CSS and HTML to help me with the Contact Us page section and have attributed the code to coming from here in the comments above on all files. I have saved this code from EmailJS into my own [JS Fiddle account](https://jsfiddle.net/AndrewH1188/5mehojx9/1/).
 * [W3 Schools](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_pattern4): Used for the below code to enable users input an email address and not just anything random into the input fields. I added the required to stop users being able to bypass this by entering nothing into the fields that require an email address on the register, log in and contact us sections. ![W3 Schools email pattern](assets/help/w3-schools-email.jpg)
 * [Stack Overflow](https://stackoverflow.com/questions/51134459/are-you-sure-want-to-delete) I used Stack Overflow to find out how to display the message to the user about deleting the entry and then have reused this for the Admin section for Manage Categories too.
 * [Stack Overflow - Mongo DB - Text Query](https://stackoverflow.com/questions/59920729/index-is-not-getting-created-text-index-required-for-text-query-mongoose) I used Stack Overflow to find out how to rectify the issue that was being caused by the search function not working.
