@@ -194,68 +194,66 @@ The images have been chosen to fit in with my website / service and to accompany
 
 The original mock designs that I produced in Adobe InDesign can be found below:
 
-#### Home / index page
+### Home / index page
 ![Home index page](assets/designs/talking-tinnitus-home-page.jpg)
-#### Home / index mobile layout
+### Home / index mobile layout
 ![Home index page mobile version](assets/designs/talking-tinnitus-home-mobile.jpg)
 
-#### About Us
+### About Us
 ![About us page](assets/designs/talking-tinnitus-about-us.jpg)
-#### About Us mobile layout
+### About Us mobile layout
 ![About us page mobile version](assets/designs/talking-tinnitus-about-us-mobile.jpg)
 
-#### Log in
+### Log in
 ![Login page](assets/designs/talking-tinnitus-log-in1.jpg) Ideal design for this page.
-#### Log in mobile layout
+### Log in mobile layout
 ![Login page mobile version](assets/designs/talking-tinnitus-log-in-mobile.jpg)
 ![Login page 2](assets/designs/talking-tinnitus-log-in2.jpg)
 
-#### Register
+### Register
 ![Register page](assets/designs/talking-tinnitus-register1.jpg) Ideal design for this page.
 ![Register page 2](assets/designs/talking-tinnitus-register2.jpg)
-#### Register mobile layout
+### Register mobile layout
 ![Register page mobile version](assets/designs/talking-tinnitus-register-mobile.jpg)
 
-#### My Profile
+### My Profile
 ![My Profile page](assets/designs/talking-tinnitus-my-profile.jpg)
 #### My Profile mobile layout
 ![My Profile page mobile version](assets/designs/talking-tinnitus-profile-mobile.jpg)
 
-#### Submit Entry
+### Submit Entry
 ![Submit Entry page](assets/designs/talking-tinnitus-submit-entry1.jpg) Ideal design for this page.
 ![Submit Entry page 2](assets/designs/talking-tinnitus-submit-entry2.jpg)
-#### Submit Entry mobile layout
+### Submit Entry mobile layout
 ![Submit Entry page mobile version](assets/designs/talking-tinnitus-submit-entry-mobile.jpg)
 
-
-#### All Entries
+### All Entries
 ![All Entries page](assets/designs/talking-tinnitus-all-entries.jpg)
-#### All Entries mobile layout
+### All Entries mobile layout
 ![All Entries page mobile version](assets/designs/talking-tinnitus-all-entries-mobile.jpg)
 
-#### Contact Us
+### Contact Us
 ![Contact us page](assets/designs/talking-tinnitus-contact-us.jpg)
 #### Contact Us mobile layout
 ![Contact us page mobile version](assets/designs/talking-tinnitus-contact-mobile.jpg)
 
-#### Manage Categories - ADMIN ONLY
+### Manage Categories - ADMIN ONLY
 ![Manage categories ADMIN ONLY page](assets/designs/talking-tinnitus-manage-categories.jpg)
-#### Manage Categories - ADMIN ONLY mobile layout
+### Manage Categories - ADMIN ONLY mobile layout
 ![Manage categories ADMIN ONLY page mobile version](assets/designs/talking-tinnitus-manage-categories-mobile.jpg)
 
-#### Add Category - ADMIN ONLY 
+### Add Category - ADMIN ONLY 
 ![Add category ADMIN ONLY page](assets/designs/talking-tinnitus-add-category.jpg)
-#### Add Category - ADMIN ONLY mobile layout
+### Add Category - ADMIN ONLY mobile layout
 ![Add category ADMIN ONLY page mobile version](assets/designs/talking-tinnitus-add-category-mobile.jpg)
 
-
-#### My Design instructions
+### My Design instructions
 ![Design Instructions](assets/designs/talking-tinnitus-design-instructions.jpg)
 
-#### Links for entries
+### Links for entries
 ![Links for entries](assets/designs/talking-tinnitus-links-for-entries.jpg)
 
-#### Code instruction
+### Code instruction
 ![Code Instruction](assets/designs/talking-tinnitus-code-instruction.jpg)
 
 
@@ -492,7 +490,8 @@ To build my fully functioning website / service I have used the languages, libra
 * [Prettier.io](https://prettier.io/) was used to make my CSS look neat, tidy and easier to follow / read.
 * [Onlinespellcheck.com](https://www.online-spellcheck.com/) I have run my README.md through here to check for any spelling or grammar errors.
 * [Stack Overflow](https://stackoverflow.com/questions/51134459/are-you-sure-want-to-delete) I used Stack Overflow to find out how to display the message to the user about deleting the entry and then have reused this for the Admin section for manage categories too.
-* [W3 Schools](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_pattern4): Used for the below code to enable users input an email address and not just anything random into the input fields. I added the required to stop users being able to bypass this by entering nothing into the fields that require an email address on the register, log in and contact us sections. [w3 Schools email pattern](assets/help/w3-schools-email.jpg)
+* [W3 Schools](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_pattern4): Used for the below code to enable users input an email address and not just anything random into the input fields. I added the required to stop users being able to bypass this by entering nothing into the fields that require an email address on the register, log in and contact us sections. 
+![w3 Schools email pattern](assets/help/w3-schools-email.jpg)
 
 
 ### Social Media:
@@ -508,19 +507,19 @@ All groups/channels/ pages etc have the same picture as the home page hero image
 
 I have added a post that features the What is Tinnitus from my website / service that I have written, designed and am I coding on Twitter, Facebook and Instagram to make a start and show that the Social media also is part of my design / “brand” for Talking Tinnitus. 
 
-#### Facebook
+### Facebook
 ![Facebook](assets/images/social-media/talking-tinnitus-facebook.jpg)
 
-#### Facebook post
+### Facebook post
 ![Facebook Post](assets/images/social-media/talking-tinnitus-facebook-post.jpg)
 
-#### Twitter
+### Twitter
 ![Twitter](assets/images/social-media/talking-tinnitus-twitter.jpg)
 
-#### Instagram
+### Instagram
 ![Instagram](assets/images/social-media/talking-tinnitus-instagram.jpg)
 
-#### Youtube
+### Youtube
 ![Youtube](assets/images/social-media/talking-tinnitus-youtube.jpg)
 
 
@@ -536,18 +535,14 @@ Included below are images that show the different page layouts on a mobile devic
 ### Home page
 Using Materialize meant that setting up the nav bar for this project was pretty straightforward, which was a big help in development time saved, but when it came to the footer section it was a different story. This was because I had issues with the alignment of the footer Social Media Icons. After looking at my War Heroes Remembered Milestone 2 project and using the sm-icons class I was able to get the icons to move from aligning vertically down the page to centrally and horizontally line up, and with the help of some CSS they were perfectly positioned as I would like them to be. This also works on both desktop, tablet and mobile screens nicely without further help from CSS commands. I had to change the layout of original design where the two sections are on the home page as they were not displaying as I would have liked them to have looked when viewing on smaller devices. Having changed the layout of these sections the home page now displays and look the same on any device. 
 ![Home Mobile Top](assets/testing/home-mobile-top.jpg)
-
 ![Home Mobile Middle](assets/testing/home-mobile-middle.jpg)
-
 ![Home Mobile Bottom](assets/testing/home-mobile-bottom.jpg)
 
 
 ### About Us
 I had to change the layout of original design where the two sections are on the about us page as they were not displaying as I would have liked them to have looked when viewing on smaller devices. Having changed the layout of these sections the about us page now displays and look the same on any device. I set up the links to sign up and Log in to help users navigate there quickly and give them guidance to help them navigate a bit easier. I changed the colours to the ones that I have as the theme with the teal type for the link colour and the mint green for the hovered over colour so a user knows they have hovered and the link works. On the About Us page it instructs a user how we can help them, and suggestions that they can try to help themselves.
 ![About Us Mobile Top](assets/testing/about-us-mobile-top.jpg)
-
 ![About Us Mobile Middle](assets/testing/about-us-mobile-middle.jpg)
-
 ![About Us Mobile Bottom](assets/testing/about-us-mobile-bottom.jpg)
 
 
@@ -575,7 +570,6 @@ A user is able to search for entries but should the entry they have searched for
 
 However when there is an entry or entries that matches the user’s search, the user is shown the entry or matching keyword entries as they would expect. 
 ![Searching Community Entries 2](assets/testing/community-entries-search-1.jpg)
-
 ![Searching Community Entries 3](assets/testing/community-entries-search-2.jpg)
 
 I have also tested this page to make sure that everything looks, displays and functions as it should, and I am happy with the results. This page also uses the Code Institute Task Manager Materialize layout.
@@ -626,13 +620,9 @@ To get the form asking for users to add a name, email and a message I added the 
 
 Having tested this to see if there was any way that I could think of to get round not having to input information, or the wrong information in the name and email section thankfully all failed. This means that my site from the contact form point has the defensive design added to it, but not only this it works as intended as shown in the last image below. I have tested the contact form across all devices to ensure that I can compose and send as well as make sure that I receive the message that has been sent and all worked out fine. Also the responsiveness of this has been tested and looks great on any device.
 ![Contact Form Blank Testing 1](assets/testing/contact-form-defensive1.jpg)
-
 ![Contact Form Blank Testing 2](assets/testing/contact-form-defensive2.jpg)
-
 ![Contact Form Blank Testing 3](assets/testing/contact-form-defensive3.jpg)
-
 ![Contact Form Blank Testing 4](assets/testing/contact-form-defensive4.jpg)
-
 ![Contact Us](assets/testing/contact-us-mobile.jpg)
 
 #### Contact form message sent and email received:
@@ -652,9 +642,7 @@ I ran the HTML of my site through the [W3 HTML Validator](https://validator.w3.o
 #### First Test:
 On the first test I was getting the following errors:
 ![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-top.jpg)
-
 ![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-top2.jpg)
-
 ![W3 HTML Testing](assets/testing/validator/talking-tinnitus-w3-html-testing-bottom.jpg)
 
 #### Final Testing:
@@ -668,7 +656,6 @@ I double-checked that the above section warnings were OK and on [Stack Overflow]
 ### CSS
 I ran the CSS of my site through the [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) and this returned the following results:
 [W3 CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftalking-tinnitus.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-
 ![W3 CSS Testing](assets/testing/validator/talking-tinnitus-w3-css-testing.jpg)
 
 
@@ -697,25 +684,21 @@ I have tested my site using Lighthouse in Google Chrome Dev Tools and my results
 
 #### Home Page:
 ![Home Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-home-desktop.jpg)
-
 ![Home Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-home-mobile.jpg)
 
 
 #### About Us:
 ![About Us Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-about-us-desktop.jpg)
-
 ![About Us Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-about-us-mobile.jpg)
 
 
 #### Log In:
 ![Log In Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-login-desktop.jpg)
-
 ![Log In Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-login-mobile.jpg)
 
 
 #### Register:
 ![Register Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-register-sign-up-desktop.jpg)
-
 ![Register Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-register-sign-up-mobile-1.jpg)
 
 Having had the negative results above for the Register page I did my little trick that I thought of and reduced the image in TinyPNG, added it into Adobe Photoshop and scaled this to the right size, then exported out at 50%, then reloaded this back into TinyPNG to further reduce the image size, then back into Gitpod. Once added, committed and pushed I re run the register page through Lighthouse and was able to significantly improve the mobile results.
@@ -724,49 +707,41 @@ Having had the negative results above for the Register page I did my little tric
 
 #### User Profile:
 ![User Profile Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-user-profile-desktop.jpg)
-
 ![User Profile Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-user-profile-mobile.jpg)
 
 
 #### Add Entry:
 On the first test the desktop version was all ok, the problem was when I tested the desktop version that I found the problem with the performance. The reason for this is that despite using TinyPNG the file size hadn’t been reduced enough to be satisfactory for mobile devices. 
 ![Add Entry Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-user-profile-mobile.jpg)
-
 ![Add Entry Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-add-entry-mobile-1.jpg)
 
 I managed to reduce the file size of the image by placing this in Adobe Photoshop, Selected Image Size, then reduced the resolution down to 200 Pixels/inch. I saved this using the Export, Save Web Legacy. I then loaded this up to TinyPNG which allowed me to reduce the file size a bit further. I placed this back into Adobe Photoshop where I added the text over the speech bubbles and applied the same size to the image so that this matched my other hero images, then saved it out using the Export, Save Web Legacy again, although I chose to save the quality at 50 and the Percent at 50. For the last time I uploaded this into TinyPNG which helped to further reduce the file size further. I then tested the mobile version first in Lighthouse to see if anything had changed at all. I was happy to see that not only the results had changed but from a 40 red warning to jump to 68 an ok warning was great to see. The screenshot of the new results can be seen below:
 ![Add Entry Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-add-entry-desktop-2.jpg)
-
 ![Add Entry Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-add-entry-mobile-2.jpg)
 
 
 #### Community Entries:
 ![All Entries Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-all-entries-desktop.jpg)
-
 ![All Entries Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-all-entries-mobile.jpg)
 
 
 #### Edit Entry:
 ![Edit Entry Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-edit-entry-desktop.jpg)
-
 ![Edit Entry Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-edit-entry-mobile.jpg)
 
 
 #### Manage Categories:
 ![Manage Categories - ADMIN ONLY Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-manage-categories-desktop.jpg)
-
 ![Manage Categories - ADMIN ONLY Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-manage-categories-mobile.jpg)
 
 
 #### Add Category - ADMIN ONLY
 ![Add Category - ADMIN ONLY Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-add-category-desktop.jpg)
-
 ![Add Category - ADMIN ONLY Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-add-category-mobile.jpg)
 
 
 #### Edit Category - ADMIN ONLY
 ![Edit Category - ADMIN ONLY Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-edit-category-desktop.jpg)
-
 ![Edit Category - ADMIN ONLY Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-edit-category-mobile.jpg)
 
 
@@ -774,13 +749,11 @@ I managed to reduce the file size of the image by placing this in Adobe Photosho
 On the first test the desktop version was all ok, the problem was when I tested the desktop version that I found the problem with the performance. The reason for this is that despite using TinyPNG the file size hadn’t been reduced enough to be satisfactory for mobile devices.
 
 ![Contact Us Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-contact-us-desktop-1.jpg)
-
 ![Contact Us Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-contact-us-mobile-1.jpg)
 
 I managed to reduce the file size of the image the same way as I had done with the Submit an Entry image. I placed this in Adobe Photoshop, Selected Image Size, then reduced the resolution down to 200 Pixels/inch. I saved this using the Export, Save Web Legacy. I then loaded this up to TinyPNG which allowed me to reduce the file size a bit further. I placed this back into Adobe Photoshop where I was able to size the image correctly to the same size as my other hero image and saved it out using the Export, Save Web Legacy again, although I chose to save the quality at 50 and the Percent at 50. For the last time I uploaded this into TinyPNG which helped to further reduce the file size further. I then tested the mobile version first in Lighthouse to see if anything had changed at all. I was happy to see that not only the results had changed but from a 40 red warning to jump to 68 an ok warning was great to see. The screenshot of the new results can be seen below:
 
 ![Contact Us Page Lighthouse Desktop](assets/testing/lighthouse/lighthouse-contact-us-desktop-2.jpg)
-
 ![Contact Us Page Lighthouse Mobile](assets/testing/lighthouse/lighthouse-contact-us-mobile-2.jpg)
 
 
@@ -804,7 +777,6 @@ when I should've had:
 When this was updated and an entry added the date showed as I would have liked it to.
 4. When I created the base HTML file I added the social media icons to the footer section as I would usually do. As always they displayed vertically down the page, but I wanted these to be centered and horizontal across the page. I tried to add display: inline-block to at least get the icons to display horizontally. Unfortunately this didn’t work. I tried to display them centered on the page as a starting point and then work out why they wouldn’t horizontally display. I managed to get this to work but the horizontal layout wasn’t to be. I revisited my War Heroes Remembered Milestone 2 project to see how I did this and copied the section with the social media icons in, updated the links and still had no joy. I looked and saw that I had given the  its own class of social media, like I had done in my War Heroes Remembered Milestone 2 project. Although I had the class on the  I hadn’t created a separate class like I had done before. On creating the class of sm-icons then adding the CSS styling of display: inline; and the Materialize command of centre-align I was able to achieve the desired result.
 ![Social Media Command 1](assets/bugs/social-media-solution.jpg)
-
 ![Social Media Command 2](assets/bugs/social-media-solution-sm.jpg)
 
 5. In the Community Entries section I wasn’t able to conduct a search as this was throwing a Jinja Error. My Mentor Caleb helped me with finding and debugging this error, which meant that we were able to fix this together. The first error was a closing bracket that was missing after the second closing bracket, so the code looked like this before: {“$search: query }}) and once fixed was like this: {“$search: query }})). Although this was one error fixed there was still no search functionality. Using the print(query) ![Search Entry Print Statement](assets/bugs/search-entry-print-statement.jpg) statement the terminal was able to show where the error was ![Terminal Help](assets/bugs/search-entry.jpg) Using [Stack Overflow](https://stackoverflow.com/questions/59920729/index-is-not-getting-created-text-index-required-for-text-query-mongoose) there was a hint at the text index not having been created in Mongo DB, therefore this would need to be fixed to enable users to perform a search on entries. Having gone over to Mongo DB and found the Create Index section ![Create Index](assets/bugs/create-index-mongodb.jpg) then removed the code that was there and pasted in { "$**": "text" } that Caleb kindly sent into the create index and saving this, then going back and testing the search functionality this worked and allowed entries to be searched and there were no errors further with the search functionality. 
@@ -815,9 +787,7 @@ When this was updated and an entry added the date showed as I would have liked i
 
 7. I managed to get a Modal from Materialize and display the warning error / message about deleting and the consequences this has (it cannot be undone). When selecting the Cancel button on both Admin and User accounts this worked and took me back to the page that I was on. However when deleting the Category (as an Admin user) I encountered a problem. It was working but it was deleting the first category on the page and not the category that was selected for deletion. I thought this could be down to the there being a 1 which was displaying the categories in alphabetical order, so I decided to remove this, but unfortunately this was not the solution to the problem. I also tried this with the Community Entries page as both Admin and User, but this also had the same affect as the Manage Categories page where the first Community Entry was deleted and not the one selected. I looked at others code who have done the same thing. The trouble was that I was a bit confused as this may break this completely so sought help from Igor at Tutor Support. The problem turned out to be that although I had the href as “modal1” I didn’t include the -{{ category._id }} or -{{ entry._id }}, so this meant that all first instance entries and categories were deleted, but with Igor’s helps this is now not the case and the correct entry or category is now deleted and another bug squished.
 ![Modal Warning](assets/bugs/modal-warning.jpg)
-
 ![Successfully Deleted Flash Message](assets/bugs/successfully-deleted-flash-message.jpg)
-
 ![Wrong Category Deleted](assets/bugs/wrong-category-deleted.jpg)
 
 8. I originally had a config.js in my static file in case this was required and had added this to the gitignore file as well as the link to this in the base.html file. When I realised that I didn’t need this I removed it from the gitignore and deleted the JavaScript file. When I checked my site for another issue using the Dev Tools in Google Chrome I was presented with the following console log error:
